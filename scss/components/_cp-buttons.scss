@@ -1,0 +1,202 @@
+/*=============================
+//  button
+==============================*/
+
+// Button 
+.button {
+    font-family: $font-outfit;
+    @include toRem(font-size, 16);
+    font-weight: 500;
+    line-height: 0;
+    letter-spacing: 0.01em;
+    text-decoration: none;
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 50px;
+    padding: 20px 30px;
+    // z-index: 1 !important;
+
+    &:hover {
+        svg {
+            animation: iconMove 0.5s;
+        }
+    }
+}
+
+// Primnary Button
+.button-primary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: $color-primary;
+    color: $color-white;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    svg {
+        transition: all 0.3s ease;
+    }
+    &:hover {
+        // color: $color-primary;
+        // background-color: transparent;
+
+    }
+}
+
+// Transparent Button
+.button-transparent {
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #1E1E2F;
+    color: #1E1E2F;
+    svg {
+        transition: all 0.3s ease;
+    }
+    &::after {
+        background: $color-white;
+        content: "";
+        height: 155px;
+        left: -75px;
+        opacity: .2;
+        position: absolute;
+        top: -50px;
+        transform: rotate(35deg);
+        transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        width: 50px;
+        z-index: -10;
+    }
+
+    &:hover {
+        background: $color-primary;
+        color: $color-white;
+        border: 1px solid $color-primary;
+        svg {
+            fill: $color-white;
+            transform: rotate(45deg);
+        }
+        &::after {
+            left: 120%;
+            transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+        }
+    }
+}
+
+// White Button
+.button-white {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: $color-white;
+    color: $color-primary;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    svg {
+        transition: all 0.4s ease;
+    }
+    &:hover {
+        color: $color-white;
+        background: $color-secondary;
+        svg {
+            fill: $color-white;
+        }
+    }
+}
+
+
+
+// primary button animation
+
+
+.btn-28:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 50%;
+    background-color: $color-secondary;
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+  }
+  .btn-28:after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 0%;
+    height: 50%;
+    background-color: $color-secondary;
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+  }
+  .btn-28:hover {
+    color: #f1f1f1;
+    border-color: $color-secondary;
+  }
+  .btn-28:hover:before,
+  .btn-28:hover:after {
+    width: 100%;
+  }
+  .btn-28:active {
+    color: #333;
+    border-color: #00a7fc;
+    background-color: #00a7fc;
+  }
+  .btn-28:active:before,
+  .btn-28:active:after {
+    background-color: #00a7fc;
+  }
+
+//
+.btn-28-reverse:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 50%;
+    background-color: #FFCD1F;
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+  }
+  .btn-28-reverse:after {
+    content: "";
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 0%;
+    height: 50%;
+    background-color: #FFCD1F;
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+  }
+  .btn-28-reverse:hover {
+    color: #f1f1f1;
+    border-color: $color-primary;
+    color: $color-secondary;
+    svg {
+        fill: $color-secondary;
+    }
+  }
+  .btn-28-reverse:hover:before,
+  .btn-28-reverse:hover:after {
+    width: 100%;
+  }
+  .btn-28-reverse:active {
+    color: #333;
+    border-color: #00a7fc;
+    background-color: #00a7fc;
+  }
+  .btn-28-reverse:active:before,
+  .btn-28-reverse:active:after {
+    background-color: #00a7fc;
+  }
+
+
+
+//   -------------
+
+
+

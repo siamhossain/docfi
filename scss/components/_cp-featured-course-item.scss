@@ -1,0 +1,156 @@
+.featured-course-item {
+    background: $color-white;
+    border: 1px solid $color-gray14;
+    padding: 21px 24px 28px 24px;
+    // width: 330px;
+    &:hover {
+        .featured-course-img {
+            .icon {
+                transform: scale(1.15);
+            }
+        }
+    }
+    .featured-course-img {
+        position: relative;
+        padding: 28px 0 4px 0;
+        @include media-only ('xs', min) {
+            // padding: 28px 47px 4px 57px;
+        }
+        .icon {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.39) 0%, rgba(255, 255, 255, 0) 100%);
+            width: 178px;
+            height: 178px;
+            position: relative;
+            z-index: 0;
+            @include transition;
+        }
+        margin-bottom: 18px;
+    }
+    .course-content {
+        margin-bottom: 15px;
+        .meta-wrapper {
+            .meta-data {
+                gap: 17px;
+                .meta-item {
+                    gap: 8px;
+                    font-family: $font-outfit;
+                    font-weight: 400;
+                    @include toRem(font-size, 15); 
+                    line-height: 0px;
+                    color: $color-shade1;
+                }
+            }
+            margin-bottom: 18px;
+        }
+        .featured-course-title {
+            .featured-course-title-link {
+                font-family: $font-outfit;
+                font-weight: 500;
+                @include toRem(font-size, 20px);
+                line-height: 28px;
+                text-transform: capitalize;
+                color: $color-title;
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+            margin-bottom: 22px;
+        }
+        .author-name {
+            font-family: $font-outfit;
+            font-weight: 400;
+            @include toRem(font-size, 15);
+            line-height: 0px;
+            color: $color-gray12;
+        }
+    }
+    .featured-course-bottom {
+        .rating {
+            gap: 6px;
+            .rating-text {
+                font-family: $font-outfit;
+                font-weight: 400;
+                @include toRem(font-size, 16); 
+                line-height: 0px;
+                color: #9D9CAE;
+            }
+        }
+        .course-price {
+            font-family: $font-outfit;
+            font-weight: 600;
+            @include toRem(font-size, 22px);
+            line-height: 0px;
+            color: $color-title;
+        }
+    }
+    &--style-2 {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        .featured-course-img {
+            width: 100%;
+            margin-bottom: 0;
+            @include media-only('md', min) {
+                width: 282px;
+            }
+        }
+        .course-content {
+            flex: 1;
+            margin-bottom: 0;
+            .meta-wrapper {
+                margin-bottom: 15px;
+            }
+            .featured-course-title {
+                margin-bottom: 10px;
+            }
+            .para-text {
+                margin-bottom: 34px;
+            }
+            .featured-course-bottom {
+                gap: 20px;
+                p.author-name {
+                    line-height: unset;
+                }
+            }
+
+            .action-area {
+                .course-price {
+                    margin-bottom: 13px;
+                }
+
+                a {
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 8px;
+
+                    border: 1px solid #DCDBE5;
+                    border-radius: 5px;
+                    font-family: $font-outfit;
+                    font-weight: 400;
+                    @include toRem(font-size, 16); 
+                    line-height: 0px;
+                    text-transform: capitalize;
+                    color: $color-title;
+
+                    &:hover {
+                        background: $color-primary;
+                        color: $color-white;
+                        svg {
+                            fill: $color-white;
+                        }
+                    }
+                }
+                .add-to-card-btn {
+                    margin-bottom: 8px;
+                    width: 143px;
+                    height: 42px;
+                }
+                .add-to-wishlist-btn {
+                    width: 164px;
+                    height: 42px;
+                }
+            }
+        }
+    }
+}

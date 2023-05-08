@@ -1,0 +1,256 @@
+.course-category-item {
+    position: relative;
+    background: $color-gray13;
+    gap: 18px;
+    padding: 35px 32px; 
+    overflow: hidden;
+    z-index: 0;
+    @include transition;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 25px;
+        height: 25px;
+        border-radius: 10px;
+        background: $color-secondary;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+        z-index: -1;
+    }
+    .icon {
+        width: 70px;
+        height: 70px;
+        @include transition;
+    }
+    .course-text-content {
+        flex: 1;
+        .title {
+            .title-link {
+                font-family: $font-outfit;
+                font-weight: 500;
+                @include toRem(font-size, 20);
+                line-height: 24px;
+                text-transform: capitalize;
+                color: $color-title;
+                &:hover {
+                    color: $color-primary
+                }
+            }
+        }
+        .para-text {
+            @include toRem(font-size, 16); 
+            line-height: 24px;
+        }
+    }
+    .shapes {
+        ul {
+            li {
+                position: absolute;
+                &:nth-child(1) {
+                    top: 26px;
+                    left: 24px;
+                    z-index: -1;
+                }
+                &:nth-child(2) {
+                    right: 0;
+                    bottom: 0;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+    &:hover {
+        &::before {
+            visibility: visible;
+            opacity: 1;
+        }
+        .icon {
+            transform: scale(1.12) translateY(-12px);
+            img.course-icon {
+                animation: toBottomFromTop 0.5s forwards;
+            }
+        }
+    }
+    &--style-2 {
+        border-radius: 20px;
+        position: relative;
+        gap: 30px;
+        .icon {
+            position: relative;
+            .icon-shapes {
+                ul {
+                    li {
+                        position: absolute;
+                        left: 0;
+                        z-index: -1;
+                        bottom: -13px;
+                    }
+                }
+            }
+        }
+        .shapes {
+            ul {
+                li {
+                    position: absolute;
+                    &:nth-child(1) {
+                        right: 0;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+        &:hover {
+            .icon {
+                transform: unset;
+            }
+        }
+    }
+    &--style-3 {
+        background: $color-white;
+        border: 1px solid #C2C2C2;
+        .icon {
+            box-shadow: 0px 4px 20px #D0D0D0;
+        }
+
+        &:hover {
+            border: 1px solid transparent;
+            .icon {
+                box-shadow: unset;
+            }
+        }
+    }
+    &--style-4 {
+        background: #F8F7F2;
+        width: 100%;
+        height: 100px;
+        gap: 18px;
+        padding: 14px 14px 14px 25px;
+        margin-bottom: 0;
+        @include media-only('sm', min) {
+            width: 258px;
+        }
+        .icon {
+            width: 50px;
+            height: 50px;
+            transform: unset;
+        }
+        &:hover {
+            .icon {
+                transform: unset;
+            }
+        }
+    }
+    &:hover {
+        &:before {
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+            visibility: visible;
+        }
+        .title {
+            .title-link {
+                color: $color-white;
+            }
+        }
+        .para-text {
+            color: $color-white;
+        }
+        .shapes {
+            ul {
+                li {
+                    &:last-child {
+                        opacity: 0.4;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.more-categories {
+    position: relative;
+    background: $color-gray13;
+    padding: 40px 25px 35px 25px;
+    z-index: 0;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 25px;
+        height: 25px;
+        border-radius: 10px;
+        background: $color-secondary;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.6s ease-in-out;
+        z-index: -1;
+    }
+    .course-text-content {
+        display: inline-block;
+        .number-of-categories {
+            font-family: $font-outfit;
+            font-weight: 700;
+            @include toRem(font-size, 36);
+            line-height: 24px;
+            text-transform: capitalize;
+            color: $color-primary;
+            margin-bottom: 13px;
+            @include transition;
+        }
+        .title-link {
+            font-family: $font-outfit;
+            font-weight: 500;
+            @include toRem(font-size, 20); 
+            line-height: 24px;
+            text-transform: capitalize;
+            color: $color-shade1;
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+    .shapes {
+        ul {
+            li {
+                position: absolute;
+                &:nth-child(1) {
+                    bottom: 22px;
+                    right: 24px;
+                    z-index: -1;
+                }
+            }
+        }
+    }
+    &:hover {
+        &:before {
+            width: 100%;
+            height: 100%;
+            opacity: 1;
+            visibility: visible;
+        }
+        .title {
+            .title-link {
+                color: $color-white;
+            }
+        }
+        .para-text {
+            color: $color-white;
+        }
+        .number-of-categories {
+            .title-link {
+                color: $color-white;
+            }
+        }
+    }
+    &--style-2 {
+        background: $color-white;
+        border: 1px solid #C2C2C2;
+        &:hover {
+            border: 1px solid transparent;
+        }
+    }
+}

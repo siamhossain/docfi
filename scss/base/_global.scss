@@ -1,0 +1,237 @@
+/* ===========================
+//	Global CSS.
+=============================*/
+
+:root {
+    // Fonts
+    --font-body: 'Roboto', sans-serif;
+
+    --font-roboto: 'Roboto', sans-serif;
+    --font-lato: 'Lato', sans-serif;
+
+    --font-outfit: 'Outfit', sans-serif;
+
+    --font-awesome: "Font Awesome 5 Free";
+
+    // Colors
+    --color-primary: #3948D2;
+    --color-secondary: #15C590;
+
+    --color-white: #fff;
+    --color-black: #000;
+    --colorOverlay: #242424;
+
+    --color-hero-title: #1E1E2F;
+    --color-title: #1D2746;
+    --footer-bg: #292940;
+    --footer-text-color: #BFBFC6;
+    --color-text: #696969;
+    --color-meta: #66687B;
+    // --footer-text-color: --color-gray2;;
+
+    --color-gray1: #4D4D4D;
+    --color-gray2: #BFBFC6;
+    --color-gray3: #C4C4C4;
+    --color-gray4: #F0F0F0;
+    --color-gray5: #F9F9F9;
+    --color-gray6: #DCDCDC;
+    --color-gray7: #E6E6E6;
+    --color-gray8: #EFEFEF;
+    --color-gray9: #DEDBF1;
+    --color-gray10: #E7E7E7;
+    --color-gray11: #BDBABB;
+    --color-gray12: #9D9CAE;
+    --color-gray13: #F8F8F8;
+    --color-gray14: #DCDBE6;
+    --color-gray15: #F7F6F3;
+
+    --color-bg: #FAF9F6;
+    --color-dark-bg: #110E19;
+
+    --bg-color2: #EDF7F3;
+
+    --color-rating: #FFB443;
+
+    --color-shade1: #4F536C;
+    --color-shade2: #392A56; 
+    --color-shade3: #B1A8FF;
+    --color-shade4: #FF9D95;
+    --color-shade5: #6CE1DC;
+    --color-shade6: #FBA3E3;
+    --color-shade7: #98DF76;
+    --color-shade8: #89DAFD;
+    --color-shade9: #FEC269;
+    --color-shade10: ;
+    --color-shade11: ;
+    --color-shade12: ;
+    --color-shade13: ;
+    --color-shade14: ;
+    --color-shade15: ;
+    --color-shade16: ;
+    --color-shade17: ;
+    --color-shade18: ;
+    --color-shade19: ;
+    --color-shade20: ;
+    --color-shade21: ;
+    --color-shade22: ;
+    --color-shade23: ;
+    --color-shade24: ;
+    --color-shade25: ;
+    --color-shade26: ;
+    --color-shade27: ;
+    --color-shade28: ;
+    --color-shade29: ;
+    --color-shade30: ;
+
+    
+
+    //gradient color
+
+    --color-gradient-1: linear-gradient(133.03deg, #7A66FF 0%, #EBDFFF 116.64%);
+    --color-gradient-2: linear-gradient(133.03deg, #F57064 0%, #FFD0CC 116.64%);
+    --color-gradient-3: linear-gradient(133.03deg, #45C8C2 0%, #B6F7F4 116.64%);
+    --color-gradient-4: linear-gradient(133.03deg, #F480D4 0%, #FFD3F3 116.64%);
+    --color-gradient-5: linear-gradient(133.03deg, #6ADE33 0%, #C8EFB6 116.64%);
+    --color-gradient-6: linear-gradient(133.03deg, #3FC6FF 0%, #D7F3FF 116.64%);
+    --color-gradient-7: linear-gradient(133.03deg, #FFA41F 0%, #FFE3BB 116.64%);
+
+    --color-gradient-8: linear-gradient(122.96deg, #7AE985 11.09%, #49B5D7 90.59%);
+    --color-gradient-9: linear-gradient(122.96deg, #FF9966 11.09%, #FF5E62 90.59%);
+    --color-gradient-10: linear-gradient(122.96deg, #7AE9E2 11.09%, #4993D7 90.59%);
+    --color-gradient-11: linear-gradient(122.96deg, #C57AE9 11.09%, #8749D7 90.59%);
+    --color-gradient-12: linear-gradient(122.96deg, #1488CC 11.09%, #1453CC 90.59%);
+    --color-gradient-13: linear-gradient(122.96deg, #56AB2F 11.09%, #A8E063 90.59%);
+    --color-gradient-14: linear-gradient(122.96deg, #F8B500 11.09%, #FFDB7B 90.59%);
+    --color-gradient-15: linear-gradient(122.96deg, #7A7FE9 11.09%, #5549D7 90.59%);
+
+    --color-gradient-16: linear-gradient(122.96deg, #E8BAA6 11.09%, #E372BA 90.59%);
+    --color-gradient-17: linear-gradient(122.96deg, #B3F47F 11.09%, #1DB949 90.59%);
+    --color-gradient-18: linear-gradient(122.96deg, #FFC7C7 11.09%, #D7495A 90.59%);
+    --color-gradient-19: linear-gradient(122.96deg, #E5D6FA 11.09%, #9470E8 90.59%);
+
+
+
+
+
+    //border-radius
+
+    --border-radius-10: 10px;
+    --border-radius-50: 50px;
+    --border-radius-100: 100px
+    --border-radius-lg: ;
+    --border-radius-xl: ;
+    --border-radius-none: 0;
+    
+
+    --button-radius1 : 50px;
+    --card-radius: 16px;
+
+    //border-colors
+    --border-color: #DBDBDB;
+    --border-color-shade-2: #BDBABB;
+
+    //box shadows
+    --box-shadow: 0px 20px 60px rgba(73, 21, 13, 0.1);
+
+    --card-box-shadow1: 8px 8px 36px rgba(0, 0, 0, 0.08);
+    --card-box-shadow2: 16px 16px 32px rgba(0, 0, 0, 0.1);
+    --card-box-shadow3: 12px 12px 48px rgba(0, 160, 103, 0.1);
+
+    --testimonial-card-box-shadow: 8px 8px 32px rgba(0, 0, 0, 0.08);
+}
+
+/*============================ 
+// Global styles
+=============================*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: $font-body;
+    font-size: 1rem;
+    // line-height: 1.625;
+}
+
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 0;
+}
+
+a {
+    display: inline-block;
+    @include transition();
+    text-decoration: none;
+    &:link,
+    &:visited,
+    &:focus {
+        text-decoration: none;
+        outline: 0;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+input,
+textarea,
+select {
+    &:focus {
+        outline: 0;
+        box-shadow: none;
+    }
+}
+
+.no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+    &__left {
+        padding-left: 0 !important;
+    }
+
+    &__right {
+        padding-right: 0 !important;
+    }
+}
+
+
+
+section,
+.section {
+    position: relative;
+}
+
+
+//animation 
+
+@keyframes toBottomFromTop {
+    49% {
+      transform: translateY(-100%);
+    }
+  
+    50% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+  
+    51% {
+      opacity: 1;
+    }
+  }

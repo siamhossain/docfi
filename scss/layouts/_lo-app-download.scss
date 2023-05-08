@@ -1,0 +1,64 @@
+.app-download-section {
+    padding: 155px 0;
+    position: relative;
+    overflow: hidden;
+    &::before {
+        content: url("../images/apps/app-download-img1.png");
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+        @include media-from-to(1400px, min, 1600px, max) {
+            right: -100px;
+        }
+        @include media-only('md', min) {
+            width: 50%;
+            display: block;
+        }
+        @include media-only(1400px, min) {
+            width: unset;
+        }
+    }
+    .app-download-content {
+        .section-text-content {
+            .section-name {
+
+            }
+            .section-heading {
+                color: $color-white;
+                @include toRem(font-size, 40);
+                line-height: 52px;
+            }
+            margin-bottom: 10px;
+        }
+        .app-download-buttons {
+            gap: 12px;
+            a {
+                // border: 1px solid transparent;
+                border-radius: 9px;
+                &:hover {
+                    box-shadow: rgb(0 122 232 / 48%) 6px 2px 16px 0px, rgb(0 210 202 / 80%) -6px -2px 16px 0px;
+                }
+            }
+        }
+    }
+
+    .shapes {
+        ul {
+            li {
+                position: absolute;
+                display: inline-block;
+                &:nth-child(1) {
+                    left: 48px;
+                    bottom: -55px;
+                }
+                &:nth-child(2) {
+                    left: 0;
+                    right: 0;
+                    bottom: 120px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

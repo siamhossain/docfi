@@ -1,0 +1,42 @@
+.feature-item {
+    position: relative;
+    gap: 25px;
+    .icon {
+        position: relative;
+        width: 68px;
+        .feature-img {
+            margin-top: -8px;
+        }
+        .feature-icon-base {
+            position: absolute;
+            z-index: -1;
+            bottom: -10px;
+        }
+    }
+    .feature-text-content {
+        flex: 1;
+        .title {
+            margin-bottom: 4px;
+            .title-link {
+                font-family: $font-outfit;
+                font-weight: 600;
+                @include toRem(font-size, 22);
+                line-height: 24px;
+                text-transform: capitalize;
+                color: $color-white;
+            }
+        }
+        .para-text {
+            color: #9D9CAE;
+        }
+    }
+
+    &:hover {
+        .icon {
+            .feature-img {
+                animation: wobble 1.9s forwards;
+            }
+        }
+    }
+    
+}

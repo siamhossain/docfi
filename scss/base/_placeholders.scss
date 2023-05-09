@@ -177,8 +177,23 @@
 }
 
 //bg
+%color-shade1-bg {
+	background: $color-shade1;
+}
 %color-shade2-bg {
 	background: $color-shade2;
+}
+%color-shade3-bg {
+	background: $color-shade3;
+}
+%color-shade4-bg {
+	background: $color-shade4;
+}
+%color-shade5-bg {
+	background: $color-shade5
+}
+%color-shade6-bg {
+	background: $color-shade6;
 }
 %color-shade14-bg {
 	background: $color-shade14;
@@ -194,9 +209,6 @@
 }
 %color-shade17-bg {
 	background: $color-shade17;
-}
-%color-shade5-bg {
-	background: $color-gray5;
 }
 %color-shade18-bg {
 	background: $color-shade18;
@@ -383,6 +395,16 @@
 
 %border-radius-10 {
 	border-radius: 10px;
+}
+
+%border-radius-style-1 {
+	border-radius: $border-radius-style-1;
+}
+%border-radius-style-2 {
+	border-radius: $border-radius-style-2;
+}
+%border-radius-style-3 {
+	border-radius: $border-radius-style-3;
 }
 
 

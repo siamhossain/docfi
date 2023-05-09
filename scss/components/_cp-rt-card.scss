@@ -1,0 +1,92 @@
+.rt-card {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+
+    .icon {
+        margin-bottom: 25px;
+        position: relative;
+        overflow: hidden;
+        &::before {
+            content: "";
+            position: absolute;
+            background: inherit;
+            height: inherit;
+            width: inherit;
+            border-radius: inherit;
+            z-index: -1;
+            
+        }
+    }
+    .card-title {
+        margin-bottom: 19px;
+        a {
+            font-family: $font-roboto;
+            font-weight: 600;
+            font-size: 24px;
+            color: $color-title;
+            @include transition;
+        }
+        line-height: 28px;
+    }
+    .card-info {
+        font-family: $font-roboto;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #6B707F;
+        margin-bottom: 24px;
+        @include transition;
+    }
+    .card-btn {
+        font-family: $font-roboto;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 26px;
+        color: #1D2746;
+        border: 1px solid #1D2746;
+        border-radius: 100px;
+        padding: 6px 21px;
+        @include transition;
+        &:hover {
+            background: $color-secondary;
+            border: 1px solid transparent;
+            color: $color-white;
+        }
+    }
+
+    &--style-1 {
+        padding: 53px 45px;
+        .icon {
+            width: 80px;
+            height: 80px;
+        }
+        &:hover {
+            .icon {
+                position: unset;
+                @include transition;
+                &::before {
+                    height: 200%;
+                    width: 200%;
+                    transition: 0.7s ease-in-out;
+                }
+            }
+            .card-title {
+                a {
+                    color: $color-white;
+                }
+            }
+            .card-info {
+                color: $color-white;
+            }
+            .card-btn {
+                color: $color-white;
+                border: 1px solid $color-white;
+                &:hover {
+                    // border: 1px solid transparent;
+                }
+            }
+        }
+    }
+
+}

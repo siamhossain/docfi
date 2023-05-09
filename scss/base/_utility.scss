@@ -116,8 +116,23 @@
     @extend %color-shade23;
 }
 
+.rt-color-shade1-bg {
+    @extend %color-shade1-bg;
+}
 .rt-color-shade2-bg {
     @extend %color-shade2-bg;
+}
+.rt-color-shade3-bg {
+    @extend %color-shade3-bg;
+}
+.rt-color-shade4-bg {
+    @extend %color-shade4-bg;
+}
+.rt-color-shade5-bg {
+    @extend %color-shade5-bg;
+}
+.rt-color-shade6-bg {
+    @extend %color-shade6-bg;
 }
 .rt-color-shade14-bg {
     @extend %color-shade14-bg;
@@ -133,9 +148,6 @@
 }
 .rt-color-shade17-bg {
     @extend %color-shade17-bg;
-}
-.rt-color-shade5-bg {
-    @extend %color-shade5-bg;
 }
 .rt-color-shade18-bg {
     @extend %color-shade18-bg;
@@ -312,11 +324,21 @@
     @extend %border-radius-10;
 }
 
+.rt-border-radius-style-1 {
+    @extend %border-radius-style-1;
+}
+.rt-border-radius-style-2 {
+    @extend %border-radius-style-2;
+}
+.rt-border-radius-style-3 {
+    @extend %border-radius-style-3;
+}
+
 
 // helper classes
 
 .section-padding {
-    padding: 140px 0;
+    padding: 120px 0;
 
     @include breakpoint("md") {
         padding: 90px 0;

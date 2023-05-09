@@ -52,15 +52,15 @@
 
     --color-rating: #FFB443;
 
-    --color-shade1: #4F536C;
-    --color-shade2: #392A56; 
-    --color-shade3: #B1A8FF;
-    --color-shade4: #FF9D95;
-    --color-shade5: #6CE1DC;
-    --color-shade6: #FBA3E3;
-    --color-shade7: #98DF76;
-    --color-shade8: #89DAFD;
-    --color-shade9: #FEC269;
+    --color-shade1: #FFF9FB;
+    --color-shade2: #FAF7FF; 
+    --color-shade3: #F5F8FF;
+    --color-shade4: #FE3387;
+    --color-shade5: #9A66FE;
+    --color-shade6: #6889FF;
+    --color-shade7: ;
+    --color-shade8: ;
+    --color-shade9: ;
     --color-shade10: ;
     --color-shade11: ;
     --color-shade12: ;
@@ -117,7 +117,7 @@
 
     --border-radius-10: 10px;
     --border-radius-50: 50px;
-    --border-radius-100: 100px
+    --border-radius-100: 100px;
     --border-radius-lg: ;
     --border-radius-xl: ;
     --border-radius-none: 0;
@@ -125,6 +125,10 @@
 
     --button-radius1 : 50px;
     --card-radius: 16px;
+
+    --border-radius-style-1: 0px 50px 50px 50px;
+    --border-radius-style-2: 0px 40px 40px 40px;
+    --border-radius-style-3: 50px 0px 50px 50px;
 
     //border-colors
     --border-color: #DBDBDB;

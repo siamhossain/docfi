@@ -1,6 +1,9 @@
 
 .rt-hero-section {
     padding: 210px 0 154px 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
     &-content-wrapper {
         padding: 70px 0;
         @include media-only('lg', min) {
@@ -13,16 +16,19 @@
             }
             .section-heading {
                 font-family: $font-lato;
-                font-weight: 600;
+                font-weight: 500;
                 font-size: 50px;
                 line-height: 60px;
                 text-align: center;
                 color: $color-white;
                 margin-bottom: 8px;
+                font-style: normal;
+                border: none;
+                padding: 0;
             }
             .para-text {
                 font-family: $font-lato;
-                font-weight: 400;
+                font-weight: 300;
                 font-size: 20px;
                 line-height: 24px;
                 text-align: center;
@@ -30,10 +36,53 @@
                 margin-bottom: 30px;
             }
         }
+        .searchbox-container { 
+            margin-bottom: 15px;
+        }
+        .search-text {
+            padding-left: 50px;
+            p {
+                font-family: $font-roboto;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 18px;
+                color: $color-white;
+                span {
+                    font-family: $font-roboto;
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 23px;
+                    color: $color-white;
+                }
+                a {
+                    font-family: $font-roboto;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 18px;
+                    color: $color-white;
+                    text-decoration: underline;
+                }
+            }
+        }
     }
 
     &--style-1 {
-        
+        &::before {
+            content: url("../../images/hero-section/shapes/shape-bg1.svg");
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0.25;
+            z-index: -1;
+        }
+        &::after {
+            content: url("../../images/hero-section/shapes/shape-bg2.svg");
+            position: absolute;
+            right: 0;
+            bottom: -262px;
+            opacity: 0.25;
+            z-index: -1;
+        }
     }
 
     &--style-3 { 

@@ -1,23 +1,36 @@
 
 .searchbox-container {
 
-    // width: 786px;
+    width: 786px;
     // height: 80px;
 
     padding: 17px 22px 17px 30px ;
     background: $color-white;
     border-radius: 100px;
     gap: 33px;
+    margin: 0 auto;
     .category-selector {
         position: relative;
-        &::after {
+        &::before {
             content: "";
             position: absolute;
             width: 1px;
-            height: 20px;
-            left: 216px;
-            top: 10px;
-            background: $color-gray11;
+            height: 31px;
+            left: 5px;
+            top: 5px;
+            background: #D9D9D9;
+        }
+        .nice-select {
+            span {
+                font-family: $font-roboto;
+                font-weight: 500;
+                @include toRem(font-size, 15);
+                line-height: 18px;
+                color: #1D2746;
+            }
+            .list {
+                left: 10px;
+            }
         }
     }
     .searchbox-textfield {
@@ -48,15 +61,15 @@
     }
     .searchbox-submit {
         .rt-searchbox-btn {
+            font-family: $font-roboto;
             background: $color-secondary;
-            font-family: $font-outfit;
             font-weight: 500;
-            @include toRem(font-size, 18);
+            @include toRem(font-size, 20);
             line-height: 23px;
             text-transform: capitalize;
             color: $color-white;
             border: none;
-            padding: 12px 30px;
+            padding: 11px 29px;
             border-radius: 50px;
             gap: 8px;
         }

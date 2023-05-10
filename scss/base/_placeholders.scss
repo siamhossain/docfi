@@ -160,12 +160,6 @@
         color: $color-shade20;
     }
 }
-%color-shade30 {
-	color: $color-shade30;
-	&:hover {
-        color: $color-shade30;
-    }
-}
 %color-shade21 {
 	color: $color-shade21;
 }
@@ -176,7 +170,15 @@
 	color: $color-shade23;
 }
 
-//bg
+%color-shade30 {
+	color: $color-shade30;
+	&:hover {
+        color: $color-shade30;
+    }
+}
+
+//background
+
 %color-shade1-bg {
 	background: $color-shade1;
 }
@@ -195,11 +197,29 @@
 %color-shade6-bg {
 	background: $color-shade6;
 }
-%color-shade14-bg {
-	background: $color-shade14;
+%color-shade7-bg {
+	background: $color-shade7;
+}
+%color-shade8-bg {
+	background: $color-shade8;
+}
+%color-shade9-bg {
+	background: $color-shade9;
+}
+%color-shade10-bg {
+	background: $color-shade10;
+}
+%color-shade11-bg {
+	background: $color-shade11;
 }
 %color-shade12-bg {
 	background: $color-shade12;
+}
+%color-shade13-bg {
+	background: $color-shade13;
+}
+%color-shade14-bg {
+	background: $color-shade14;
 }
 %color-shade15-bg {
 	background: $color-shade15;
@@ -228,7 +248,6 @@
 %color-shade23-bg {
 	background: $color-shade23;
 }
-
 %color-shade24-bg {
 	background: $color-shade24;
 }
@@ -405,6 +424,12 @@
 }
 %border-radius-style-3 {
 	border-radius: $border-radius-style-3;
+}
+%border-radius-style-4 {
+	border-radius: $border-radius-style-4;
+}
+%border-radius-style-5 {
+	border-radius: $border-radius-style-5;
 }
 
 

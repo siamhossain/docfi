@@ -1,0 +1,89 @@
+.explore-topics-card {
+    padding: 44px 58px;
+    margin-bottom: 24px;
+    border: 1px solid #E7E7E7;
+    border-radius: 10px;
+    @include transition;
+    .explore-topics-header {
+        border-bottom: 1px solid #D9D9D9;
+        padding-bottom: 20px;
+        .title-area {
+            gap: 10px;
+            .icon {
+                width: 35px;
+                height: 35px;
+                border-radius: 0px 50px 50px 50px;
+            }
+            h3 {
+                a {
+                    font-family: $font-roboto;
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 26px;
+                    color: $color-title;
+                }
+            }
+        }
+        .number-of-article {
+            font-family: 'Roboto';
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: #777777;
+        }
+    }
+    .explore-topics-body {
+        padding: 20px 0;
+        margin-bottom: 20px;
+        ul.explore-topics-list {
+            li {
+                font-family: $font-roboto;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: #6B707F;
+                margin-bottom: 30px;
+                position: relative;
+                padding-left: 22px;
+                transition: all 0.3s ease-in-out;
+                cursor: pointer;
+                &:before {
+                    content: url("../images/explore-topic/list-arrow.svg");
+                    position: absolute;
+                    left: 0;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &:hover {
+                    color: $color-secondary;
+                    margin-left: 10px;
+                    &:before {
+                        content: url("../images/explore-topic/list-arrow-green.svg");
+                        transition: all 0.3s ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+    .view-all-btn {
+        border: 1px solid #1D2746;
+        border-radius: 100px;
+        padding: 8px 20px 8px 20px;
+        font-family: 'Roboto';
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #1D2746;
+        &:hover {
+            border: 1px solid transparent;
+            background-color: $color-secondary;
+            color: $color-white;
+        }
+    }
+
+    &:hover {
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+        background: $color-white;
+    }
+}

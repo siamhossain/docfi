@@ -1,0 +1,36 @@
+.logo-card {
+    padding: 34px 48px 35px 30px;
+    border: 1px solid #CDCDCD;
+    border-radius: 10px;
+    @include transition;
+    margin-bottom: 11px;
+    
+    .logo {
+        img {
+            margin-bottom: 8px;
+        }
+        .text {
+            font-family: $font-roboto;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 28px;
+            color: #8E8E8F;
+        }
+    }
+    
+    &:hover {
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.08);
+        .logo-card-btn {
+            svg {
+                fill: #1D2746;
+                @include transition;
+            }
+        }
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &--style-1 {
+
+    }
+}

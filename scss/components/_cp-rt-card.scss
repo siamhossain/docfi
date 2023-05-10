@@ -7,6 +7,7 @@
         margin-bottom: 25px;
         position: relative;
         overflow: hidden;
+        @include transition;
         &::before {
             content: "";
             position: absolute;
@@ -26,6 +27,9 @@
             font-size: 24px;
             color: $color-title;
             @include transition;
+            &:hover {
+                color: #1D2746;
+            }
         }
         line-height: 28px;
     }
@@ -55,6 +59,8 @@
         }
     }
 
+    
+
     &--style-1 {
         padding: 53px 45px;
         .icon {
@@ -64,11 +70,12 @@
         &:hover {
             .icon {
                 position: unset;
+                // background: red;
                 @include transition;
                 &::before {
                     height: 200%;
                     width: 200%;
-                    transition: 0.7s ease-in-out;
+                    transition: 0.8s ease-in-out;
                 }
             }
             .card-title {
@@ -88,5 +95,94 @@
             }
         }
     }
-
+    &--style-2 {
+        padding: 55px 32px;
+        background: #F8F8F8;
+        @include transition;
+        .icon {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 15px;
+        }
+        .card-title {
+            margin-bottom: 10px;
+            a {
+                font-weight: 500;
+                font-size: 22px;
+            }
+            line-height: 26px;
+        }
+        .card-info {
+            line-height: 30px;
+            margin-bottom: 0;
+            @include transition;
+        }
+        &:hover {
+            box-shadow: 20px 20px 25px rgba(0, 0, 0, 0.2);
+            .icon {
+                position: unset;
+                // background: red;
+                @include transition;
+                &::before {
+                    height: 200%;
+                    width: 200%;
+                    transition: 0.8s ease-in-out;
+                }
+            }
+            .card-title {
+                a {
+                    color: $color-white;
+                }
+            }
+            .card-info {
+                color: $color-white;
+            }
+            .card-btn {
+                color: $color-white;
+                border: 1px solid $color-white;
+                &:hover {
+                    // border: 1px solid transparent;
+                }
+            }
+        }
+    }
+    &--style-3 {
+        background: transparent;
+        border-radius: 0;
+        width: 329px;
+        // margin-bottom: 40px;
+        .icon {
+            width: 45px;
+            height: 45px;
+            background: none;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .card-title {
+            margin-bottom: 5px;
+            a {
+                font-weight: 500;
+                font-size: 22px;
+            }
+            line-height: 26px;
+        }
+        .card-info {
+            line-height: 30px;
+            margin-bottom: 0;
+            @include transition;
+        }
+        &:hover {
+            color: unset;
+            .icon {
+                background: $color-secondary;
+                border: 1px solid transparent;
+                svg {
+                    path {
+                        @include transition;
+                        stroke: $color-white !important;
+                    }
+                }
+            }
+        }
+    }
 }

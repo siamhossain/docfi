@@ -1,0 +1,71 @@
+.best-online-documentation-section {
+    .best-documentation-info-wrapper {
+        border: 1px solid #CDCDCD;
+        padding: 60px 65px;
+        border-radius: 10px;
+        row-gap: 40px;
+        column-gap: 64px;
+        .rt-card {
+            &:nth-child(1) {
+                .icon {
+                    border: 1px solid #F84436;
+                }
+                &:hover {
+                    .icon {
+                        border: 1px solid transparent;
+                    }
+                }
+            }
+            &:nth-child(2) {
+                .icon {
+                    border: 1px solid #F47D0E;
+                }
+                &:hover {
+                    .icon {
+                        border: 1px solid transparent;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                .icon {
+                    border: 1px solid #6836F8;
+                }
+                &:hover {
+                    .icon {
+                        border: 1px solid transparent;
+                    }
+                }
+            }
+            &:nth-child(4) {
+                .icon {
+                    border: 1px solid #C82CFF;
+                }
+                &:hover {
+                    .icon {
+                        border: 1px solid transparent;
+                    }
+                }
+            }
+            &:nth-child(5) {
+                .icon {
+                    border: 1px solid #F47D0E;
+                }
+                &:hover {
+                    .icon {
+                        border: 1px solid transparent;
+                    }
+                }
+            }
+            &:nth-child(6) {
+                .icon {
+                    border: 1px solid #3678F8;
+                }
+                &:hover {
+                    .icon {
+                        border: 1px solid transparent;
+                    }
+                }
+            }
+        }
+    }   
+}

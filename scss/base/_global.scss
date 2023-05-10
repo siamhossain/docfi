@@ -58,23 +58,23 @@
     --color-shade4: #FE3387;
     --color-shade5: #9A66FE;
     --color-shade6: #6889FF;
-    --color-shade7: ;
-    --color-shade8: ;
-    --color-shade9: ;
-    --color-shade10: ;
-    --color-shade11: ;
-    --color-shade12: ;
-    --color-shade13: ;
-    --color-shade14: ;
-    --color-shade15: ;
-    --color-shade16: ;
-    --color-shade17: ;
-    --color-shade18: ;
-    --color-shade19: ;
-    --color-shade20: ;
-    --color-shade21: ;
-    --color-shade22: ;
-    --color-shade23: ;
+    --color-shade7: #FFFEF8;
+    --color-shade8: #FBFBFF;
+    --color-shade9: #FFFBFB;
+    --color-shade10: #FBF9FF;
+    --color-shade11: #F9FFFA;
+    --color-shade12: #6C62CA;
+    --color-shade13: #FF8631;
+    --color-shade14: #FD5B5B;
+    --color-shade15: #1D8FFA;
+    --color-shade16: #E233FE;
+    --color-shade17: #4AD00A;
+    --color-shade18: #f7f7ff;
+    --color-shade19: #5160DD;
+    --color-shade20: #9933FE;
+    --color-shade21: #0ED86B;
+    --color-shade22: #4291EE;
+    --color-shade23: #FF912B;
     --color-shade24: ;
     --color-shade25: ;
     --color-shade26: ;
@@ -129,6 +129,8 @@
     --border-radius-style-1: 0px 50px 50px 50px;
     --border-radius-style-2: 0px 40px 40px 40px;
     --border-radius-style-3: 50px 0px 50px 50px;
+    --border-radius-style-4: 10px 0px 0px 10px;
+    --border-radius-style-5: 0px 10px 10px 0px;
 
     //border-colors
     --border-color: #DBDBDB;
@@ -169,7 +171,6 @@ li {
     padding: 0;
     margin: 0;
     list-style: none;
-    line-height: 0;
 }
 
 a {

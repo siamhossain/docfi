@@ -3,8 +3,8 @@
         border: 1px solid #CDCDCD;
         padding: 60px 65px;
         border-radius: 10px;
-        row-gap: 40px;
-        column-gap: 64px;
+        row-gap: 30px;
+        column-gap: 60px;
         .rt-card {
             &:nth-child(1) {
                 .icon {
@@ -68,4 +68,11 @@
             }
         }
     }   
+    .shapes {
+        img {
+            position: absolute;
+            left: 83px;
+            bottom: 0;
+        }
+    }
 }

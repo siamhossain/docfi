@@ -4,25 +4,6 @@
         .section-heading {
             margin-bottom: 40px;
             position: relative;
-            &::before {
-                content: url("../images/testimonial/shapes/heading-shape.svg");
-                position: absolute;
-                bottom: -33px;
-                right: 0;
-                left: 0;
-                text-align: center;
-            }
-            &::after {
-                content: url("../images/testimonial/shapes/shape-2.svg");
-                position: absolute;
-                right: -187px;
-                top: 14px;
-                z-index: -1;
-                display: none;
-                @include media-only('lg', min) {
-                    display: block;
-                }
-            }
         }
         .para-text {
 
@@ -31,18 +12,18 @@
 
     
     
-    .swiper {
-        margin: 0 0;
-        @include media-only('lg', min) {
-            margin: 0 -225px;
-            .visible-first {
-                opacity: 0.5;
-            }
-            .visible-last {
-                opacity: 0.5;
-            }
-        }
-    }
+    // .swiper {
+    //     margin: 0 0;
+    //     @include media-only('lg', min) {
+
+    //         .visible-first {
+    //             opacity: 0.5;
+    //         }
+    //         .visible-last {
+    //             opacity: 0.5;
+    //         }
+    //     }
+    // }
 
 
     &--style-3 {

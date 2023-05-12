@@ -1,8 +1,10 @@
 
 .searchbox-container {
 
-    width: 786px;
-    // height: 80px;
+    width: 100%;
+    @include media-only('md', min) {
+        width: 786px;
+    } 
 
     padding: 17px 22px 17px 30px ;
     background: $color-white;

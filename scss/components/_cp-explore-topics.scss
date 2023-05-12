@@ -1,6 +1,5 @@
 .explore-topics-card {
     padding: 44px 58px;
-    margin-bottom: 24px;
     border: 1px solid #E7E7E7;
     border-radius: 10px;
     @include transition;
@@ -85,5 +84,26 @@
     &:hover {
         box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
         background: $color-white;
+    }
+}
+
+.explore-topic-section.section-padding {
+    padding-top: 0;
+}
+.explore-topic-section {
+    position: relative;
+    .shapes {
+        img {
+            position: absolute;
+            right: 57px;
+            bottom: 0;
+            display: none;
+            @include media-only(1000px, min) {
+                display: block;
+            }
+            @include media-from-to(1200px , min, 1300px, max ) {
+                z-index: -1;
+            }
+        }
     }
 }

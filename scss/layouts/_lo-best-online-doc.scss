@@ -73,6 +73,13 @@
             position: absolute;
             left: 83px;
             bottom: 0;
+            display: none;
+            @include media-only ('lg', min) {
+                display: block;
+            }
+            @include media-from-to(1200px, min, 1300px, max) {
+                z-index: -1;
+            }
         }
     }
 }

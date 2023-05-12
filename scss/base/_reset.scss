@@ -1,83 +1,9 @@
-/* ========================== */
-/* bootstrap accordion reset
-/* =========================== */
 
-// .accordion-button {
-//     background: #F8F8F8;
-//     font-family: $font-outfit;
-//     font-weight: 500;
-//     @include toRem(font-size, 18);
-//     line-height: 23px;
-//     color: $color-title;
-//     height: 60px;
-//     padding: 1rem 25px;
+/** Bootstrap Row customize**/
 
-//     @media (max-width: 768px) {
-//         font-size: 16px;
-//     }
-// }
-
-// .accordion-button::after {
-//     background-image: url("../images/icons/right-arrow.svg");
-//     background-size: unset;
-// }
-
-// .accordion-button:not(.collapsed)::after {
-//     background-image: url("../images/icons/white-up-arrow.svg");
-//     transform: rotate(0deg);
-//     height: 10px;
-    
-// }
-
-// .accordion-flush .accordion-item .accordion-button:not(.collapsed) {
-//     color: $color-white;
-//     background-color: $color-primary;
-//     box-shadow: none;
-//     border-radius: 5px 5px 0px 0px;
-// }
-
-// .accordion-button:focus {
-//     outline: none;
-//     box-shadow: none;
-// }
-
-// .accordion-flush .accordion-item {
-//     position: relative;
-//     margin-bottom: 7px;
-//     border-radius: 5px;
-//     border: none;
-//     &:first-child {
-        
-//     }
-//     &:last-child {
-        
-//     }
-// }
-
-// .accordion-flush .accordion-item .accordion-button {
-//     border-radius: 5px;
-//     &:last-child {
-//         // border-radius: 6px;
-//     }
-// }
-
-// .services-details-page {
-//     .accordion-item {
-//         margin-bottom: 15px;
-//     }
-// }
-
-// .accordion-body {
-//     border: 1px solid #DCDBE5;
-//     padding: 0;
-//     border-radius: 0px 0px 5px 5px;
-// }
-
-/* End Custom accordion */
-
-/* ========================== */
-// nice select reset
-/* =========================== */
+.row {
+    --bs-gutter-y: 1.5rem;
+}
 
 .nice-select {
     background: transparent;
@@ -133,7 +59,10 @@
 
 
 .swiper {
-    padding-bottom: 120px;
+    padding-bottom: 80px;
+    @include media-only ('md' min) {
+        padding-bottom: 120px;
+    } 
 }
 
 .swiper-pagination .swiper-pagination-bullet {

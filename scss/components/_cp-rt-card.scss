@@ -150,7 +150,9 @@
         background: transparent;
         border-radius: 0;
         width: 329px;
-        // margin-bottom: 40px;
+        @include media-from-to(1200px, min, 1300px, max) {
+            width: 270px;
+        }
         .icon {
             width: 45px;
             height: 45px;

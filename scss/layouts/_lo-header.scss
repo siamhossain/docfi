@@ -9,12 +9,18 @@ header {
   right: 0;
   z-index: 9;
   padding-top: 32px;
+  .row {
+    --bs-gutter-y: 0;
+  }
   .header-logo {
     a {
       img {
         width: 100%;
         height: auto;
       }
+    }
+    .sticky-header-logo {
+      display: none;
     }
   }
   .main-menu {
@@ -145,7 +151,7 @@ a.menu--link.second-level::after {
       }
 
       svg {
-        stroke: #FFFFFF;
+        stroke: $color-white;
         transition: all 0.4s ease;
         -webkit-transition: all 0.4s ease;
         display: none;
@@ -344,7 +350,12 @@ a.menu--link.second-level::after {
     border: none;
 
     .header-logo {
-      display: block;
+      a {
+        display: none;
+      }
+      .sticky-header-logo {
+        display: block;
+      }
     }
   }
 

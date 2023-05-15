@@ -82,4 +82,33 @@
             }
         }
     }
+    &--style-2 {
+        padding: 100px 0;
+        margin-bottom: 120px;
+        .section-text-content {
+            .section-heading {
+                border-bottom: none;
+                padding: 0;
+            }
+        }
+        .theme-logo-wrapper {
+            padding: 0 45px;
+        }
+        &::before {
+            content: "";
+            position: absolute;
+            width: 1000px;
+            height: 100%;
+            background: #FCF9FF;
+            border-radius: 50px;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            z-index: -1;
+        }
+        .shapes {
+            display: none;
+        }
+    }
 }

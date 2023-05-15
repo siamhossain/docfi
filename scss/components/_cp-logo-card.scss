@@ -33,6 +33,21 @@
         margin-bottom: 0;
     }
     &--style-1 {
-
+        
+    }
+    &--style-2 {
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.08);
+        border: 1px solid transparent;
+        @include transition;
+        &:hover {
+            border: 1px solid #F8851C;
+            box-shadow: none;
+            .logo-card-btn {
+                svg {
+                    fill: #F8851C;
+                    @include transition;
+                }
+            }
+        }
     }
 }

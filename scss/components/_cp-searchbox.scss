@@ -81,7 +81,12 @@
     }
 
     &--style-2 {
-        
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
+        .searchbox-submit {
+            .rt-searchbox-btn {
+                background: $color-shade24;
+            }
+        }
     }
 
     &--style-3 {

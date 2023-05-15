@@ -85,6 +85,49 @@
         }
     }
 
+    &--style-2 { 
+        padding: 215px 0 286px 0;
+        &:before {
+            content: url("../../images/hero-section/BG-home-2.png");
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            // height: 745px;
+            z-index: -1;
+        }
+        .rt-hero-section-content-wrapper {
+            .section-text-content {
+                .section-name {
+                    color: $color-shade1;
+                    margin-bottom: 4px;
+                }
+                .section-heading {
+                    font-family: $font-lato;
+                    font-weight: 600;
+                    color: $color-title;
+                }
+                .para-text {
+                    font-weight: 400;
+                    color: #6B707F;
+                }
+            }
+        }
+
+        .search-text {
+            p {
+                color: $color-title;
+                span {
+                    color: $color-title;
+                }
+                a {
+                    color: $color-title;
+                }
+            }
+        }
+    }
+
     &--style-3 { 
 
     }

@@ -1,0 +1,31 @@
+.find-communities-section {
+    .section-text-content {
+        .section-heading {
+            border-bottom: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+        .para-text {
+
+        }
+    }
+    .wrapper {
+        position: relative;
+        .slider-navigation-btn-wrapper {
+            .prev {
+                left: -30px;
+            } 
+            .next {
+                right: -30px;
+            } 
+        }
+        .slider-navigation-btn-wrapper {
+            .swiper-arrow {
+                top: 40%;
+                background: #FFFFFF;
+                box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.07);
+                border: none;
+            }
+        }
+    }
+}

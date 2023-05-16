@@ -1,0 +1,96 @@
+.single-post {
+    background: #FAFAFF;
+    padding: 30px;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 1px solid #E7E7E7;
+    @include transition;
+    &:last-child {
+        border-bottom: none;
+    }
+    &:hover {
+        background: $color-white;
+    }
+
+    .title-content {
+        gap: 20px;
+        .icon {
+            width: 70px;
+            height: 70px;
+            background: #FFF2F2;
+        }
+        .title-area {
+            flex: 1;
+            .title {
+                margin-bottom: 4px;
+                .title-link {
+                    font-family: $font-roboto;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 23px;
+                    color: $color-title;
+                }
+            }
+        }
+    }
+    .post-info-wrapper {
+        column-gap: 63px;
+        row-gap: 25px;
+
+        .post-counts {
+            gap: 60px;
+            .single-count {
+                position: relative;
+                text-align: center;
+                .icon {
+                    margin-bottom: 9px;
+                }
+                .numbers {
+                    font-family: $font-roboto;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 23px;
+                    text-align: center;
+                    color: $color-title;
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    right: -30px;
+                    top: -5px;
+                    width: 1px;
+                    height: 60px;
+                    background: #E3E3E3;
+                }
+            }
+        }
+        .post-author-info {
+            gap: 10px;
+            .title-area {
+                flex: 1;
+                .author-name {
+                    font-family: $font-roboto;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: $color-title;
+                    margin-bottom: 10px;
+                }
+                .post-date {
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+
+.community-posts-section {
+    .community-posts-wrapper {
+        border: 1px solid #E7E7E7;
+        border-radius: 10px;
+    }
+}

@@ -21,8 +21,36 @@
     .testimonial-comment {
         margin-bottom: 15px;
     }
-    .logo {
 
+    &--style-2 {
+        background: $color-white;
+        box-shadow: none;
+        border-radius: 20px;
+        padding: 69px 85px;
+        // border: 1px solid #969696;
+        .quotation-icon {
+            margin-bottom: 32px;
+        }
+        .testimonial-comment {
+            margin-bottom: 29px;
+        }
+        .author-info {
+            .name {
+                color: $color-title;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+            .designation {
+                font-family: $font-roboto;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 18px;
+                text-align: center;
+                color: #6B707F;
+            }
+        }
     }
 }
 

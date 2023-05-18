@@ -2,11 +2,16 @@
     overflow: unset;
     .join-community-wrapper {
         // height: 202px;
-        background: linear-gradient(59.5deg, transparent 10%, #F8851C 10%);
+        background: linear-gradient(0deg, transparent 10%, #F8851C 10%);
         position: relative;
         margin-bottom: -50px;
-        padding: 70px 76.5px 64px 165px;
+        padding: 70px 76.5px 64px 76.5px;
         z-index: 1;
+        row-gap: 20px;
+        @include media-only(1400px, min ) {
+            padding: 70px 76.5px 64px 165px;
+            background: linear-gradient(59.5deg, transparent 10%, #F8851C 10%);
+        }
         &::before {
             content: "";
             position: absolute;
@@ -16,8 +21,11 @@
             left: 2px;
             top: 0px;
             z-index: -2;
-            -webkit-clip-path: polygon(0 0, 42% 100%, 100% 100%);
             clip-path: polygon(0 0, 40% 140%, 100% 140%);
+            display: none;
+            @include media-only(1400px, min ) {
+                display: block;
+            }
         }
         .join-community-text-content {
             gap: 15px;

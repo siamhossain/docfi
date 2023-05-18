@@ -126,9 +126,64 @@
                 }
             }
         }
+        .shapes {
+            ul {
+                li {
+                    position: absolute;
+                    z-index: -1;
+                    &:nth-child(1) {
+                        left: 0;
+                        top: 0;
+                    }
+                    &:nth-child(2) {
+                        right: 0;
+                        bottom: 32%;
+                    }
+                }
+            }
+        }
     }
 
-    &--style-3 { 
-
+    &--style-3 {
+        background: #FFFAD1;
+        padding-bottom: 303px;
+        &::before {
+            content: url("../../images/hero-section/BG-home-3.png");
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: -1;
+        }
+        .rt-hero-section-content-wrapper {
+            .section-text-content {
+                .section-name {
+                    color: $color-title;
+                    margin-bottom: 4px;
+                }
+                .section-heading {
+                    font-family: $font-lato;
+                    font-weight: 600;
+                    color: $color-title;
+                }
+                .para-text {
+                    font-weight: 400;
+                    color: #6B707F;
+                }
+            }
+        }
+        .search-text {
+            p {
+                color: $color-title;
+                span {
+                    color: $color-title;
+                }
+                a {
+                    color: $color-title;
+                }
+            }
+        }
     }
 }

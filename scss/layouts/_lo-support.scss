@@ -67,5 +67,22 @@
             }
         }
     }
+
+    &--style-2 {
+        background: unset;
+        .section-text-content {
+            margin-bottom: 50px;
+            .section-heading {
+                color: $color-title;
+                border-bottom: none;
+                padding: 0;
+                font-size: 40px;
+                line-height: 47px;
+            }
+            .para-text {
+                color: #6B707F;;
+            }
+        }
+    }
     
 }

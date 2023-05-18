@@ -325,7 +325,13 @@ a.menu--link.second-level::after {
   }
 
   &--style-3 {
-    
+    .menu--link {
+      color: $color-title;
+    }
+    .navbar-action-area ul li a {
+      border: 1px solid #8A58F3;
+      color: #8A58F3;
+    }
   }
 }
 

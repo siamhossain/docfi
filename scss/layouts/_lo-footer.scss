@@ -116,8 +116,9 @@
             }
         }
     }
-    
+
     &--style-2 {
+        // z-index: -1;
         background: #1B2234;
         .rt-footer-content-wrapper { 
             .rt-footer-content {
@@ -168,3 +169,5 @@
         }
     }
 }
+
+

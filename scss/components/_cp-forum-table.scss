@@ -1,0 +1,94 @@
+.post-table {
+    table, th, td {
+        border: 1px solid #000;
+        
+    }
+    table {
+        width: 100%;
+        tbody {
+            tr {
+                th {
+                    background: #F9FBFD;
+                    border-top: 2px solid #0289FF;
+                    border-bottom: 1px solid #F4F4F4;
+    
+                    font-family: 'Roboto';
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #1D2746;
+                    &:last-child {
+                        background: red;
+                    }
+                }
+                td {
+                    .title-area {
+                        gap: 5px;
+                        margin-bottom: 6px;
+                        // background: $color-white;
+                        .post-title {
+                            font-family: 'Roboto';
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 19px;
+                        }
+                        
+                    }
+                    .meta-list {
+                        gap: 15px;
+                        .meta-data {
+                            .post-author {
+                                gap: 5px;
+                                .name {
+                                    font-family: 'Roboto';
+                                    font-weight: 400;
+                                    font-size: 12px;
+                                    line-height: 14px;
+                                    color: #1D2746;
+                                }
+                            }
+                            span {
+                                font-family: 'Roboto';
+                                font-weight: 400;
+                                font-size: 12px;
+                                line-height: 14px;
+                                color: #1D2746;
+                            }
+                            .tag {
+                                background: #F2F9FF;
+                                border-radius: 2px;
+                                padding: 4px;
+                                font-family: 'Roboto';
+                                font-weight: 400;
+                                font-size: 10px;
+                                line-height: 12px;
+                                color: #0289FF;
+                            }
+                        }
+                    }
+                    .count {
+                        font-family: 'Roboto';
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 18px;
+                        color: #1D2746;
+                    }
+                    .last-post {
+                        font-family: 'Roboto';
+                        font-weight: 400;
+                        font-size: 12px;
+                        line-height: 14px;
+                        color: #4E4F50;
+                    }
+                    .author-name {
+                        @extend .last-post;
+                    }
+
+                    &:nth-child(2) {
+                        background: red;
+                    }
+                }
+            }
+        }   
+    }
+}

@@ -50,4 +50,26 @@
             }
         }
     }
+    &--style-3 {
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+        border: 1px solid transparent;
+        padding: 35px 56px;
+        height: unset;
+        margin-bottom: 20px;
+        .logo {
+            margin-bottom: 30px;
+            img {
+                margin-bottom: 20px;
+            }
+        }
+        .post-info-wrapper {
+            column-gap: 63px;
+            row-gap: 25px;
+        }
+        @include transition;
+        &:hover {
+            border: 1px solid #8A58F3;
+            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+        }
+    }
 }

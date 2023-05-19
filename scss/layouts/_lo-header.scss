@@ -333,6 +333,15 @@ a.menu--link.second-level::after {
       color: #8A58F3;
     }
   }
+  &--style-4 {
+    .menu--link {
+      color: $color-white;
+    }
+    .navbar-action-area ul li a {
+      border: 1px solid $color-white;
+      color: $color-white;
+    }
+  }
 }
 
 /* ------- Start Main Header -------- */

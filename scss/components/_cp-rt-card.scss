@@ -324,4 +324,44 @@
             }
         }
     }
+    &--style-8 {
+        padding: 57px 40px;
+        @include transition;
+        .card-title {
+            gap: 10px;
+            line-height: 35px;
+            a {
+                font-weight: 500;
+                font-size: 30px;
+            }
+            .icon {
+                margin-bottom: 0;
+            }
+        }
+        .card-info {
+            line-height: 30px;
+            margin-bottom: 19px;
+        }
+        .card-btn {
+            border: none;
+            color: $color-title;
+            padding: 0;
+            font-size: 18px;
+            line-height: 30px;
+            gap: 10px;
+            &:hover {
+                color: #0289FF;
+                padding: 0;
+                background: unset;
+                border: none;
+                svg {
+                    fill: #0289FF;
+                    @include transition;
+                }
+            }
+        }
+        &:hover {
+            box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+        }
+    }
 }

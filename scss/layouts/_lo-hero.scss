@@ -186,4 +186,40 @@
             }
         }
     }
+    &--style-4 {
+        padding-top: 265px;
+        padding-bottom: 147px;
+        &::before {
+            content: url("../../images/hero-section/BG-home-4.jpg");
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: -1;
+        }
+        .rt-hero-section-content-wrapper {
+            .section-text-content {
+                .section-heading {
+                    text-transform: initial;
+                }
+                .para-text {
+                    font-weight: 300;
+                    color: #EBEBEB;
+                }
+            }
+        }
+        .search-text {
+            p {
+                color: $color-white;
+                span {
+                    color: $color-white;
+                }
+                a {
+                    color: $color-white;
+                }
+            }
+        }
+    }
 }

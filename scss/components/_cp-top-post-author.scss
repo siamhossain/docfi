@@ -1,0 +1,18 @@
+.post-author-info {
+    gap: 10px;
+    .title-area {
+        flex: 1;
+        .author-name {
+            font-family: $font-roboto;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: $color-title;
+            margin-bottom: 10px;
+        }
+        .post-date {
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+}

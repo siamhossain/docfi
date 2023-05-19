@@ -118,11 +118,11 @@
             border-radius: 20px;
             padding: 50px;
             .title {
-                font-family: 'Roboto';
+                font-family: $font-roboto;
                 font-weight: 700;
                 font-size: 24px;
                 line-height: 30px;
-                color: #1D2746;
+                color: $color-title;
                 margin-bottom: 20px;
             }
             .forum-form {
@@ -136,7 +136,7 @@
                             width: 100%;
                             padding: 20px;
         
-                            font-family: 'Roboto';
+                            font-family: $font-roboto;
                             font-style: normal;
                             font-weight: 400;
                             font-size: 15px;
@@ -151,7 +151,7 @@
                             border-radius: 5px;
                             width: 100%;
         
-                            font-family: 'Roboto';
+                            font-family: $font-roboto;
                             font-style: normal;
                             font-weight: 400;
                             font-size: 15px;
@@ -182,7 +182,7 @@
                             color: $color-white;
                             padding: 14px 25px;
     
-                            font-family: 'Roboto';
+                            font-family: $font-roboto;
                             font-weight: 600;
                             font-size: 16px;
                             line-height: 19px;
@@ -194,21 +194,38 @@
                 .contact-info-wrapper {
                     .contact-info {
                         gap: 10px;
+                        margin-bottom: 10px;
                         a, p {
-                            font-family: 'Roboto';
-                            font-style: normal;
+                            font-family: $font-roboto;
                             font-weight: 400;
                             font-size: 16px;
                             line-height: 30px;
-                            /* identical to box height, or 188% */
-
-
-                            color: #1D2746;
+                            color: $color-title;
 
                         }
                     }
                 }
             }
         }
+        .best-documentation-info-wrapper {
+            border: none;
+            padding: 0;
+            .section-text-content {
+                margin-bottom: 25px;
+                width: 597px;
+                .section-heading {
+                    border-bottom: 0;
+                    text-align: left;
+                    padding: 0;
+                    margin-bottom: 16px;
+                    font-size: 40px;
+                    line-height: 55px;
+                }
+                .para-text {
+
+                }
+            }
+        }
     }
+    
 }

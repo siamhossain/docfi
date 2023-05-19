@@ -1,0 +1,27 @@
+.post-counts {
+    gap: 60px;
+    .single-count {
+        position: relative;
+        text-align: center;
+        .icon {
+            margin-bottom: 9px;
+        }
+        .numbers {
+            font-family: $font-roboto;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23px;
+            text-align: center;
+            color: $color-title;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            right: -30px;
+            top: -5px;
+            width: 1px;
+            height: 60px;
+            background: #E3E3E3;
+        }
+    }
+}

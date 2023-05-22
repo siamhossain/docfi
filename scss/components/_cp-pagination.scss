@@ -3,46 +3,32 @@
 =================================*/
 
 .pagination-wrapper {
-    margin-top: 30px;
-    display: inline-block;
+    margin-top: 50px;
+    // display: inline-block;
     margin-bottom: 25px;
     @include media-only('md', min) {
         margin-bottom: 0;
     }
     ul.pagination {
         .active {
-                color: $color-primary;
-            }
-        gap: 12px;
+            background: #0289FF;
+            color: $color-white;
+        }
+        gap: 5px;
         li {
             a {
-                font-family: $title-font;
+                font-family: $font-roboto;
                 font-weight: 500;
-                @include toRem(font-size, 17);
-                line-height: 26px;
-                text-align: center;
-                color: $color-text;
-                border-radius: 6px;
+                @include toRem(font-size, 16);
+                line-height: 19px;
+                color: $color-title;
+                background: #F7F7F7;
+                border-radius: 5px;
                 border: none;
-                padding: .375rem 9px;
+                padding: 8px 13px;
                 &:hover {
-                    color: $color-primary;
-                }
-            }
-            &:first-child {
-                a {
-                    background: #F4F3FF;
-                    width: 44px;
-                    height: 44px;
-                    border-radius: 5px;
-                }
-            }
-            &:last-child {
-                a {
-                    background: #F4F3FF;
-                    width: 44px;
-                    height: 44px;
-                    border-radius: 5px;
+                    background: #0289FF;
+                    color: $color-white;
                 }
             }
         }

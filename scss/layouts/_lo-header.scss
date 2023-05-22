@@ -342,6 +342,15 @@ a.menu--link.second-level::after {
       color: $color-white;
     }
   }
+  &--style-5 {
+    .menu--link {
+      color: $color-title;
+    }
+    .navbar-action-area ul li a {
+      border: 1px solid $color-title;
+      color: $color-title;
+    }
+  }
 }
 
 /* ------- Start Main Header -------- */

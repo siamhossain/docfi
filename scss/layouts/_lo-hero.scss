@@ -222,4 +222,45 @@
             }
         }
     }
+    &--style-5 {
+        background: #EBFFED;
+        padding: 191px 0 168px 0;
+        &::before {
+            content: url("../../images/hero-section/page-banner-shape.png");
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+            z-index: -1;
+        }
+        .rt-hero-section-content-wrapper {
+            .section-text-content {
+                margin: 0;
+                .section-heading {
+                    font-family: $font-roboto;
+                    font-weight: 600;
+                    color: $color-title;
+                    border-bottom: none;
+                }
+                .para-text {
+                    font-weight: 400;
+                    color: $color-title;
+                    margin: 0;
+                }
+            }
+        }
+        .search-text {
+            p {
+                color: $color-title;
+                span {
+                    color: $color-title;
+                }
+                a {
+                    color: $color-title;
+                }
+            }
+        }
+    }
 }

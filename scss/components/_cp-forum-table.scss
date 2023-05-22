@@ -1,12 +1,17 @@
 .post-table {
     table, th, td {
-        border: 1px solid #000;
+        // border: 1px solid #000;
         
     }
     table {
         width: 100%;
+        border: 1px solid #F4F4F4;
         tbody {
             tr {
+                border-bottom: 1px solid #F4F4F4;
+                &:nth-child(2n+1) {
+                    background: #FAFAFA;
+                }
                 th {
                     background: #F9FBFD;
                     border-top: 2px solid #0289FF;
@@ -17,11 +22,15 @@
                     font-size: 18px;
                     line-height: 21px;
                     color: #1D2746;
+                    &:first-child {
+                        padding: 10px 15px 10px 50px;
+                    }
                     &:last-child {
-                        background: red;
+                        padding: 10px 15px 10px 45px;
                     }
                 }
                 td {
+                    vertical-align: top;
                     .title-area {
                         gap: 5px;
                         margin-bottom: 6px;
@@ -79,13 +88,27 @@
                         font-size: 12px;
                         line-height: 14px;
                         color: #4E4F50;
+                        margin-bottom: 9px
                     }
                     .author-name {
                         @extend .last-post;
                     }
 
+                    &:nth-child(1) {
+                        padding: 15px 15px 15px 50px;
+                        width: 60%;
+                    }
                     &:nth-child(2) {
-                        background: red;
+                        width: 8%;
+                        padding: 15px;
+                    }
+                    &:nth-child(3) {
+                        width: 8%;
+                        padding: 15px;
+                    }
+                    &:nth-child(4) {
+                        width: 20%;
+                        padding: 15px 15px 15px 45px;
                     }
                 }
             }

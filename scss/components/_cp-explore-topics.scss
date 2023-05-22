@@ -3,6 +3,7 @@
     border: 1px solid #E7E7E7;
     border-radius: 10px;
     @include transition;
+    margin-bottom: 24px;
     .explore-topics-header {
         border-bottom: 1px solid #D9D9D9;
         padding-bottom: 20px;
@@ -87,10 +88,9 @@
     }
 }
 
-.explore-topic-section.section-padding {
-    padding-top: 0;
-}
 .explore-topic-section {
+    padding: 0;
+    padding-bottom: 96px;
     position: relative;
     .shapes {
         img {
@@ -105,5 +105,11 @@
                 z-index: -1;
             }
         }
+    }
+}
+
+.two-columns-page, .three-columns-page {
+    .explore-topics-card {
+        margin-bottom: 0;
     }
 }

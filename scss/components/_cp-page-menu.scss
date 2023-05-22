@@ -1,0 +1,35 @@
+.page-menu {
+    background: #F9F9FF;
+    padding: 30px 0;
+    ul {
+        gap: 18px;
+        li {
+            a {
+                font-family: $font-roboto;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 21px;
+                color: #666666;
+                position: relative;
+                &::after {
+                    content: "/";
+                    position: absolute;
+                    right: -13px;
+                }
+                &:hover {
+                    color: $color-title;
+                }
+            }
+            a.active {
+                color: $color-title;
+            }
+            &:last-child {
+                a {
+                    &::after {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+.documentation-features-layout {
+    .head-title-area {
+        gap: 10px;
+        border-bottom: 1px solid #D7D7D7;
+        padding-bottom: 40px;
+        .head-title-text-wrapper {
+            .head-title {
+                font-family: $font-roboto;
+                font-weight: 700;
+                font-size: 30px;
+                line-height: 35px;
+                color: $color-title;
+                margin-bottom: 6px;
+            }
+        }
+    }
+    .document-title-area {
+        .section-name {
+            font-family: $font-roboto;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 18px;
+            color: #F31A68;
+        }
+        .title {
+            font-family: $font-roboto;
+            font-weight: 600;
+            font-size: 22px;
+            line-height: 26px;
+            color: $color-title;
+        }
+        .para-text {
+            font-size: 15px;
+            line-height: 18px;
+        }
+    }
+    .image-area {
+        img {
+            border-radius: 10px;
+        }
+        .title {
+            font-family: $font-roboto;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 23px;
+            color: $color-title;
+        }
+        .para-text {
+            font-size: 18px;
+            line-height: 21px;
+        }
+    }
+}

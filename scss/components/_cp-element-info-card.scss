@@ -1,0 +1,69 @@
+.elements-content-wrapper {
+    .title-wrapper {
+        gap: 10px;
+        margin-bottom: 30px;
+        .icon {
+            background: #6C62CA;
+            border-radius: 0px 50px 50px 50px;
+            width: 41px;
+            height: 41px;
+        }   
+        .title-area {
+            h3 {
+                font-family: 'Roboto';
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 28px;
+                color: #1D2746;
+                margin-bottom: 2px;
+            }
+            p {
+                font-family: $font-roboto;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 19px;
+                color: #6B707F;
+            }
+        }
+    }
+}
+
+.element-info-card-wrapper {
+    row-gap: 24px;
+    column-gap: 24px;
+    margin-bottom: 50px;
+}
+
+.tab-pane-wrapper {
+    .explore-btn {
+        text-align: center;
+        a {
+            font-family: $font-roboto;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 26px;
+            color: $color-title;
+            border: 1px solid #1D2746;
+            border-radius: 500px;
+            padding: 6px 21px;
+        }
+    }
+}
+
+.element-info-card {
+    border: 1px solid #DEDEDE;
+    border-radius: 20px;
+    padding: 30px 35px 24px 38px;
+    width: 416px;
+    // height: 180px;
+    .title {
+        line-height: 23px;
+        margin-bottom: 11px;
+        a {
+            font-family: $font-roboto;
+            font-weight: 600;
+            font-size: 20px;
+            color: $color-title;
+        }
+    }
+}

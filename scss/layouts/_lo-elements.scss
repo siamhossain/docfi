@@ -1,53 +1,502 @@
-.documentation-features-layout {
-    .head-title-area {
-        gap: 10px;
-        border-bottom: 1px solid #D7D7D7;
-        padding-bottom: 40px;
-        .head-title-text-wrapper {
-            .head-title {
-                font-family: $font-roboto;
-                font-weight: 700;
-                font-size: 30px;
-                line-height: 35px;
-                color: $color-title;
-                margin-bottom: 6px;
-            }
-        }
-    }
+.single-element-section {
     .document-title-area {
+        margin-bottom: 25px;
+        
         .section-name {
             font-family: $font-roboto;
             font-weight: 400;
             font-size: 15px;
             line-height: 18px;
             color: #F31A68;
+            margin-bottom: 9px;
         }
         .title {
             font-family: $font-roboto;
-            font-weight: 600;
+            font-weight: 700;
             font-size: 22px;
             line-height: 26px;
             color: $color-title;
+            margin-bottom: 9px;
         }
         .para-text {
             font-size: 15px;
             line-height: 18px;
         }
     }
-    .image-area {
-        img {
-            border-radius: 10px;
+
+    .elements-info-layout {
+        .documentation-features {
+            padding-bottom: 80px;
+            margin-bottom: 80px;
+            border-bottom: 1px solid #D7D7D7;
+            .head-title-area {
+                gap: 10px;
+                border-bottom: 1px solid #D7D7D7;
+                padding-bottom: 40px;
+                margin-bottom: 20px;
+                .head-title-text-wrapper {
+                    .head-title {
+                        font-family: $font-roboto;
+                        font-weight: 700;
+                        font-size: 30px;
+                        line-height: 35px;
+                        color: $color-title;
+                        margin-bottom: 6px;
+                    }
+                }
+            }
+            
+            .image-area {
+                margin-bottom: 50px;
+                img {
+                    border-radius: 10px;
+                    margin-bottom: 25px;
+                }
+                .title {
+                    font-family: $font-roboto;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 23px;
+                    color: $color-title;
+                    margin-bottom: 15px;
+                }
+                .para-text {
+                    font-size: 18px;
+                    line-height: 21px;
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
         }
-        .title {
-            font-family: $font-roboto;
-            font-weight: 500;
-            font-size: 20px;
-            line-height: 23px;
-            color: $color-title;
+    
+        .tab-widget {
+            scroll-margin-top: 120px;
+            padding-bottom: 80px;
+            margin-bottom: 80px;
+            border-bottom: 1px solid #D7D7D7;
+            .normal-tab-area {
+                margin-bottom: 50px;
+                .title-area {
+                    margin-bottom: 35px;
+                    .title {
+                        font-family: $font-roboto;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: $color-title;
+                        margin-bottom: 10px;
+                    }
+                    .para-text {
+                        line-height: 26px;
+                    }
+                }
+                .normal-tab-wrapper {
+                    nav, .nav-pills {
+                        gap: 5px;
+                        .nav-item {
+                            .nav-link {
+                                background: #F2FFFB;
+                                font-family: $font-roboto;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 26px;
+                                color: #15C590;
+                                padding: 7px 21px;
+                                border-radius: 0;
+                            }
+                            .nav-link.active {
+                                background: #15C590;
+                                color: $color-white;
+                            }
+                        }
+                    }
+                    .tab-content {
+                        background: #FFFFFF;
+                        border: 1px solid #EFEFEF;
+                        margin-top: -1px;
+                        .tab-pane {
+                            padding: 25px 47px 20px 20px;
+                        }
+                    }
+                }
+            }
+            .process-tab-area {
+                .title-area {
+                    margin-bottom: 35px;
+                    .title {
+                        font-family: $font-roboto;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: $color-title;
+                        margin-bottom: 10px;
+                    }
+                    .para-text {
+                        line-height: 26px;
+                    }
+                }
+                .process-tab-wrapper {
+                    nav, .nav-pills {
+                        gap: 5px;
+                        margin-bottom: 30px;
+                        .nav-item {
+                            .nav-link {
+                                font-family: $font-roboto;
+                                font-weight: 400;
+                                font-size: 15px;
+                                line-height: 18px;
+                                color: $color-title;
+                                border-radius: 0;
+                                background: #F5F5F5;
+                                border-radius: 50px;
+                                padding: 11px 15px 11px 0px;
+                                span {
+                                    background: #FFFFFF;
+                                    border-radius: 50%;
+                                    padding: 8px 13px 9px 13px;
+                                    margin: 3px 5px;
+    
+                                    font-family: $font-roboto;
+                                    font-weight: 700;
+                                    font-size: 15px;
+                                    line-height: 18px;
+                                    color: $color-title;
+                                }
+                            }
+                            .nav-link.active {
+                                background: #15C590;
+                                color: $color-white;
+                                span {
+                                    color: #15C590
+                                }
+                            }
+                        }
+                    }
+                    .tab-content {
+                        background: #F5F5F5;
+                        border-radius: 10px;
+                        .tab-pane {
+                            padding: 23px 33px 47px 33px;
+                        }
+                    }
+                }
+            }
         }
-        .para-text {
-            font-size: 18px;
-            line-height: 21px;
+    
+        .message-widget {
+            scroll-margin-top: 120px;
+            padding-bottom: 80px;
+            margin-bottom: 80px;
+            border-bottom: 1px solid #D7D7D7;
+            .notice-area {
+                .box-notice-area {
+                    margin-bottom: 60px;
+                }
+                .border-notice-area {
+                    margin-bottom: 50px;
+                }
+                .note-area {
+                    .note-card-wrapper {
+                        gap: 24px;
+                        .rt-card {
+                            background: #FFFFFF;
+                            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.07);
+                            padding: 44px 20px;
+                            width: 306px;
+                            height: 300px;
+                            .icon {
+                                width: 80px;
+                                height: 80px;
+                                margin-bottom: 15px;
+                            }
+                            .card-title {
+                                a {
+                                    font-family: $font-roboto;
+                                    font-weight: 500;
+                                    font-size: 22px;
+                                    line-height: 26px;
+                                    color: $color-title;
+                                }
+                                margin-bottom: 10px;
+                            }
+                            .card-info {
+                                line-height: 30px;
+                                margin-bottom: 0;
+                            }
+    
+                            &:nth-child(1) {
+                                .icon {
+                                    background: #482CFE;
+                                }
+                            }
+                            &:nth-child(2) {
+                                .icon {
+                                    background: #FF7037;
+                                }
+                            }
+                            &:nth-child(3) {
+                                .icon {
+                                    background: #63E082;
+                                }
+                            }
+                            &:nth-child(4) {
+                                .icon {
+                                    background: #FF2F46;;
+                                }
+                            }
+                        }
+                    }
+                }
+                .title-area {
+                    margin-bottom: 35px;
+                    .title {
+                        font-family: $font-roboto;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: $color-title;
+                        margin-bottom: 10px;
+                    }
+                    .para-text {
+                        line-height: 26px;
+                    }
+                }
+                .message-box {
+                    padding: 33px 27px;
+                    margin-bottom: 21px;
+                    .title-wrapper {
+                        gap: 10px;
+                        margin-bottom: 10px;
+                        .title {
+                            font-family: $font-roboto;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 21px;
+                            color: $color-title;
+                        }
+                    }
+                    &--style-1 {
+                        background: #F9F8FF;
+                    }
+                    &--style-2 {
+                        background: #FFFAF8;
+                    }
+                    &--style-3 {
+                        background: #EBFFF0;
+                    }
+                    &--style-4 {
+                        background: #FFF7F7;
+                    }
+                    &--style-5 {
+                        border: 1px solid #482CFE;
+                    }
+                    &--style-6 {
+                        border: 1px solid #FF7037;
+                    }
+                    &--style-7 {
+                        border: 1px solid #63E082;
+                    }
+                    &--style-8 {
+                        border: 1px solid #FF2F46;
+                    }
+                }
+            }
+        }
+    
+        .accordion-widget {
+            scroll-margin-top: 120px;
+            padding-bottom: 80px;
+            margin-bottom: 80px;
+            border-bottom: 1px solid #D7D7D7;
+            .accordion-area {
+                .title-area {
+                    margin-bottom: 35px;
+                    .title {
+                        font-family: $font-roboto;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: $color-title;
+                        margin-bottom: 10px;
+                    }
+                    .para-text {
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+    
+        .cheatsheet-widget {
+            scroll-margin-top: 120px;
+            .cheatsheet-area {
+                .auxiliary-area {
+                    margin-bottom: 50px;
+                }
+                .title-area {
+                    margin-bottom: 35px;
+                    .title {
+                        font-family: $font-roboto;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: $color-title;
+                        margin-bottom: 10px;
+                    }
+                    .para-text {
+                        line-height: 26px;
+                    }
+                }
+                .cheatsheet-card {
+                    border: 1px solid #DBD8D8;
+                    padding: 36px 66px;
+                    .number {
+                        font-family: $font-roboto;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 28px;
+                        color: $color-title;
+                        margin-bottom: 10px;
+                    }
+                    .text {
+                        font-family: $font-roboto;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 21px;
+                        color: #A8A7A7;
+                        margin-bottom: 10px
+                    }
+                    .title {
+                        @extend .text;
+                        font-weight: 500;
+                        color: #15C590;
+                    }
+                }
+            }
         }
     }
+    .content-info-layout {
+        .main-heading-area {
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #D9D9D9;
+            .title {
+                font-family: $font-roboto;
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 26px;
+                color: $color-title;
+                margin-bottom: 9px;
+            }
+            .para-text {
+                font-size: 15px;
+                line-height: 18px;
+            }
+        }
+        .widget-area {
+            margin-bottom: 50px;
+            border-bottom: 1px solid #D9D9D9;
+            .widget-title-area {
+                margin-bottom: 30px;
+                .title {
+                    font-family: $font-roboto;
+                    font-weight: 700;
+                    font-size: 19px;
+                    line-height: 22px;
+                    color: $color-title;
+                    margin-bottom: 10px;
+                }
+                .para-text {
+                    // font-size: 16px;
+                    line-height: 19px;
+                }
+            }
+            .video-area-wraper {
+                margin-bottom: 47px;
+                .video-area {
+                    border-radius: 10px;
+                    overflow: hidden;
+                    position: relative;
+                    margin-bottom: 30px;
+                    img {
+                        width: 100%;
+                    }
+                    .video-play-btn {
+                        background: #FF0000;
+                        border-radius: 20px;
+                        width: 80px;
+                        height: 60px;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+                .video-title-area {
+                    .title {
+                        font-family: $font-roboto;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 23px;
+                        color: $color-title;
+                        margin-bottom: 14px;
+                    }
+                    .para-text {
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
+                }
+            }
+            .table-area-wraper {
+                margin-bottom: 47px;
+                .table-area {
+                    .table {
+                        background: #D9D9D9;
+                        border-radius: 10px;
+                        padding: 10px;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .title-area {
+                        .title {
+                            font-family: $font-roboto;
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 23px;
+                            color: $color-title;
+                            margin-bottom: 14px;
+                        }
+                        .para-text {
+                            font-size: 18px;
+                            line-height: 21px;
+                        }
+                    }
+                }
+            }
+            .tooltip-content-area {
+                .title {
+                    font-family: 'Roboto';
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 23px;
+                    color: #1D2746;
+                }
+                .para-text {
+                    margin-bottom: 45px;
+                    span {
+                        background: #3A49D3;
+                        border-radius: 10px;
+                        color: $color-white;
+                        padding: 9px 19px;
+
+                    }
+                    &:first-child {
+                    }
+                }
+            }
+        }
+    }
+
+    
 }

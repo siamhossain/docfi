@@ -1,35 +1,58 @@
 .error-section {
     .rt-error-area {
-        img {
+        .img-area-wrapper {
+            position: relative;
+            .rocket {
+                position: absolute;
+                left: 136px;
+                bottom: 99px;
+            }
             margin-bottom: 90px;
         }
-        .error-heading {
-            font-family: $font-outfit;
-            font-weight: 700;
-            @include toRem(font-size, 50);
-            line-height: 65px;
-            color: $color-title;
-            margin-bottom: 11px;
+
+        .section-text-content {
+            margin-bottom: 50px;
+            .section-heading {
+                border: none;
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 55px;
+                margin: 0;
+                padding: 0;
+                text-transform: none;
+            }
         }
-        .error-text {
-            font-family: $font-outfit;
-            font-weight: 400;
-            @include toRem(font-size, 24);
-            line-height: 30px;
-            color: $color-title;
-            margin-bottom: 40px;
-        }
-        .go-to-home-btn {
-            background: $color-primary;
-            color: $color-white;
-            font-family: $font-outfit;
-            font-weight: 700;
-            @include toRem(font-size, 18);
-            line-height: 26px;
-            padding: 22px 35px;
-            border-radius: 5px;
-            width: 371px;
-            
+
+        .form-wrapper {
+            gap: 10px;
+            form {
+                input {
+                    background: #F7FAFF;
+                    border: 1px solid #DEDEDE;
+                    border-radius: 500px;
+                    padding: 17px 21px;
+                    color: #939393;
+                    width: 100%;
+                    &::placeholder {
+                        font-family: $font-roboto;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 19px;
+                        color: #939393;
+                    }
+                }
+                flex: 1;
+            }
+            .home-back-btn {
+                background: #15C590;
+                color: $color-white;
+                font-family: $font-roboto;
+                font-weight: 600;
+                @include toRem(font-size, 16);
+                line-height: 29px;
+                padding: 16px 29px 15px 29px;
+                border-radius: 500px;
+            }
         }
     }
 }

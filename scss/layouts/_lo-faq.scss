@@ -62,67 +62,7 @@
         }
     }
     .faq-pane-wrapper {
-
-        .accordion-button {
-            padding: 20px 30px;
-
-            font-family: 'Roboto';
-            font-weight: 500;
-            font-size: 18px;
-            line-height: 21px;
-            color: #1D2746;
-        }
         
-        .accordion-button::after {
-            background-image: url("../images/icons/down-arrow.svg");
-            background-size: unset;
-        }
-        
-        .accordion-button:not(.collapsed)::after {
-            background-image: url("../images/icons/up-arrow.svg");
-            transform: rotate(0deg);
-            height: 10px;
-            
-        }
-        
-        .accordion-flush .accordion-item .accordion-button:not(.collapsed) {
-            color: $color-secondary;
-            background: transparent;
-            box-shadow: none;
-            padding: 20px 30px 10px 30px;
-            border: none;
-        }
-        
-        .accordion-button:focus {
-            outline: none;
-            box-shadow: none;
-        }
-        
-        .accordion-flush .accordion-item {
-            position: relative;
-            margin-bottom: 20px;
-            border: none;
-            
-            background: #FFFFFF;
-            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.04);
-            border-radius: 10px;
-        }
-        
-        .accordion-flush .accordion-item .accordion-button {
-            &:last-child {
-            }
-        }
-        
-        
-        .accordion-body {
-            border: none;
-            padding: 0px 30px 29px 30px;
-            font-family: 'Roboto';
-            font-weight: 400;
-            font-size: 15px;
-            line-height: 26px;
-            color: #6B707F;
-        }
     }
     .shapes {
         .tob {

@@ -516,5 +516,20 @@
         }
      });
 
+     
+    //  $('.elements-click').click(function() {
+    //     $('.elements-info-layout' ).css("display", "none");
+
+    //     $('.content-info-layout' ).css("display", "block");
+    //     $('.layout-info' ).css("display", "none");
+    //  })
+
+    //  $('.content-click').click(function() {
+    //     $('.content-info-layout' ).css("display", "block");
+
+    //     $('.elements-info-layout' ).css("display", "none");
+    //     $('.layout-info' ).css("display", "none");
+    //  })
+
 
 })(jQuery);

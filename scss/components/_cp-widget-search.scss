@@ -1,15 +1,35 @@
 .widget-search {
-    padding-bottom: 34px;
-    margin-bottom: 26px;
-    .searchbox-container {
-        margin-bottom: 0;
-        box-shadow: none;
-        height: 45px;
-        border-radius: 4px;
-
+    margin-bottom: 46px;
+    .widget-content-wrapper {
+        border: 1px solid #D9D9D9;
+        border-radius: 500px;
+        overflow: hidden;
+        .searchbox-textfield {
+            flex: 1;
+            .rt-searchbox-form {
+                input {
+                    width: 100%;
+                    border: none;
+                    padding: 0 20px;
+                    color: #ADADAD;
+                    &::placeholder {
+                        font-family: $font-roboto;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 18px;
+                        color: #ADADAD;
+                    }
+                }
+            }
+        }
+    
         .searchbox-submit {
             .rt-searchbox-btn {
-                padding: 12px 18px;
+                background: #15C590;
+                border-radius: 0px 40px 40px 0px;
+                border: none;
+                width: 60px;
+                height: 58px;
             }
         }
     }

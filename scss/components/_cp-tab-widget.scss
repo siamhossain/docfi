@@ -26,11 +26,24 @@
             @include transition;
             text-decoration: underline;
             text-decoration-color: rgba(21, 197, 144, 0);
+            // text-decoration-thickness: 1px;
             &:hover {
                 text-decoration: underline;
                 text-decoration-color: rgba(21, 197, 144, 1);
                 text-decoration-thickness: 1px;
                 color: #15C590;
+            }
+        }
+    }
+
+    &--style-2 {
+        padding: 68px 85px 68px 62px;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.04);
+
+        .nav {
+            .nav-link {
+                font-weight: 400;
+                color: #6B707F;
             }
         }
     }

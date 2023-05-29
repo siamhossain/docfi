@@ -1,0 +1,42 @@
+.contact-section {
+
+    .contact-info-area {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        padding: 70px 60px 35px 60px;
+    }
+
+    .contact-form-area {
+        .section-text-content {
+            width: 468px;
+            margin-bottom: 30px;
+            .section-heading {
+                padding-bottom: 8px;
+            }   
+            .para-text {
+
+            }
+        }
+    }
+
+    .section-text-content {
+        margin-bottom: 35px;
+        .section-name {
+            font-family: $font-roboto;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            color: $color-secondary;
+            margin-bottom: 5px;
+        }
+        .section-heading {
+            font-family: $font-roboto;
+            font-weight: 500;
+            font-size: 30px;
+            line-height: 35px;
+            color: $title-font;
+        }
+
+    }
+}

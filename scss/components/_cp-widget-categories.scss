@@ -3,8 +3,7 @@
 ===================================*/
 
 .widget-categories {
-    padding-bottom: 34px;
-    margin-bottom: 26px;
+    margin-bottom: 46px;
     .sub-title {
         background: #F7F9FE;
         border-radius: 8px 8px 0px 0px;
@@ -13,10 +12,10 @@
         font-weight: 600;
         @include toRem(font-size, 20);
         line-height: 140%;
-        color: red;
     }
     .categories-list {
         ul {
+            margin-left: 15px;
             li {
                 list-style: disc;
                 position: relative;
@@ -30,19 +29,16 @@
                     transition: all 0.3s ease-in-out;
                 }
                 a {
-                    font-family: $font-outfit;
+                    font-family: $font-roboto;
                     font-weight: 400;
-                    @include toRem(font-size, 16);
-                    line-height: 50px;
+                    @include toRem(font-size, 18);
+                    line-height: 40px;
                     color: $color-shade1;
-                    svg {
-                        margin-right: 6px;
-                    }
                 }
 
 
                 a {
-                    background-image: linear-gradient(to right, $color-primary, $color-primary 50%, #000 50%);
+                    background-image: linear-gradient(to right, $color-secondary, $color-secondary 50%, #000 50%);
                     background-size: 200% 100%;
                     background-position: -100%;
                     display: inline-block;
@@ -53,7 +49,7 @@
                     transition: all 0.3s ease-in-out;
                     &::before{
                       content: '';
-                      background: $color-primary;
+                      background: $color-secondary;
                       display: block;
                       position: absolute;
                       bottom: 0;

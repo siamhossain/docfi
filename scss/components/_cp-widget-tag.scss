@@ -15,25 +15,27 @@
     }
     .tag-list-wrapper {
         ul.tag-list {
-            gap: 10px;
+            row-gap: 10px;
+            column-gap: 5px;
             flex-wrap: wrap;
             li {
                 .tag-link {
-                    background: #F8F8F8;
-                    border-radius: 3px;
                     
-                    padding: 5px 15px;
+                    padding: 8px 14px 7px 14px;
 
-                    font-family: $font-outfit;
+                    font-family: $font-roboto;
                     font-weight: 400;
-                    @include toRem(font-size, 16);
-                    line-height: 23px;
-                    text-transform: capitalize;
-                    color: $color-primary;
+                    @include toRem(font-size, 15);
+                    line-height: 18px;
+                    color: $color-title;
+
+                    border: 1px solid #D9D9D9;
+                    border-radius: 30px;
 
                     &:hover {
-                        background: $color-primary;
+                        background: $color-secondary;
                         color: $color-white;
+                        border: 1px solid transparent;
                     }
                 }
             }

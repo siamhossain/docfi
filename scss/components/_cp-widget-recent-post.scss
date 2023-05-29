@@ -1,6 +1,5 @@
 .widget-recent-post {
-    padding-bottom: 34px;
-    margin-bottom: 26px;
+    margin-bottom: 46px;
     .post-thumb-list {
 
     }
@@ -41,20 +40,22 @@
                     font-size: 16px;
                     line-height: 24px;
                     color: $color-title;
+                    @include transition;
 
                     display: inline;
                     padding-bottom: 0;
                     -webkit-transition: background-size 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
                     transition: background-size 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
-                    background-image: -webkit-gradient(linear, left top, left bottom, from($color-primary), color-stop(98%, $color-primary));
-                    background-image: linear-gradient(to bottom, $color-primary, $color-primary);
+                    background-image: -webkit-gradient(linear, left top, left bottom, from($color-secondary), color-stop(98%, $color-secondary));
+                    background-image: linear-gradient(to bottom, $color-secondary, $color-secondary);
                     background-size: 0 1px;
                     background-repeat: no-repeat;
                     background-position: left 100%;
 
                     &:hover {
-                        color: $color-primary;
+                        color: $color-secondary;
                         background-size: 100% 1px;
+                        @include transition;
                     }
                 }
             }

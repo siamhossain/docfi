@@ -1,79 +1,47 @@
 .post-comment-form-wrapper {
-    border-radius: 8px;
-    padding: 38px 17px  45px 40px;
-    background: $color-gray13;
-    border: 1px solid #E0E0ED;
-    border-radius: 12px;
-    .title {
-        font-family: $font-outfit;
-        font-weight: 600;
-        @include toRem(font-size, 24);
-        line-height: 30px;
-        color: $color-title;
-        margin-bottom: 2px;
-        position: relative;
-        &::before {
-            content: "";
-            position: absolute;
-            background: $color-primary;
-            border-radius: 100px;
-            width: 40px;
-            height: 5px;
-            bottom: -23px;
+    .section-text-content {
+        margin-bottom: 38px;
+        .section-heading {
+            font-size: 22px;
+            line-height: 26px;
+            padding: 0;
         }
-    }
-    .para-text {
-        margin-bottom: 17px;
-        @include toRem(font-size, 16);
-        line-height: 26px;
+        .para-text {
+            font-size: 15px;
+            line-height: 18px;
+        }
     }
     .post-comment-form {
         .input-area {
-            input {
+            input,textarea {
                 background: $color-white;
+                border: 1px solid #EFEFEF;
                 border-radius: 5px;
-                border: none;
+                padding: 15px 20px;
                 width: 100%;
-                padding: 11px 15px;
-                font-family: 'Hind';
+
+                font-family: $font-roboto;
                 font-weight: 400;
-                @include toRem(font-size, 16);
-                line-height: 28px;
-                text-transform: capitalize;
-                margin-bottom: 30px;
+                font-size: 15px;
+                line-height: 18px;
+                color: #7B7B7B;
                 &::placeholder {
-                    color: #A2A8B0;
+                    color: #7B7B7B;
                 }
             }
             textarea {
-                background: $color-white;
-                border-radius: 5px;
-                border: none;
-                width: 100%;
-                padding: 15px 15px;
-                margin-bottom: 13px;
-
-                font-family: 'Hind';
-                font-weight: 400;
-                @include toRem(font-size, 16);
-                line-height: 28px;
-                text-transform: capitalize;
-
-                &::placeholder {
-                    color: #A2A8B0;
-                }
+                height: 240px;
             }
         }
         .check-box-area {
             gap: 12px;
-            margin-bottom: 24px;
             input {
-                width: 23px;
-                height: 23px;
+                width: 15px;
+                height: 15px;
                 margin: 0;
-                border-radius: 3px;
-                border: 1px solid #C6C6C6;
-
+                border: 1px solid #6B707F;
+                border-radius: 0;
+                // background-color: transparent;
             }
             label {
                 font-family: $font-outfit;
@@ -86,12 +54,13 @@
         }
         .form-btn {
             a {
-                padding: 16px 26px;
-                background: $color-primary;
-                border-radius: 5px;
-                font-family: $font-outfit;
-                font-weight: 600;
+                padding: 15px 27px;
+                background: #15C590;
+                border-radius: 700px;
+                font-family: $font-roboto;
+                font-weight: 700;
                 @include toRem(font-size, 16);
+                line-height: 19px;
                 color: $color-white;
             }
         }

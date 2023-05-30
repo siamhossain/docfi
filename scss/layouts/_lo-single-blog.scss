@@ -1,0 +1,158 @@
+.single-blog-details-wrapper {
+    .single-blog-content-wrapper {
+        .entry-meta {
+            margin-bottom: 10px;
+            ul {
+                gap: 30px;
+                li {
+                    gap: 5px;
+                }
+            }
+        }
+        .section-text-content {
+            margin-bottom: 35px;
+            .section-heading {
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 55px;
+                width: 100%;
+                padding-bottom: 25px;
+                @include media-only('lg', min) {
+                    width: 660px;
+                } 
+            }
+            .para-text {
+
+            }
+        }
+        .single-blog-main-img {
+            margin-bottom: 35px;
+            img {
+                border-radius: 10px;
+            }
+        }
+
+        .text-content-wrapper {
+            margin-bottom: 48px;
+            h3.sub-title {
+                font-family: $font-roboto;
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 28px;
+                color: $color-title;
+                margin-bottom: 14px;
+            }
+            .blog-img-wrapper {
+                margin-bottom: 45px;
+                gap: 24px;
+                img {
+                    border-radius: 20px;
+                }
+            }
+            blockquote {
+                border: 1px solid #D9D9D9;
+                border-radius: 10px;
+                padding: 36px 52px;
+                font-family: $font-roboto;
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 40px;
+                color: $color-title;
+                margin-bottom: 33px;
+            }
+            .para-text {
+                &:nth-child(1) {
+                    margin-bottom: 30px;
+                }
+                &:nth-child(2) {
+                    margin-bottom: 28px;
+                }
+                &:nth-child(3) {
+                    margin-bottom: 40px;
+                }
+                &:nth-child(4) {
+                    margin-bottom: 28px;
+                }
+                &:nth-child(6) {
+                    margin-bottom: 28px;
+                }
+                &:nth-child(7) {
+                    margin-bottom: 20px;
+                }
+                &:nth-child(9) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .single-blog-tag-share {
+            margin-bottom: 55px;
+            .single-tag-area {
+                ul {
+                    gap: 5px;
+                    li {
+                        .title {
+                            font-family: $font-roboto;
+                            font-weight: 600;
+                            font-size: 15px;
+                            line-height: 28px;
+                            color: #1D2746;
+                        }
+                        a {
+                            border: 1px solid #D9D9D9;
+                            border-radius: 30px;
+                            padding: 7px 10px;
+                            font-family: $font-roboto;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 20px;
+                            color: #191D27;
+                            &:hover {
+                                background: $color-secondary;
+                                color: $color-white;
+                                border: 1px solid transparent;
+                            }
+                        }
+                    }
+                }
+            }
+            .single-share-area {
+                ul {
+                    gap: 15px;
+                    li {
+                        .title {
+                            font-family: $font-roboto;
+                            font-weight: 500;
+                            font-size: 15px;
+                            line-height: 28px;
+                            color: #1D2746;
+                        }
+                        a {
+                            color: #8D8D8D; 
+                            &:hover {
+                                color: $color-secondary;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .single-blog-navgation {
+            a {
+                font-family: $font-roboto;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 21px;
+                color: #1D2746;
+                gap: 8px;
+                &:hover {
+                    color: $color-secondary;
+                    svg {
+                        fill: $color-secondary;
+                        @include transition;
+                    }
+                }
+            }
+        }
+    }
+}

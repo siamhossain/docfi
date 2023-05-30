@@ -5,6 +5,7 @@
             font-size: 22px;
             line-height: 26px;
             padding: 0;
+            margin-bottom: 8px;
         }
         .para-text {
             font-size: 15px;
@@ -41,7 +42,11 @@
                 margin: 0;
                 border: 1px solid #6B707F;
                 border-radius: 0;
-                // background-color: transparent;
+                background-color: transparent;
+            }
+            .form-check-input:checked {
+                background-color: $color-secondary;
+                border: none;
             }
             label {
                 font-family: $font-outfit;

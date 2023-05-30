@@ -33,4 +33,21 @@
             }
         }
     }
+
+    &--style-2 {
+        margin-top: 35px;
+        ul.pagination {
+            .active {
+                background: $color-secondary;
+            }
+            li {
+                a {
+                    &:hover {
+                        background: $color-secondary;
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+    }
 }

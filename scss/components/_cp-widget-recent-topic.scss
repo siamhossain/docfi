@@ -1,0 +1,48 @@
+.widget-recent-topic {
+    .topic-item {
+        gap: 15px;
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .icon {
+            background: #F4F7FF;
+            width: 50px;
+            height: 50px;
+        }
+        .topic-content {
+            ul.meta {
+                margin-bottom: 5px;
+                li {
+                    span {
+                        font-family: $font-roboto;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 18px;
+                        color: #939393;
+                    }
+                }
+            }
+            .topic-title {
+                a {
+                    font-family: $font-roboto;
+                    font-weight: 500;
+                    font-size: 22px;
+                    line-height: 26px;
+                    color: $color-title;
+                    margin-bottom: 10px;
+                }
+            }
+            .author-info {
+                gap: 7px;
+                .author-name {
+                    font-family: $font-roboto;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21px;
+                    color: #A4A1A1;
+                }
+            }
+        }
+    }
+}

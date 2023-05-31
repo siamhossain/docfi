@@ -166,6 +166,15 @@ body {
     // line-height: 1.625;
 }
 
+ol {
+    padding-left: 1rem;
+    li {
+        padding: 0;
+        margin: 0;
+        list-style: decimal;
+    }
+}
+
 ul,
 li {
     padding: 0;

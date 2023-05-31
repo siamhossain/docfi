@@ -1,0 +1,14 @@
+.admin-tag {
+    background: #EFFFEF;
+    border-radius: 10px;
+    font-family: $font-roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #15CA0E;
+    padding: 3px 8px;
+    &:hover {
+        background: $color-secondary;
+        color: $color-white;
+    }
+}

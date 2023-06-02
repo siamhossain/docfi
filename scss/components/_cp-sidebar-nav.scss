@@ -1,95 +1,98 @@
+.stickyx {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 115px;
+}
+.single-element-section {
+    overflow: unset;
+}
 .sidebar-nav {
     background: #FFFFFF;
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
     padding: 30px;
-    // .accordion {
-    //     .accordion-item {
-    //         border: none;
-    //         .accordion-header {
-    //             button {
-    //                 background: #F9F9F9;
-    //                 gap: 4px;
-    //                 padding: 5px 20px;
-    //                 border: none;
-    //                 box-shadow: none;
-    //                 margin-bottom: 20px;
-    //                 @include transition;
-    //                 .icon {
-    //                     width: 30px;
-    //                     height: 30px;
-    //                     // background: #6C62CA;
-    //                     border-radius: 0px 50px 50px 50px;
-    //                 }
-
-    //                 &::after {
-    //                     background-image: url("../images/icons/up-arrow-black.svg");
-    //                     background-size: unset;
-    //                     width: 11px;
-    //                     height: 11px;
-    //                 }
-    //                 &:not(.collapsed) {
-    //                     color: inherit;
-    //                     margin-bottom: 6px; 
-    //                     @include transition;
-    //                 }
-    //             }
-    //         }
-    //         .accordion-body {
-    //             padding: 0 0px 0 50px;
-    //             ul.sidebar-nav-menu-list {
-    //                 margin-bottom: 40px;
-    //                 li {
-    //                     border-bottom: 1px solid #E4E4E4;
-    //                     position: relative;
-    //                     &::after {
-    //                         content: "";
-    //                         position: absolute;
-    //                         border-bottom: 1px solid #15C590;
-    //                         width: 0;
-    //                         left: 0;
-    //                         bottom: 0;
-    //                         @include transition;
-    //                     }
-    //                     &:hover {
-    //                         &:after {
-    //                             width: 100%;
-    //                         } 
-    //                         a {
-    //                             color: #15C590;
-    //                         }
-    //                     }
-    //                     a {
-    //                         font-family: $font-roboto;
-    //                         font-weight: 500;
-    //                         font-size: 15px;
-    //                         line-height: 50px;
-    //                         color: #6B707F;
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //         &:nth-child(1) {
-    //             button {
-    //                 .icon {
-    //                     background: #6C62CA;
-    //                 }
-    //             }
-    //         }
-    //         &:nth-child(2) {
-    //             button {
-    //                 .icon {
-    //                     background: #FF8631;
-    //                 }
-    //             }
-    //         }
-    //         &:nth-child(3) {
-    //             button {
-    //                 .icon {
-    //                     background: #FD5B5B;;
-    //                 }
-    //             }
-    //         }
-    //     }
-    // }
+    nav {
+        ul.parent-item-list {
+            .nav-item {
+                background: #F9F9F9;
+                margin: 0 0 20px;
+                cursor: pointer;
+                .nav-link {
+                    position: relative;
+                    gap: 5px;
+                    font-family: $font-roboto;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 23px;
+                    color: $color-title;
+                    padding: 10px 20px;
+                    .icon {
+                        width: 30px;
+                        height: 30px;
+                        background: #6C62CA;
+                        border-radius: 0px 50px 50px 50px;
+                    }
+                    .arrow {
+                        position: absolute;
+                        right: 20px;
+                    }
+                }
+                .dropdown_nav {
+                    background: $color-white;
+                    padding: 6px 0 2px 50px;
+                    padding-top: 6px;
+                    padding-bottom: 22px;
+                    padding-left: 50px;
+                    display: none;
+                    .nav-item {
+                        background: 0 0;
+                        margin: 0;
+                        padding: 0;
+                        .nav-link { 
+                            font-family: $font-roboto;
+                            font-weight: 500;
+                            font-size: 15px;
+                            line-height: 50px;
+                            color: #6B707F;
+                            padding: 0 0 0 0;
+                            border-bottom: 1px solid #E4E4E4;
+                            position: relative;
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                border-bottom: 1px solid $color-secondary;
+                                left: 0;
+                                bottom: 0;
+                                width: 0;
+                                @include transition;
+                            }
+                            &:hover {
+                                color: $color-secondary;
+                                &::before {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                    &.active {
+                        display: block;
+                    }
+                }
+                &:nth-child(1) {
+                    .nav-link {
+                        .icon {
+                            background: #6C62CA;
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    .nav-link {
+                        .icon {
+                            background: #FF8631;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

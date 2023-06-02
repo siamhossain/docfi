@@ -516,20 +516,83 @@
         }
      });
 
-     
-    //  $('.elements-click').click(function() {
-    //     $('.elements-info-layout' ).css("display", "none");
 
-    //     $('.content-info-layout' ).css("display", "block");
-    //     $('.layout-info' ).css("display", "none");
-    //  })
+    // window.addEventListener("scroll", navHighlighter);
 
-    //  $('.content-click').click(function() {
-    //     $('.content-info-layout' ).css("display", "block");
+    // function navHighlighter() {
+    //     // Get current scroll position
+    //       let scrollY = window.pageYOffset;
+      
+    //       if (scrollY > 500) {
+    //           $('.dropdown_nav' ).css({"display" : "block"});
+    //       }
+    //       else
+    //       $('.dropdown_nav' ).css({"display": "none"});
+    // }
 
-    //     $('.elements-info-layout' ).css("display", "none");
-    //     $('.layout-info' ).css("display", "none");
-    //  })
+
+  
+        // Get all sections that have an ID defined
+        // const sections = document.querySelectorAll(".single-element-section .content-wrapper section");
+        
+        // console.log(sections);
+
+        // window.addEventListener("scroll", navHighlighter);
+
+        // function navHighlighter() {
+        //     let scrollY = window.pageYOffset;
+        
+        //     sections.forEach(current => {
+
+        //         const sectionHeight = current.offsetHeight;
+
+        //         const sectionTop = current.offsetTop;
+        //         const sectionTopParent = current.offsetParent;
+        //         var sectionId = current.getAttribute("id");
+
+        //         console.log(scrollY + ' Y-scroll');
+        //         console.log(sectionTop + ' Section-top');
+        //         console.log(sectionHeight + " Height-section");
+        //         console.log(sectionId);
+
+
+                
+                
+        //         if ( scrollY > sectionTop && scrollY <= sectionTop + sectionHeight ) {
+        //             document.querySelector(".dropdown_nav").classList.add("active");
+        //         } else {
+        //             document.querySelector(".dropdown_nav").classList.remove("active");
+        //         }
+        //     });
+        // }
+
+
+
+        let sections = $('.single-element-section .content-wrapper section')
+        let nav_item = $('nav-item')
+        // let nav_height = nav.outerHeight()
+
+
+        $(window).on('scroll', function () {
+            let current_position = $(this).scrollTop()
+            
+            sections.each(function () {
+                let top = $(this).offset().top;
+                let bottom = top + $(this).outerHeight()
+
+                console.log(current_position)
+                console.log(top)
+                console.log(bottom)
+
+            if (current_position >= top && current_position <= bottom) {
+                $('.dropdown_nav').removeClass('active')
+                // sections.removeClass('active')
+
+                // $(this).addClass('active') // colorize section's content
+                $('.dropdown_nav').addClass('active')
+            }
+            })
+        })
 
 
 })(jQuery);

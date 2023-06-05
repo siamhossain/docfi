@@ -1,6 +1,9 @@
 .topic-details-section {
     .forum-login-form-wrapper {
-        padding-left: 60px;
+        padding-left: 0;
+        @include media-only("md", min) {
+            padding-left: 60px;
+        }
         form {
             .input-area {
                 input {

@@ -4,12 +4,18 @@
             position: relative;
             .rocket {
                 position: absolute;
-                left: 136px;
-                bottom: 99px;
+                left: 0;
+                bottom: 0;
+                width: 50%;
+                @include media-only("sm", min) {
+                    left: 136px;
+                    bottom: 99px;
+                    width: unset;
+                }
             }
             margin-bottom: 90px;
         }
-
+        
         .section-text-content {
             margin-bottom: 50px;
             .section-heading {

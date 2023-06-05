@@ -25,7 +25,10 @@
             @include toRem (font-size, 16);
             line-height: 26px;
             color: #6B707F;
-            padding-right: 155px;
+            padding: 0; 
+            @include media-only("lg", min) {
+                padding-right: 155px;
+            }
         }
     }
 

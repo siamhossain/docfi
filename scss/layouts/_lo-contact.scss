@@ -5,6 +5,10 @@
         box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
         border-radius: 10px;
         padding: 70px 60px 35px 60px;
+        margin-bottom: 30px;
+        @include media-only("md", min) {
+            margin-bottom: 0;
+        }
     }
 
     .contact-form-area {

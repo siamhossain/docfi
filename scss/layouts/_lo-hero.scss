@@ -277,7 +277,10 @@
     }
     &--style-6 {
         background: #EBEDFF;
-        padding: 205px 0 190px 0;
+        padding: 100px 0;
+        @include media-only("sm", min) {
+            padding: 205px 0 190px 0;
+        }
         &::before {
             content: url("../../images/hero-section/page-banner-shape.png");
             position: absolute;

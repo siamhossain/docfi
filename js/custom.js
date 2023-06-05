@@ -580,16 +580,17 @@
                 let top = $(this).offset().top;
                 let bottom = top + $(this).outerHeight()
 
-                console.log(current_position)
+                console.log(current_position + " Y")
                 console.log(top)
                 console.log(bottom)
 
             if (current_position >= top && current_position <= bottom) {
-                $('.dropdown_nav').removeClass('active')
-                // sections.removeClass('active')
+                nav_item.find('.dropdown_nav').removeClass('active')
+            // sections.removeClass('active')
 
-                // $(this).addClass('active') // colorize section's content
-                $('.dropdown_nav').addClass('active')
+            // $(this).addClass('active') // colorize section's content
+                nav_item.find($(this).attr('id') + '.dropdown_nav').addClass('active')
+                
             }
             })
         })

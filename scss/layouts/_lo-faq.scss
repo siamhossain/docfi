@@ -132,6 +132,9 @@
         .faq-pane-wrapper { 
             .accordion-flush .accordion-item .accordion-button:not(.collapsed) {
                 color: #F8851C;
+                &::after {
+                    background-image: url(../images/icons/orange-up-arrow.svg);
+                }
             }
         }
     }

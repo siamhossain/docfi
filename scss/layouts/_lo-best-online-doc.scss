@@ -97,15 +97,18 @@
         &::before {
             content: "";
             position: absolute;
-            width: 1000px;
             height: 100%;
             background: #FCF9FF;
             border-radius: 50px;
+            width: 100%;
             top: 0;
             left: 0;
             right: 0;
             margin: auto;
             z-index: -1;
+            @include media-only(1000px, min) {
+                width: 1000px;
+            }
         }
         .shapes {
             display: none;
@@ -212,7 +215,10 @@
             padding: 0;
             .section-text-content {
                 margin-bottom: 25px;
-                width: 597px;
+                width: 100%;
+                @include media-only('lg', min) {
+                    width: 597px;
+                }
                 .section-heading {
                     border-bottom: 0;
                     text-align: left;

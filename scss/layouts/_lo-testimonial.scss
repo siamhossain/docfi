@@ -7,7 +7,7 @@
             position: relative;
             z-index: 1;
             img {
-                max-width: unset;
+                // max-width: unset;
             }
             &::before {
                 content: "";
@@ -22,6 +22,10 @@
                 left: 0;
                 right: 0;
                 top: 175px;
+                display: none;
+                @include media-only("lg", min) {
+                    display: block;
+                }
             }
         }
         .slider-navigation-btn-wrapper {

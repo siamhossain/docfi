@@ -1,4 +1,8 @@
 .post-table {
+    overflow-x: auto;
+    @include media-only("md", min) {
+        overflow-x: unset;
+    }
     table, th, td {
         // border: 1px solid #000;
         
@@ -6,6 +10,7 @@
     table {
         width: 100%;
         border: 1px solid #F4F4F4;
+        
         tbody {
             tr {
                 border-bottom: 1px solid #F4F4F4;

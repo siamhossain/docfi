@@ -54,7 +54,7 @@
         @include transition;
         &:hover {
             background: $color-secondary;
-            border: 1px solid transparent;
+            border: 1px solid $color-secondary;
             color: $color-white;
         }
     }
@@ -90,7 +90,7 @@
                 color: $color-white;
                 border: 1px solid $color-white;
                 &:hover {
-                    // border: 1px solid transparent;
+                    border: 1px solid $color-secondary;
                 }
             }
         }

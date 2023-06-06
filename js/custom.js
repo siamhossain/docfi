@@ -131,7 +131,6 @@
 
         //tab-function
         rtTabs: function () {
-
             // rt-tabs-wrapper
             if ($rtTabWrappers.length) {
                 // for scoped

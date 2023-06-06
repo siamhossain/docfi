@@ -23,8 +23,14 @@
                 right: 0;
                 top: 175px;
                 display: none;
+                @include transition;
                 @include media-only("lg", min) {
                     display: block;
+                }
+            }
+            &:hover {
+                &::before {
+                    background: #f7b7b7;
                 }
             }
         }

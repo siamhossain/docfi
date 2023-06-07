@@ -45,6 +45,10 @@
                 padding: 15px 32px;
                 background: #0289FF;
                 border-radius: 50px;
+                border: 1px solid transparent;
+                &:hover {
+                    color: $color-title;
+                }
             }
         }
     }
@@ -87,6 +91,10 @@
                 a {
                     background: #15C590;
                     border-radius: 10px;
+                    &:hover {
+                        background-color: #08815d;
+                        color: $color-white
+                    }
                 }
             }
         }

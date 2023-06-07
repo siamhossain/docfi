@@ -54,6 +54,12 @@
             font-size: 18px;
             line-height: 21px;
             color: #FFFFFF;
+            &:hover {
+                color: $color-title;
+            }
+            &::after {
+                background-color: $color-white;
+            }
         }
     }
 }

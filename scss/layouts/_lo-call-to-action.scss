@@ -41,20 +41,34 @@
             font-weight: 700;
             font-size: 20px;
             line-height: 23px;
-            padding: 24px 39px 23px 39px;
+            padding: 23px 39px 22px 39px;
             border: none;
             border-radius: 500px;
+            border: 1px solid transparent;
             &--style-1 {
                 background: $color-secondary;
                 color: $color-white;
+                border: 1px solid currentColor;
+                &::after {
+                    background-color: white;
+                }
+                &:hover {
+                    color: $color-title;
+                }
             }
             &--style-2 {
                 background: $color-shade25;
                 color: $color-white;
+                &:hover {
+                    color: $color-title;
+                }
             }
             &--style-4 {
                 background: #0289FF;
                 color: $color-white;
+                &:hover {
+                    color: $color-title;
+                }
             }
         }
     }

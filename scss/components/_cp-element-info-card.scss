@@ -46,6 +46,12 @@
             border: 1px solid #1D2746;
             border-radius: 500px;
             padding: 6px 21px;
+            &::after {
+                background: $color-secondary;
+            }
+            &:hover {
+                color: $color-white;
+            }
         }
     }
 }

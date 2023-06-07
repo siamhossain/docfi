@@ -53,9 +53,7 @@
         padding: 6px 21px;
         @include transition;
         &:hover {
-            background: $color-secondary;
-            border: 1px solid $color-secondary;
-            color: $color-white;
+
         }
     }
 
@@ -89,8 +87,11 @@
             .card-btn {
                 color: $color-white;
                 border: 1px solid $color-white;
+                &::after {
+                    background-color: white;
+                }
                 &:hover {
-                    border: 1px solid $color-secondary;
+                    color: $color-title;
                 }
             }
         }
@@ -294,8 +295,11 @@
             color: #8A58F3;
             line-height: 18px;
             padding: 13px 23px 12px 23px;
+            &::after {
+                background-color: #8A58F3;
+            }
             &:hover {
-                background: #8A58F3;
+                color: $color-white;
             }
         }
     }

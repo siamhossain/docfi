@@ -229,6 +229,9 @@
                                 font-size: 16px;
                                 line-height: 19px;
                                 color: $color-white;
+                                &:hover {
+                                   background-color: #026992;
+                                }
                             }
                         }
                     }

@@ -14,7 +14,7 @@
             }
         }
         .tag {
-            background: #15C590;
+            background: $color-secondary;
             color: $color-white;
             font-family: $font-roboto;
             font-weight: 500;
@@ -27,6 +27,10 @@
             position: absolute;      
             left: 30px;
             top: 30px; 
+            &:hover {
+                background: $color-white;
+                color: $color-title;
+            }
         }
     }
     .blog-post-content {
@@ -93,14 +97,6 @@
                     transform-origin: right center;
                 }
             }
-            .tag {
-                background: $color-white;
-                color: $color-title;
-            }
-        }
-        .read-more-btn {
-            background: #15C590;
-            color: $color-white;
         }
     }
 
@@ -112,11 +108,18 @@
         .blog-post-img {
             .blog-post-img-link {
                 img {
+                    
                 }
             }
             .tag {      
                 right: 30px;
                 left: unset;
+                color: $color-title;
+                background-color: $color-white;
+                &:hover {
+                    background: $color-secondary;
+                    color: $color-white;
+                }
             }
         }
         .blog-post-content { 
@@ -124,12 +127,34 @@
                 margin-bottom: 14px;
             }
             .blog-post-title {
-
+                a {
+                    color: $color-secondary;
+                    &:hover {
+                        color: $color-title;
+                    }
+                }
             }
             .blog-post-info {
                 margin-bottom: 31px;
             }
 
+            .read-more-btn {
+                background: #15C590;
+                color: $color-white;
+                &:hover {
+                    background: #F7F7F7;
+                    color: $color-title;
+                }
+            }
+        }
+        &:hover {
+            .blog-post-img {
+                .blog-post-img-link {
+                    img {
+                        transform: scale(1.10);
+                    }
+                }
+            }
         }
 
     }
@@ -141,7 +166,7 @@
     }
     .see-more-btn-area {
         .see-more-btn {
-            border: 1px solid #15C590;
+            border: 1px solid $color-secondary;
             border-radius: 42px;
             padding: 11px 20px;
             font-family: $font-roboto;
@@ -151,6 +176,18 @@
             color: #15C590;
             svg {
                 margin-left: 6px;
+                path {
+                    @include transition;
+                }
+            }
+            &:hover {
+                background: $color-secondary;
+                color: $color-white;
+                svg {
+                    path {
+                        stroke: $color-white;
+                    }
+                }
             }
         }
     }

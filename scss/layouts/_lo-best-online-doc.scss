@@ -184,11 +184,13 @@
                             border-radius: 500px;
                             color: $color-white;
                             padding: 14px 25px;
-    
                             font-family: $font-roboto;
                             font-weight: 600;
                             font-size: 16px;
                             line-height: 19px;
+                            &:hover {
+                                color: $color-title;
+                            }
                         }
                     }
                 }
@@ -204,7 +206,11 @@
                             font-size: 16px;
                             line-height: 30px;
                             color: $color-title;
-
+                        }
+                        a {
+                            &:hover {
+                                color: #8A58F3;
+                            }
                         }
                     }
                 }

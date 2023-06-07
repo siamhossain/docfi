@@ -58,6 +58,10 @@
                 line-height: 29px;
                 padding: 16px 29px 15px 29px;
                 border-radius: 500px;
+                border: 1px solid transparent;
+                &:hover {
+                    color: $color-title;
+                }
             }
         }
     }

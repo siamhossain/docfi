@@ -78,19 +78,19 @@
                         top: -62px;
                         left: -100px;
                         z-index: -3;
-                        animation: leaf1 4s linear infinite;
+                        // animation: leaf1 4s linear infinite;
                     }
                     &:nth-child(2) {
                         top: -150px;
                         left: -71px;
                         z-index: -1;
-                        animation: leaf2 5s linear infinite;
+                        // animation: leaf2 5s linear infinite;
                     }
                     &:nth-child(3) {
                         top: -241px;
                         left: 48px;
                         z-index: -2;
-                        animation: leaf3 6s linear infinite;
+                        // animation: leaf3 6s linear infinite;
                     }
                 }
             }

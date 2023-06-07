@@ -67,6 +67,11 @@
                 @include toRem(font-size, 16);
                 line-height: 19px;
                 color: $color-white;
+                cursor: pointer;
+                @include transition;
+                &:hover {
+                    background-color: #0b9b70;
+                }
             }
         }
     }

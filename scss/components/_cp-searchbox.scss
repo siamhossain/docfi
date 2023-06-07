@@ -82,7 +82,13 @@
             border: none;
             padding: 11px 29px;
             border-radius: 50px;
-            gap: 8px;
+            border: 1px solid transparent;;
+            &::after {
+                background: $color-white;
+            }
+            &:hover {
+                color: indigo;
+            }
         }
     }
     &--style-1 {
@@ -94,6 +100,13 @@
         .searchbox-submit {
             .rt-searchbox-btn {
                 background: $color-shade24;
+                border: 1px solid #F8851C;
+                &:hover {
+                    color: indigo;
+                }
+                &::after {
+                    background-color: $color-white;
+                }
             }
         }
     }
@@ -103,6 +116,13 @@
         .searchbox-submit {
             .rt-searchbox-btn {
                 background: $color-shade25;
+                border: 1px solid $color-shade25;;
+                &:hover {
+                    color: indigo;
+                }
+                &::after {
+                    background-color: $color-white;
+                }
             }
         }
     }

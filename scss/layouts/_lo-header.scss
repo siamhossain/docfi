@@ -311,7 +311,14 @@ a.menu--link.second-level::after {
 
 .header {
   &--style-1 {
-
+    .navbar-action-area ul li a {
+      &::after {
+        background: $color-secondary;
+      }
+      &:hover {
+        color: $color-white;
+      }
+    }
   }
 
   &--style-2 {
@@ -321,6 +328,12 @@ a.menu--link.second-level::after {
     .navbar-action-area ul li a {
       border: 1px solid #F8851C;
       color: #F8851C;
+      &:hover {
+        color: $color-white;
+      }
+      &::after {
+        background-color: #F8851C;  
+      }
     }
   }
 
@@ -331,6 +344,12 @@ a.menu--link.second-level::after {
     .navbar-action-area ul li a {
       border: 1px solid #8A58F3;
       color: #8A58F3;
+      &:hover {
+        color: $color-white;
+      }
+      &::after {
+        background-color: #8A58F3;  
+      }
     }
   }
   &--style-4 {
@@ -340,6 +359,9 @@ a.menu--link.second-level::after {
     .navbar-action-area ul li a {
       border: 1px solid $color-white;
       color: $color-white;
+      &::after {
+        background: #0289FF;
+      }
     }
   }
   &--style-5 {
@@ -349,6 +371,12 @@ a.menu--link.second-level::after {
     .navbar-action-area ul li a {
       border: 1px solid $color-title;
       color: $color-title;
+      &::after {
+        background: $color-secondary;
+      }
+      &:hover {
+        color: $color-white;
+      }
     }
   }
 }

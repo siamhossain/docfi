@@ -568,9 +568,9 @@
 
 
         let sections = $('.single-element-section .content-wrapper section')
-        let nav_item = $('nav-item')
+        let navLi = $("nav ul .nav-item");
+        // let ActiveId = $("nav ul .nav-item");
         // let nav_height = nav.outerHeight()
-
 
         $(window).on('scroll', function () {
             let current_position = $(this).scrollTop()
@@ -579,20 +579,25 @@
                 let top = $(this).offset().top;
                 let bottom = top + $(this).outerHeight()
 
+                let sectionId = $(this).attr('id');
+
+                // console.log(sectionId + " Test ID");
+
                 console.log(current_position + " Y")
-                console.log(top)
+                console.log(top )
                 console.log(bottom)
 
-            if (current_position >= top && current_position <= bottom) {
-                nav_item.find('.dropdown_nav').removeClass('active')
-            // sections.removeClass('active')
-
-            // $(this).addClass('active') // colorize section's content
-                nav_item.find($(this).attr('id') + '.dropdown_nav').addClass('active')
-                
-            }
+                if (current_position >= top && current_position <= bottom) {
+                    if(navLi.find(sectionId) === sectionId) {
+                        navLi.addClass("active");
+                    } else {
+                        navLi.removeClass("active");
+                    }
+                }
             })
         })
+
+
 
 
 })(jQuery);

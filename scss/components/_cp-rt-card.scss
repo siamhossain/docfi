@@ -79,6 +79,9 @@
             .card-title {
                 a {
                     color: $color-white;
+                    &:hover {
+                        color: yellow;
+                    }
                 }
             }
             .card-info {
@@ -110,6 +113,9 @@
             a {
                 font-weight: 500;
                 font-size: 22px;
+                &:hover {
+                    color: yellow;
+                }
             }
             line-height: 26px;
         }
@@ -166,6 +172,9 @@
             a {
                 font-weight: 500;
                 font-size: 22px;
+                &:hover {
+                    color: $color-secondary;
+                }
             }
             line-height: 26px;
         }
@@ -210,6 +219,9 @@
             a {
                 font-weight: 600;
                 font-size: 21px;
+                &:hover {
+                    color: $color-shade25;
+                }
             }
             line-height: 26px;
         }
@@ -258,6 +270,9 @@
                 font-weight: 700;
                 font-size: 30px;
                 line-height: 45px;
+                &:hover {
+                    color: $color-shade25;
+                }
             }
             line-height: 45px;
         }
@@ -286,6 +301,11 @@
         padding: 50px 40px;
         .card-title {
             margin-bottom: 16px;
+            a {
+                &:hover {
+                    color: $color-shade25;
+                }
+            }
         }
         .card-info {
             margin-bottom: 33px;
@@ -340,6 +360,9 @@
             a {
                 font-weight: 500;
                 font-size: 30px;
+                &:hover {
+                    color: $color-shade25;
+                }
             }
             .icon {
                 margin-bottom: 0;

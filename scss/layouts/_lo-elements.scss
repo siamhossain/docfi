@@ -1,7 +1,7 @@
 .single-element-section {
+
     .document-title-area {
         margin-bottom: 25px;
-        
         .section-name {
             font-family: $font-roboto;
             font-weight: 400;
@@ -498,5 +498,90 @@
         }
     }
 
-    
+    .single-element-action-area {
+        background: #FFFFFF;
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
+        border-radius: 20px;
+        padding: 44px 50px;
+        .font-size-controller-btn-area {
+            background: #F5F5F5;
+            border: 1px solid #DEDEDE;
+            border-radius: 10px;
+            padding: 15px 37px;
+            display: inline-block;
+            margin-bottom: 22px;
+            .font-size-controller-btn-wrapper {
+                gap: 14px;
+                button {
+                    background: transparent;
+                    border: none;
+                    font-family: 'Roboto';
+                    font-weight: 500;
+                    font-size: 17px;
+                    line-height: 20px;
+                    color: #000000;
+                }
+                button.active {
+                    color: #3948D2;
+                }
+                
+            }
+        }
+        .social-share-list {
+            gap: 15px;
+            li {
+               a {
+                   width: 40px;
+                   height: 40px;
+                   border-radius: 50px;
+                   display: flex;
+                   justify-content: center;
+                   align-items: center;
+               }
+               &:nth-child(1) {
+                   a {
+                       background-color: #F2F8FF;
+                       color: #1877F2;
+                       &:hover {
+                            background-color: #d4e7fc;
+                       }
+                   }
+               }
+               &:nth-child(2) {
+                   a {
+                       background-color: #F3FBFF;;
+                       color: #1DA1F2;
+                       &:hover {
+                            background-color: #d5f1ff;
+                       }
+                   }
+               }
+               &:nth-child(3) {
+                   a {
+                       background-color: #FCF7FF;
+                       color: #833AB4;
+                       &:hover {
+                            background-color: #efd2ff;
+                       }
+                   }
+               }
+               &:nth-child(4) {
+                   a {
+                       background-color: #FFF9FA;
+                       color: #E60023;
+                       &:hover {
+                            background-color: #fac0ca;
+                       }
+                   }
+               }
+               &:hover {
+                    a {
+                        i {
+                            animation: toBottomFromTop 0.5s forwards;
+                        }
+                    }
+               }
+           }
+       }
+    }
 }

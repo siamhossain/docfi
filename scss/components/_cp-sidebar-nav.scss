@@ -74,9 +74,6 @@
                             }
                         }
                     }
-                    &.active {
-                        display: block;
-                    }
                 }
                 &:nth-child(1) {
                     .nav-link {
@@ -90,6 +87,14 @@
                         .icon {
                             background: #FF8631;
                         }
+                    }
+                }
+                &.active {
+                    .dropdown_nav {
+                        display: block;
+                    }
+                    .nav-link {
+                        color: red;
                     }
                 }
             }

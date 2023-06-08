@@ -9,6 +9,9 @@
             line-height: 19px;
             color: $color-title;
             margin-bottom: 10px;
+            &:hover {
+                color: $color-shade25;
+            }
         }
         .post-date {
             font-size: 14px;

@@ -267,6 +267,27 @@
             });
         },
 
+        //Font size controller
+        fontSizeController: function () {
+
+            var minusFont = $(".font-size-minus"); 
+            var plusFont = $(".font-size-plus");
+            var normalFont = $(".font-size-normal");
+
+            $( plusFont ).on( "click", function() {
+                $( ".content-wrapper .para-text" ).css({ "font-size": "+=2", "line-height" : "+=1px" });
+            });
+
+            $( normalFont ).on( "click", function() {
+                $( ".content-wrapper .para-text" ).css({ "font-size": "16px"});
+            });
+            
+            $( minusFont ).on( "click", function() {
+                $( ".content-wrapper .para-text" ).css({"font-size" : "-=2", "line-height" : "-=1px"  });
+            });
+
+        },
+
         //Elements Carousel
         elementsCarousel: function () {
             if ($elCarousel.elExists()) {
@@ -456,6 +477,8 @@
         rtDocfi.functions.isotope();
         rtDocfi.functions.dateCountdown();
         rtDocfi.functions.marqueeElement();
+        rtDocfi.functions.fontSizeController();
+        
 	});
 
 	/**
@@ -488,23 +511,6 @@
     wow.init();
   
 
-    $(".course-intro-section--style-2 .course-intro-item").hover(
-        function() {
-            $(this).addClass('active');
-        }, function() {
-            $( ".course-intro-item" ).removeClass('active');
-        }
-    );
-
-    $(".course-intro-section--style-2 .course-intro-item").hover(
-        function () {
-            //toggleClass() switches the active class
-            $(this).addClass("active");
-        },
-        function () {
-            $(this).addClass("visited");
-        },
-    );
 
     //sticky tab
     $(window).scroll(function () {
@@ -568,7 +574,7 @@
 
 
         let sections = $('.single-element-section .content-wrapper section')
-        let navLi = $("nav ul .nav-item");
+        let navLi = $("#home");
         // let ActiveId = $("nav ul .nav-item");
         // let nav_height = nav.outerHeight()
 
@@ -578,39 +584,21 @@
             sections.each(function () {
                 let top = $(this).offset().top;
                 let bottom = top + $(this).outerHeight()
-
                 let sectionId = $(this).attr('id');
 
-                console.log(sectionId + " Test ID");
-
-                console.log(current_position + " Y")
-                console.log(top )
-                console.log(bottom)
+                
+                console.log(sectionId + " Section Id");
+                console.log(current_position + " Offset-Y");
+                console.log(top + " Top")
+                console.log(bottom + " Bottom")
 
                 if (current_position >= top && current_position <= bottom) {
-                    navLi.find(sectionId).css({"color" : "red"});
-                }
+                    $("#homex .nav-main").css({"color" : "red"});
+                    $("#homex").addClass("active");
+                    console.log("Wiiiiiiiiiin");
+                } 
             })
         })
-
-
-
-        //font size controller
-        var minusFont = $(".font-size-minus"); 
-        var plusFont = $(".font-size-plus");
-        var normalFont = $(".font-size-normal");
-
-        $( plusFont ).on( "click", function() {
-            $( ".content-wrapper .para-text" ).css({ "font-size": "+=2", "line-height" : "+=1px" });
-        });
-
-        $( normalFont ).on( "click", function() {
-            $( ".content-wrapper .para-text" ).css({ "font-size": "16px"});
-        });
-          
-        $( minusFont ).on( "click", function() {
-            $( ".content-wrapper .para-text" ).css({"font-size" : "-=2", "line-height" : "-=1px"  });
-        });
 
 
 

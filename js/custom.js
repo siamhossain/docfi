@@ -581,22 +581,36 @@
 
                 let sectionId = $(this).attr('id');
 
-                // console.log(sectionId + " Test ID");
+                console.log(sectionId + " Test ID");
 
                 console.log(current_position + " Y")
                 console.log(top )
                 console.log(bottom)
 
                 if (current_position >= top && current_position <= bottom) {
-                    if(navLi.find(sectionId) === sectionId) {
-                        navLi.addClass("active");
-                    } else {
-                        navLi.removeClass("active");
-                    }
+                    navLi.find(sectionId).css({"color" : "red"});
                 }
             })
         })
 
+
+
+        //font size controller
+        var minusFont = $(".font-size-minus"); 
+        var plusFont = $(".font-size-plus");
+        var normalFont = $(".font-size-normal");
+
+        $( plusFont ).on( "click", function() {
+            $( ".content-wrapper .para-text" ).css({ "font-size": "+=2", "line-height" : "+=1px" });
+        });
+
+        $( normalFont ).on( "click", function() {
+            $( ".content-wrapper .para-text" ).css({ "font-size": "16px"});
+        });
+          
+        $( minusFont ).on( "click", function() {
+            $( ".content-wrapper .para-text" ).css({"font-size" : "-=2", "line-height" : "-=1px"  });
+        });
 
 
 

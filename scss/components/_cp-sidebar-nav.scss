@@ -36,6 +36,9 @@
                         position: absolute;
                         right: 20px;
                     }
+                    &.active {
+                        color: pink;
+                    }
                 }
                 .dropdown_nav {
                     background: $color-white;
@@ -44,6 +47,7 @@
                     padding-bottom: 22px;
                     padding-left: 50px;
                     display: none;
+                    @include transition;
                     .nav-item {
                         background: 0 0;
                         margin: 0;
@@ -89,9 +93,17 @@
                         }
                     }
                 }
+                &:nth-child(3) {
+                    .nav-link {
+                        .icon {
+                            background: #FD5B5B;
+                        }
+                    }
+                }
                 &.active {
                     .dropdown_nav {
                         display: block;
+                        @include transition;
                     }
                     .nav-link {
                         color: red;

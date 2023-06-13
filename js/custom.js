@@ -593,10 +593,11 @@
                 console.log(bottom + " Bottom")
 
                 if (current_position >= top && current_position <= bottom) {
-                    $("#homex .nav-main").css({"color" : "red"});
-                    $("#homex").addClass("active");
-                    console.log("Wiiiiiiiiiin");
-                } 
+
+                    $(".parent-nav-item a[href*=" + sectionId + "]").parents('li').addClass("active");
+                } else {
+                    $(".parent-nav-item a[href*=" + sectionId + "]").parents('li').removeClass("active");
+                }
             })
         })
 

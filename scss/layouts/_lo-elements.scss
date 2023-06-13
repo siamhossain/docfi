@@ -411,28 +411,55 @@
                     line-height: 19px;
                 }
             }
-            .video-area-wraper {
-                margin-bottom: 47px;
-                .video-area {
+        }
+        .video-area-wraper {
+            margin-bottom: 47px;
+            .video-area {
+                border-radius: 10px;
+                overflow: hidden;
+                position: relative;
+                margin-bottom: 30px;
+                img {
+                    width: 100%;
+                }
+                .video-play-btn {
+                    background: #FF0000;
+                    border-radius: 20px;
+                    width: 80px;
+                    height: 60px;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+            .video-title-area {
+                .title {
+                    font-family: $font-roboto;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 23px;
+                    color: $color-title;
+                    margin-bottom: 14px;
+                }
+                .para-text {
+                    font-size: 18px;
+                    line-height: 21px;
+                }
+            }
+        }
+        .table-area-wraper {
+            margin-bottom: 47px;
+            .table-area {
+                .table {
+                    background: #D9D9D9;
                     border-radius: 10px;
-                    overflow: hidden;
-                    position: relative;
-                    margin-bottom: 30px;
+                    padding: 10px;
                     img {
                         width: 100%;
                     }
-                    .video-play-btn {
-                        background: #FF0000;
-                        border-radius: 20px;
-                        width: 80px;
-                        height: 60px;
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%, -50%);
-                    }
                 }
-                .video-title-area {
+                .title-area {
                     .title {
                         font-family: $font-roboto;
                         font-weight: 500;
@@ -447,52 +474,66 @@
                     }
                 }
             }
-            .table-area-wraper {
-                margin-bottom: 47px;
-                .table-area {
-                    .table {
-                        background: #D9D9D9;
-                        border-radius: 10px;
-                        padding: 10px;
-                        img {
-                            width: 100%;
-                        }
-                    }
-                    .title-area {
-                        .title {
-                            font-family: $font-roboto;
-                            font-weight: 500;
-                            font-size: 20px;
-                            line-height: 23px;
-                            color: $color-title;
-                            margin-bottom: 14px;
-                        }
-                        .para-text {
-                            font-size: 18px;
-                            line-height: 21px;
-                        }
-                    }
+        }
+        .tooltip-content-area {
+            .title {
+                font-family: 'Roboto';
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 23px;
+                color: #1D2746;
+            }
+            .para-text {
+                margin-bottom: 45px;
+                span {
+                    background: #3A49D3;
+                    border-radius: 10px;
+                    color: $color-white;
+                    padding: 9px 19px;
+
+                }
+                &:first-child {
                 }
             }
-            .tooltip-content-area {
+        }
+        .recovery-doc-area {
+            .widget-title-area {
+                margin-bottom: 12px;
+            }
+            .recovery-doc {
+                form {
+                    textarea {
+                        width: 100%;
+                        border: 1px solid #D1D1D1;
+                        border-radius: 10px;
+                        height: 136px;
+                    }
+                }
+                padding-bottom: 45px;
+            }
+        }
+        .accordion-widget-area {
+            .widget-style-1 {
+                .widget-title-area {
+                    .title {
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
+                    .para-text {
+                        line-height: 30px;
+                    }
+                }
+                padding-bottom: 50px;
+            }
+            .widget-style-2 {
                 .title {
-                    font-family: 'Roboto';
                     font-weight: 500;
-                    font-size: 20px;
-                    line-height: 23px;
-                    color: #1D2746;
+                    font-size: 18px;
+                    line-height: 21px;
                 }
                 .para-text {
-                    margin-bottom: 45px;
-                    span {
-                        background: #3A49D3;
-                        border-radius: 10px;
-                        color: $color-white;
-                        padding: 9px 19px;
-
-                    }
-                    &:first-child {
-                    }
+                    line-height: 30px;
                 }
             }
         }

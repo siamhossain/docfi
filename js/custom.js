@@ -574,9 +574,9 @@
 
 
         let sections = $('.single-element-section .content-wrapper section')
-        let navLi = $("#home");
-        // let ActiveId = $("nav ul .nav-item");
-        // let nav_height = nav.outerHeight()
+        let secHeight = $(".elements-info-layout").prop("scrollHeight");
+
+        // console.log(secHeight + " Test");
 
         $(window).on('scroll', function () {
             let current_position = $(this).scrollTop()
@@ -586,21 +586,17 @@
                 let bottom = top + $(this).outerHeight()
                 let sectionId = $(this).attr('id');
 
-                
                 console.log(sectionId + " Section Id");
                 console.log(current_position + " Offset-Y");
                 console.log(top + " Top")
                 console.log(bottom + " Bottom")
 
                 if (current_position >= top && current_position <= bottom) {
-
                     $(".parent-nav-item a[href*=" + sectionId + "]").parents('li').addClass("active");
                 } else {
                     $(".parent-nav-item a[href*=" + sectionId + "]").parents('li').removeClass("active");
                 }
             })
         })
-
-
 
 })(jQuery);

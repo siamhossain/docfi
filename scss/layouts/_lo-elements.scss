@@ -25,6 +25,7 @@
     }
 
     .elements-info-layout {
+        margin-bottom: 50px;
         .documentation-features {
             padding-bottom: 80px;
             margin-bottom: 80px;
@@ -310,6 +311,7 @@
             margin-bottom: 80px;
             border-bottom: 1px solid #D7D7D7;
             .accordion-area {
+                padding-bottom: 30px;
                 .title-area {
                     margin-bottom: 35px;
                     .title {
@@ -323,6 +325,9 @@
                     .para-text {
                         line-height: 26px;
                     }
+                }
+                &:last-child {
+                    padding-bottom: 0;
                 }
             }
         }
@@ -534,6 +539,65 @@
                 }
                 .para-text {
                     line-height: 30px;
+                }
+            }
+        }
+    }
+    .layouts-info-layout {
+        .main-heading-area {
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            border-bottom: 1px solid #D9D9D9;
+            .title {
+                font-family: $font-roboto;
+                font-weight: 600;
+                font-size: 22px;
+                line-height: 26px;
+                color: $color-title;
+                margin-bottom: 9px;
+            }
+            .para-text {
+                font-size: 15px;
+                line-height: 18px;
+            }
+        }
+        .widget-title-area {
+            margin-bottom: 30px;
+            .title {
+                font-family: $font-roboto;
+                font-weight: 700;
+                font-size: 19px;
+                line-height: 22px;
+                color: $color-title;
+                margin-bottom: 5px;
+            }
+            .para-text {
+                line-height: 19px;
+            }
+        }
+        .call-to-action-area-wrapper {
+            margin-bottom: 50px;
+            border-bottom: 1px solid#D9D9D9;
+            .single-call-to-action-area {
+                margin-bottom: 50px;
+                .call-to-action-section {
+                    margin-bottom: 30px;
+                }
+                .title-area {
+                    // margin-bottom: 30px;
+                    .title {
+                        font-family: $font-roboto;
+                        font-weight: 500;
+                        font-size: 20px;
+                        line-height: 23px;
+                        color: $color-title;
+                        margin-bottom: 5px;
+                    }
+                    .para-text {
+                        font-size: 18px;
+                        line-height: 21px;
+
+                    }
                 }
             }
         }

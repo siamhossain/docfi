@@ -598,7 +598,6 @@
             } else {
                 $(".dropdown_nav li a[href*=" + widgetId + "]").removeClass("active");
             }
-    
         })
 
         layoutsWidgetArea.each(function() {
@@ -624,30 +623,8 @@
             }
     
         })
-        
-
-        // console.log(current_position + " Y Offset - line scroll");
-        // console.log(videoWidgetTop + " Top Space");
-        // console.log(divHeight + " Div Height");
-
-        
-        
     })
     
-    
-    //line on scroll
-    // let scrollHeight = $(".elements-info-layout").prop("scrollHeight");
-
-    // var divHeight = $(".video-widget-area").height();
-    // var videoWidgetTop = $(".video-widget-area").offset().top;
-
-    // console.log(scrollHeight + " Test");
-    // console.log(divHeight);
-    // console.log(videoWidgetTop + " Top Space");
-    // console.log(videoWidgetBottom + " Bottom Space");
-
-
-
     
 
 

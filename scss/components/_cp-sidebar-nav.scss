@@ -65,31 +65,17 @@
                             position: relative;
 
                             &.active {
-                                color: red;
+                                color: $color-secondary;
                                 .progress-indicator {
                                     position: absolute;
-                                    background: red;
+                                    background: $color-secondary;
                                     width: 0;
                                     height: 1px;
                                     bottom: 0;
                                     left: 0;
                                     z-index: 1;
-                                };
+                                }
                             }
-
-                            
-                            
-                            // &.active {
-                            //     &::before {
-                            //         content: "";
-                            //         position: absolute;
-                            //         border-bottom: 1px solid $color-secondary;
-                            //         left: 0;
-                            //         bottom: 0;
-                            //         width: 50%;
-                            //         @include transition;
-                            //     }
-                            // }
                         }
                     }
                 }

@@ -524,7 +524,9 @@
 
 
     let sections = $('.single-element-section .content-wrapper section');
+    let elementsWidgetArea = $("#elements .widget-area");
     let contentWidgetArea = $("#content .widget-area");
+    let layoutsWidgetArea = $("#layouts .widget-area");
     
 
     
@@ -552,6 +554,29 @@
 
         //line on scroll
         
+        elementsWidgetArea.each(function() {
+            
+            var divHeight = $(this).outerHeight();
+            var widgetTop = $(this).offset().top - 160;
+            var widgetBottom = widgetTop + divHeight;
+            var widthPercentage = 0;
+
+            let widgetId = $(this).attr('id');
+            console.log(widgetId);
+    
+            if (current_position >= widgetTop && current_position <= widgetBottom) {
+                var storeY = current_position - widgetTop;
+                widthPercentage = (storeY / divHeight) * 100;
+                
+                $(".dropdown_nav li a[href*=" + widgetId + "]").addClass("active");
+                $(".active .progress-indicator").width(widthPercentage + "%");
+    
+            } else {
+                $(".dropdown_nav li a[href*=" + widgetId + "]").removeClass("active");
+            }
+    
+        })
+
         contentWidgetArea.each(function() {
             
             var divHeight = $(this).outerHeight();
@@ -564,17 +589,37 @@
     
             if (current_position >= widgetTop && current_position <= widgetBottom) {
                 var storeY = current_position - widgetTop;
-                // console.log(storeY + " Store value of Y");
                 widthPercentage = (storeY / divHeight) * 100;
-                // console.log(widthPercentage + " div scroll percentage");
                 
                 $(".dropdown_nav li a[href*=" + widgetId + "]").addClass("active");
     
                 $(".active .progress-indicator").width(widthPercentage + "%");
     
-                // $(".dropdown_nav .nav-item .test").addClass("active");
             } else {
-                // $(".dropdown_nav .nav-item .test").removeClass("active");
+                $(".dropdown_nav li a[href*=" + widgetId + "]").removeClass("active");
+            }
+    
+        })
+
+        layoutsWidgetArea.each(function() {
+            
+            var divHeight = $(this).outerHeight();
+            var widgetTop = $(this).offset().top - 160;
+            var widgetBottom = widgetTop + divHeight;
+            var widthPercentage = 0;
+
+            let widgetId = $(this).attr('id');
+            console.log(widgetId);
+    
+            if (current_position >= widgetTop && current_position <= widgetBottom) {
+                var storeY = current_position - widgetTop;
+                widthPercentage = (storeY / divHeight) * 100;
+                
+                $(".dropdown_nav li a[href*=" + widgetId + "]").addClass("active");
+    
+                $(".active .progress-indicator").width(widthPercentage + "%");
+    
+            } else {
                 $(".dropdown_nav li a[href*=" + widgetId + "]").removeClass("active");
             }
     

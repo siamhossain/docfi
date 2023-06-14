@@ -55,12 +55,12 @@
                         position: relative;
                         .progress-indicator {
                             position: absolute;
-                            height: 1px;
-                            width: 30%;
                             background: red;
+                            width: 0;
+                            height: 1px;
                             bottom: 0;
                             left: 0;
-                            // z-index: 1;
+                            z-index: 1;
                         }
                         .nav-link { 
                             font-family: $font-roboto;
@@ -71,6 +71,10 @@
                             padding: 0 0 0 0;
                             border-bottom: 1px solid #E4E4E4;
                             position: relative;
+
+                            &.active {
+                                color: red;
+                            }
 
                             
                             

@@ -513,90 +513,80 @@
 
 
     //sticky tab
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 550) {
-           $('.course-details-tabs').addClass('sticky-tab-style');
-        } else {
-           $('.course-details-tabs').removeClass('sticky-tab-style');
-        }
-     });
+    // $(window).scroll(function () {
+    //     if ($(this).scrollTop() > 550) {
+    //        $('.course-details-tabs').addClass('sticky-tab-style');
+    //     } else {
+    //        $('.course-details-tabs').removeClass('sticky-tab-style');
+    //     }
+    //  });
 
 
-    // window.addEventListener("scroll", navHighlighter);
 
-    // function navHighlighter() {
-    //     // Get current scroll position
-    //       let scrollY = window.pageYOffset;
-      
-    //       if (scrollY > 500) {
-    //           $('.dropdown_nav' ).css({"display" : "block"});
-    //       }
-    //       else
-    //       $('.dropdown_nav' ).css({"display": "none"});
-    // }
-
-
-  
-        // Get all sections that have an ID defined
-        // const sections = document.querySelectorAll(".single-element-section .content-wrapper section");
+    let sections = $('.single-element-section .content-wrapper section')
+    
+    
+    $(window).on('scroll', function () {
+        let current_position = $(this).scrollTop()
         
-        // console.log(sections);
-
-        // window.addEventListener("scroll", navHighlighter);
-
-        // function navHighlighter() {
-        //     let scrollY = window.pageYOffset;
-        
-        //     sections.forEach(current => {
-
-        //         const sectionHeight = current.offsetHeight;
-
-        //         const sectionTop = current.offsetTop;
-        //         const sectionTopParent = current.offsetParent;
-        //         var sectionId = current.getAttribute("id");
-
-        //         console.log(scrollY + ' Y-scroll');
-        //         console.log(sectionTop + ' Section-top');
-        //         console.log(sectionHeight + " Height-section");
-        //         console.log(sectionId);
-
-
-                
-                
-        //         if ( scrollY > sectionTop && scrollY <= sectionTop + sectionHeight ) {
-        //             document.querySelector(".dropdown_nav").classList.add("active");
-        //         } else {
-        //             document.querySelector(".dropdown_nav").classList.remove("active");
-        //         }
-        //     });
-        // }
-
-
-
-        let sections = $('.single-element-section .content-wrapper section')
-        let secHeight = $(".elements-info-layout").prop("scrollHeight");
-
-        // console.log(secHeight + " Test");
-
-        $(window).on('scroll', function () {
-            let current_position = $(this).scrollTop()
+        sections.each(function () {
+            let top = $(this).offset().top;
+            let bottom = top + $(this).outerHeight();
+            let sectionId = $(this).attr('id');
             
-            sections.each(function () {
-                let top = $(this).offset().top;
-                let bottom = top + $(this).outerHeight()
-                let sectionId = $(this).attr('id');
-
-                console.log(sectionId + " Section Id");
-                console.log(current_position + " Offset-Y");
-                console.log(top + " Top")
-                console.log(bottom + " Bottom")
-
-                if (current_position >= top && current_position <= bottom) {
-                    $(".parent-nav-item a[href*=" + sectionId + "]").parents('li').addClass("active");
-                } else {
-                    $(".parent-nav-item a[href*=" + sectionId + "]").parents('li').removeClass("active");
-                }
-            })
+            console.log(sectionId + " Section Id");
+            console.log(current_position + " Offset-Y");
+            console.log(top + " Top")
+            console.log(bottom + " Bottom")
+            
+            if (current_position >= top && current_position <= bottom) {
+                $(".parent-nav-item a[href*=" + sectionId + "]").parents('li').addClass("active");
+            } else {
+                $(".parent-nav-item a[href*=" + sectionId + "]").parents('li').removeClass("active");
+            }
         })
+
+        //line on scroll
+        var divHeight = $(".video-widget-area").outerHeight();
+        var videoWidgetTop = $(".video-widget-area").offset().top;
+        var videoWidgetBottom = videoWidgetTop + divHeight;
+
+        
+
+        console.log(current_position + " Y Offset - line scroll");
+        console.log(videoWidgetTop + " Top Space");
+        console.log(divHeight + " Div Height");
+
+        if (current_position >= videoWidgetTop && current_position <= videoWidgetBottom) {
+            var storeY = current_position - videoWidgetTop;
+            console.log(storeY + " Store value of Y");
+            var widthPercentage = (storeY / divHeight) * 100;
+            console.log(widthPercentage + " div scroll percentage");
+
+            $(".progress-indicator").width(widthPercentage + "%");
+
+            $(".dropdown_nav .nav-item .test").addClass("active");
+        } else {
+            $(".dropdown_nav .nav-item .test").removeClass("active");
+        }
+        
+    })
+    
+    
+    //line on scroll
+    // let scrollHeight = $(".elements-info-layout").prop("scrollHeight");
+
+    // var divHeight = $(".video-widget-area").height();
+    // var videoWidgetTop = $(".video-widget-area").offset().top;
+
+    // console.log(scrollHeight + " Test");
+    // console.log(divHeight);
+    // console.log(videoWidgetTop + " Top Space");
+    // console.log(videoWidgetBottom + " Bottom Space");
+
+
+
+    
+
 
 })(jQuery);

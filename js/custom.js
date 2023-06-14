@@ -523,14 +523,18 @@
 
 
 
-    let sections = $('.single-element-section .content-wrapper section')
+    let sections = $('.single-element-section .content-wrapper section');
+    let contentWidgetArea = $("#content .widget-area");
+    
+
     
     
     $(window).on('scroll', function () {
+
         let current_position = $(this).scrollTop()
         
         sections.each(function () {
-            let top = $(this).offset().top;
+            let top = $(this).offset().top - 160;
             let bottom = top + $(this).outerHeight();
             let sectionId = $(this).attr('id');
             
@@ -547,28 +551,41 @@
         })
 
         //line on scroll
-        var divHeight = $(".video-widget-area").outerHeight();
-        var videoWidgetTop = $(".video-widget-area").offset().top;
-        var videoWidgetBottom = videoWidgetTop + divHeight;
+        
+        contentWidgetArea.each(function() {
+            
+            var divHeight = $(this).outerHeight();
+            var widgetTop = $(this).offset().top - 160;
+            var widgetBottom = widgetTop + divHeight;
+            var widthPercentage = 0;
 
+            let widgetId = $(this).attr('id');
+            console.log(widgetId);
+    
+            if (current_position >= widgetTop && current_position <= widgetBottom) {
+                var storeY = current_position - widgetTop;
+                // console.log(storeY + " Store value of Y");
+                widthPercentage = (storeY / divHeight) * 100;
+                // console.log(widthPercentage + " div scroll percentage");
+                
+                $(".dropdown_nav li a[href*=" + widgetId + "]").addClass("active");
+    
+                $(".active .progress-indicator").width(widthPercentage + "%");
+    
+                // $(".dropdown_nav .nav-item .test").addClass("active");
+            } else {
+                // $(".dropdown_nav .nav-item .test").removeClass("active");
+                $(".dropdown_nav li a[href*=" + widgetId + "]").removeClass("active");
+            }
+    
+        })
         
 
-        console.log(current_position + " Y Offset - line scroll");
-        console.log(videoWidgetTop + " Top Space");
-        console.log(divHeight + " Div Height");
+        // console.log(current_position + " Y Offset - line scroll");
+        // console.log(videoWidgetTop + " Top Space");
+        // console.log(divHeight + " Div Height");
 
-        if (current_position >= videoWidgetTop && current_position <= videoWidgetBottom) {
-            var storeY = current_position - videoWidgetTop;
-            console.log(storeY + " Store value of Y");
-            var widthPercentage = (storeY / divHeight) * 100;
-            console.log(widthPercentage + " div scroll percentage");
-
-            $(".progress-indicator").width(widthPercentage + "%");
-
-            $(".dropdown_nav .nav-item .test").addClass("active");
-        } else {
-            $(".dropdown_nav .nav-item .test").removeClass("active");
-        }
+        
         
     })
     

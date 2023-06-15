@@ -527,6 +527,7 @@
     let elementsWidgetArea = $("#elements .widget-area");
     let contentWidgetArea = $("#content .widget-area");
     let layoutsWidgetArea = $("#layouts .widget-area");
+    let blogPostWidgetArea = $("#blog-post .widget-area");
     
 
     
@@ -623,6 +624,30 @@
             }
     
         })
+
+        blogPostWidgetArea.each(function() {
+            
+            var divHeight = $(this).outerHeight();
+            var widgetTop = $(this).offset().top - 160;
+            var widgetBottom = widgetTop + divHeight;
+            var widthPercentage = 0;
+
+            let widgetId = $(this).attr('id');
+            console.log(widgetId);
+    
+            if (current_position >= widgetTop && current_position <= widgetBottom) {
+                var storeY = current_position - widgetTop;
+                widthPercentage = (storeY / divHeight) * 100;
+                
+                $(".dropdown_nav li a[href*=" + widgetId + "]").addClass("active");
+    
+                $(".active .progress-indicator").width(widthPercentage + "%");
+    
+            } else {
+                $(".dropdown_nav li a[href*=" + widgetId + "]").removeClass("active");
+            }
+        })
+
     })
     
     

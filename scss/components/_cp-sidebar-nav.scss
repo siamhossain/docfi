@@ -53,7 +53,7 @@
                     // display: none;
                     transition: opacity 1s ease-out;
                     opacity: 0;
-                    height: 0;
+                    max-height: 0;
                     overflow: hidden;
                     .nav-item {
                         background: 0 0;
@@ -107,6 +107,27 @@
                         }
                     }
                 }
+                &:nth-child(4) {
+                    .nav-link {
+                        .icon {
+                            background: #1D8FFA;
+                        }
+                    }
+                }
+                &:nth-child(5) {
+                    .nav-link {
+                        .icon {
+                            background: #E233FE;
+                        }
+                    }
+                }
+                &:nth-child(6) {
+                    .nav-link {
+                        .icon {
+                            background: #4AD00A;
+                        }
+                    }
+                }
                 &.active {
                     a {
                         @include transition;
@@ -119,9 +140,9 @@
                     }
                     .dropdown_nav {
                         // display: block;
-                        @include transition;
+                        transition: all 0.6s ease-in-out;
                         opacity: 1;
-                        height: 260px;
+                        max-height: 260px;
                     }
                 }
             }

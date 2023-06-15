@@ -257,4 +257,48 @@
             }
         }
     }
+    &--style-5 { 
+        .accordion-item {
+            border-left: none;
+            border: 1px solid #080AEC;
+            .accordion-header {
+                .accordion-button {
+                    padding: 5px 20px 5px 40px;
+                    font-family: $font-roboto;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 21px;
+                    color: $color-title;
+                    background-color: #DFF0FF;
+                    &::after {
+                        background-image: url("../images/icons/blue-plus.svg");
+                        background-size: unset;
+                        position: absolute;
+                        left: 15px;
+                        height: 12px;
+                    }
+                    &:focus {
+                        outline: none;
+                        box-shadow: none;
+                    }
+                }
+                .accordion-button:not(.collapsed) {
+                    background-color: #DFF0FF;
+                    &::after {
+                        background-image: url("../images/icons/red-minus.svg");
+                        transform: rotate(0deg);
+                        height: 10px;   
+                    }
+                }
+            }
+            .accordion-body {
+                background-color: #F7FAFE;
+            }
+            &:last-child {
+            }
+        }
+        .accordion-item:not(:first-of-type) {
+            border-top: 0;
+        }
+    }
 }

@@ -311,14 +311,23 @@ a.menu--link.second-level::after {
 
 .header {
   &--style-1 {
-    .navbar-action-area ul li a {
-      &::after {
-        background: $color-secondary;
+      .navbar-action-area ul li a {
+          &::after {
+            background: $color-secondary;
+          }
+          &:hover {
+            color: $color-white;
+          }
       }
-      &:hover {
-        color: $color-white;
+      .affix {
+          .navbar-action-area ul li a {
+              border: 1px solid $color-secondary;
+              color: $color-secondary;
+              &:hover {
+                color: $color-white;
+              }
+          }
       }
-    }
   }
 
   &--style-2 {
@@ -361,6 +370,15 @@ a.menu--link.second-level::after {
       color: $color-white;
       &::after {
         background: #0289FF;
+      }
+    }
+    .affix {
+      .navbar-action-area ul li a {
+          border: 1px solid #0289FF;
+          color: #0289FF;
+          &:hover {
+            color: $color-white;
+          }
       }
     }
   }

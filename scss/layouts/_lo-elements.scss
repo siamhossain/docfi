@@ -1,5 +1,10 @@
 .single-element-section {
-
+        .container, .container-lg, .container-md, .container-sm, .container-xl {
+            @include media-from-to (1200px, min, 1400px, max) {
+                max-width: 1200px;
+            }
+        }
+    
     .document-title-area {
         margin-bottom: 25px;
         .section-name {
@@ -734,7 +739,7 @@
                 margin-bottom: 14px;
             }
         }
-        
+
         .changelogs-timeline-widget {
             .changelogs-timeline-area {
                 .timeline-content {
@@ -889,7 +894,7 @@
         background: #FFFFFF;
         box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
         border-radius: 20px;
-        padding: 44px 50px;
+        padding: 44px 45px;
         .font-size-controller-btn-area {
             background: #F5F5F5;
             border: 1px solid #DEDEDE;

@@ -607,6 +607,11 @@
     }
     .change-logs-info-layout {
         padding-top: 50px;
+        .widget-area {
+            padding-bottom: 45px;
+            margin-bottom: 50px;
+            border-bottom: 1px solid #D9D9D9;
+        }
         .main-heading-area {
             padding-bottom: 25px;
             margin-bottom: 25px;
@@ -727,6 +732,117 @@
             }
             .list-title {
                 margin-bottom: 14px;
+            }
+        }
+        .changelogs-timeline-widget {
+            .changelogs-timeline-area {
+                .timeline-content {
+                    position: relative;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        right: -12px;
+                        top: 0;
+                        height: 100%;
+                        width: 1px;
+                        // background: red;
+                    }
+                    h3 {
+                        background-color: #6C62CA;
+                        color: $color-white;
+                        border-radius: 5px;
+                        margin-bottom: 18px;
+                        font-size: 18px;
+                        font-family: $font-roboto;
+                        font-weight: 600;
+                        padding: 5px 10px;
+                    }
+                    ul {
+                        padding-left: 7px;
+                        li {
+                            margin-bottom: 10px;
+                            h4 {
+                                color: #6C62CA;
+                                font-family: $font-roboto;
+                                font-size: 16px;
+                            }  
+                            .para-text {
+                                color: $color-title;
+                                font-size: 10px;
+                                line-height: 12px;
+                            }
+                        }
+                    }
+                }
+                .parent {
+                    .child {
+                        &:nth-child(1) {
+                            .timeline-content {
+                                &::after {
+                                    background-color: #5946ff;
+                                }
+                                h3 {
+                                    background: #5946ff;
+                                }
+                                ul {
+                                    li {
+                                        h4 {
+                                            color: #5946ff;
+                                        } 
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(2) {
+                            .timeline-content {
+                                &::after {
+                                    background-color: #FD5B5B;
+                                }
+                                h3 {
+                                    background: #FD5B5B;
+                                }
+                                ul {
+                                    li {
+                                        h4 {
+                                            color: #FD5B5B;
+                                        } 
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(3) {
+                            .timeline-content {
+                                &::after {
+                                    background-color: #E233FE;
+                                }
+                                h3 {
+                                    background: #E233FE;
+                                }
+                                ul {
+                                    li {
+                                        h4 {
+                                            color: #E233FE;
+                                        } 
+                                    }
+                                }
+                            }
+                        }
+                        &:nth-child(4) {
+                            .timeline-content {
+                                h3 {
+                                    background: orange;
+                                }
+                                ul {
+                                    li {
+                                        h4 {
+                                            color: orange;
+                                        } 
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }

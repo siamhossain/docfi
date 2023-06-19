@@ -1,11 +1,27 @@
 .best-online-documentation-section {
+    .theme-logo-wrapper {
+        li {
+            margin-bottom: 11px;
+            &.active {
+                .logo-card {
+                    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.08);
+                    .logo-card-btn {
+                        svg {
+                            fill: #1D2746;
+                        }
+                    }
+                }
+            }
+        }
+    }
     .best-documentation-info-wrapper {
         border: 1px solid #CDCDCD;
-        padding: 60px 65px;
+        padding: 60px 65px 20px 65px;
         border-radius: 10px;
-        row-gap: 30px;
-        column-gap: 60px;
+        // column-gap: 60px;
+        
         .rt-card {
+            margin-bottom: 40px;
             &:nth-child(1) {
                 .icon {
                     border: 1px solid #F84436;

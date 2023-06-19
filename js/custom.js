@@ -398,8 +398,6 @@
                         }
                     });
                 });
-
-
             }
         },
 
@@ -442,12 +440,28 @@
                 layoutMode: 'fitRows'
             });
             
-            $('.isotope-menu ul li').click(function(){
+            $('.isotope-menu ul li').click(function() {
                 $('.isotope-menu ul li').removeClass('active');
                 $(this).addClass('active');
             
                 var selector = $(this).attr('data-filter');
                 $('.isotope-items').isotope({
+                filter: selector
+                });
+                return false;
+            });
+
+            $('.isotope-items2').isotope({
+                itemSelector: '.item',
+                layoutMode: 'fitRows'
+            });
+            
+            $('.isotope-menu2 ul li').click(function() {
+                $('.isotope-menu2 ul li').removeClass('active');
+                $(this).addClass('active');
+            
+                var selector = $(this).attr('data-filter');
+                $('.isotope-items2').isotope({
                 filter: selector
                 });
                 return false;

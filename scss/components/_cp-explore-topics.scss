@@ -13,6 +13,7 @@
                 width: 35px;
                 height: 35px;
                 border-radius: 0px 50px 50px 50px;
+                @include transition;
             }
             h3 {
                 a {
@@ -85,6 +86,13 @@
     &:hover {
         box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
         background: $color-white;
+        .explore-topics-header {
+            .title-area {
+                .icon {
+                    border-radius: 50px 0px 50px 50px;
+                }
+            }
+        }
     }
 }
 

@@ -1,4 +1,5 @@
 .topic-details-section {
+    overflow: unset;
     .forum-login-form-wrapper {
         padding-left: 0;
         @include media-only("md", min) {

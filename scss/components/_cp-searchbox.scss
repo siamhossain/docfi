@@ -79,15 +79,16 @@
             line-height: 23px;
             text-transform: capitalize;
             color: $color-white;
-            border: none;
             padding: 11px 29px;
             border-radius: 50px;
-            border: 1px solid transparent;;
-            &::after {
-                background: $color-white;
-            }
+            border: 1px solid transparent;
             &:hover {
-                color: indigo;
+                border: 1px solid $color-secondary;
+                background: $color-white;
+                // @include transition;
+                &::before {
+                    // background-color: red;
+                }
             }
         }
     }

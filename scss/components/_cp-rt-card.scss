@@ -8,16 +8,15 @@
         position: relative;
         overflow: hidden;
         @include transition;
-        &::before {
-            content: "";
-            position: absolute;
-            background: inherit;
-            height: inherit;
-            width: inherit;
-            border-radius: inherit;
-            z-index: -1;
-            
-        }
+        // &::before {
+        //     content: "";
+        //     position: absolute;
+        //     background: inherit;
+        //     height: inherit;
+        //     width: inherit;
+        //     border-radius: inherit;
+        //     z-index: -1;
+        // }
     }
     .card-title {
         margin-bottom: 19px;
@@ -64,37 +63,39 @@
         .icon {
             width: 80px;
             height: 80px;
+            border-radius: 0 40px 40px 40px;
         }
         &:hover {
             .icon {
-                position: unset;
-                box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-                @include transition;
-                &::before {
-                    height: 200%;
-                    width: 200%;
-                    transition: 0.8s ease-in-out;
-                }
+                // position: unset;
+                // @include transition;
+                border-radius: 40px 0 40px 40px;
+                // &::before {
+                //     height: 200%;
+                //     width: 200%;
+                //     transition: 0.8s ease-in-out;
+                // }
             }
-            .card-title {
-                a {
-                    color: $color-white;
-                    &:hover {
-                        color: yellow;
-                    }
-                }
-            }
-            .card-info {
-                color: $color-white;
-            }
+            // .card-title {
+            //     a {
+            //         color: $color-white;
+            //         &:hover {
+            //             color: yellow;
+            //         }
+            //     }
+            // }
+            // .card-info {
+            //     color: $color-white;
+            // }
             .card-btn {
-                color: $color-white;
-                border: 1px solid $color-white;
-                &::after {
-                    background-color: white;
-                }
+                // color: $color-white;
+                // border: 1px solid $color-white;
+                // &::after {
+                //     background-color: white;
+                // }
                 &:hover {
-                    color: $color-title;
+                    border: 1px solid $color-secondary;
+                    color: $color-white;
                 }
             }
         }
@@ -107,15 +108,16 @@
             width: 60px;
             height: 60px;
             margin-bottom: 15px;
+            border-radius: 0 40px 40px 40px;
         }
         .card-title {
             margin-bottom: 10px;
             a {
                 font-weight: 500;
                 font-size: 22px;
-                &:hover {
-                    color: yellow;
-                }
+                // &:hover {
+                //     color: yellow;
+                // }
             }
             line-height: 26px;
         }
@@ -127,22 +129,23 @@
         &:hover {
             box-shadow: 20px 20px 25px rgba(0, 0, 0, 0.2);
             .icon {
-                position: unset;
-                box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+                border-radius: 40px 0 40px 40px;
                 @include transition;
-                &::before {
-                    height: 200%;
-                    width: 200%;
-                    transition: 0.8s ease-in-out;
-                }
+                // position: unset;
+                // box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+                // &::before {
+                //     height: 200%;
+                //     width: 200%;
+                //     transition: 0.8s ease-in-out;
+                // }
             }
             .card-title {
-                a {
-                    color: $color-white;
-                }
+                // a {
+                //     color: $color-white;
+                // }
             }
             .card-info {
-                color: $color-white;
+                // color: $color-white;
             }
             .card-btn {
                 color: $color-white;

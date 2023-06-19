@@ -230,37 +230,73 @@
   }
 }
 
-//btn-animation-3
+// .btn-animation-3 {
+  // overflow: hidden;
+  // position: relative;
+  // text-decoration: none;
+  // transition: .2s transform ease-in-out;
+  // will-change: transform;
+  // z-index: 0;
+  // &::after {
+  //   background-color: $color-white;
+  //   border-radius: 3rem;
+  //   content: '';
+  //   height: 100%;
+  //   width: 100%;
+  //   position: absolute;
+  //   left: 0;
+  //   top: 0;
+  //   transform: translate(-100%, 0) rotate(10deg);
+  //   transform-origin: top left;
+  //   transition: .2s transform ease-out;
+  //   will-change: transform;
+  //   z-index: -1;
+  // }
+  // &:hover::after {
+  //   transform: translate(0, 0);
+  // }
+  // &:hover {
+  //   color: indigo;
+  //   transform: scale(1.05);
+  //   will-change: transform;
+  //   border: 1px solid transparent !important;
+  // }
+// }
 
 .coolBeans {
-  overflow: hidden;
   position: relative;
-  text-decoration: none;
-  transition: .2s transform ease-in-out;
-  will-change: transform;
-  z-index: 0;
-  &::after {
-    background-color: $color-white;
-    border-radius: 3rem;
-    content: '';
+  overflow: hidden;
+  z-index: 1;
+  &::before {
+    background-color: $color-secondary;
+    content: "";
     height: 100%;
-    width: 100%;
+    left: -100%;
     position: absolute;
-    left: 0;
     top: 0;
-    transform: translate(-100%, 0) rotate(10deg);
-    transform-origin: top left;
-    transition: .2s transform ease-out;
-    will-change: transform;
+    width: 0;
     z-index: -1;
-  }
-  &:hover::after {
-    transform: translate(0, 0);
+    -webkit-transform: skew(50deg);
+    -moz-transform: skew(50deg);
+    -o-transform: skew(50deg);
+    transform: skew(50deg);
+    -webkit-transition: width 0.6s;
+    -moz-transition: width 0.6s;
+    -o-transition: width 0.6s;
+    transition: width 0.6s;
+    transform-origin: top left;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
   }
   &:hover {
-    color: indigo;
-    transform: scale(1.05);
-    will-change: transform;
-    border: 1px solid transparent !important;
+    color: $color-white;
+    border: 1px solid $color-secondary;
+    &::before {
+      height: 100%;
+      width: 200%;
+    }
   }
 }

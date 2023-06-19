@@ -1,7 +1,7 @@
 .best-online-documentation-section {
     .theme-logo-wrapper {
         li {
-            margin-bottom: 11px;
+            margin-bottom: 15px;
             &.active {
                 .logo-card {
                     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.08);
@@ -12,6 +12,9 @@
                     }
                 }
             }
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
     }
     .best-documentation-info-wrapper {
@@ -20,68 +23,89 @@
         border-radius: 10px;
         // column-gap: 60px;
         
-        .rt-card {
-            margin-bottom: 40px;
+        .child {
             &:nth-child(1) {
-                .icon {
-                    border: 1px solid #F84436;
-                }
-                &:hover {
+                .rt-card {
                     .icon {
-                        border: 1px solid transparent;
+                        border: 1px solid #F84436;
+                    }
+                    &:hover {
+                        .icon {
+                            border: 1px solid transparent;
+                            background-color: #F84436;
+                        }
                     }
                 }
             }
             &:nth-child(2) {
-                .icon {
-                    border: 1px solid #F47D0E;
-                }
-                &:hover {
+                .rt-card {
                     .icon {
-                        border: 1px solid transparent;
+                        border: 1px solid #F47D0E;
+                    }
+                    &:hover {
+                        .icon {
+                            border: 1px solid transparent;
+                            background-color: #F47D0E;
+                        }
                     }
                 }
             }
             &:nth-child(3) {
-                .icon {
-                    border: 1px solid #6836F8;
-                }
-                &:hover {
+                .rt-card {
                     .icon {
-                        border: 1px solid transparent;
+                        border: 1px solid #6836F8;
+                    }
+                    &:hover {
+                        .icon {
+                            border: 1px solid transparent;
+                            background-color: #6836F8;
+                        }
                     }
                 }
             }
             &:nth-child(4) {
-                .icon {
-                    border: 1px solid #C82CFF;
-                }
-                &:hover {
+                .rt-card {
                     .icon {
-                        border: 1px solid transparent;
+                        border: 1px solid #C82CFF;
+                    }
+                    &:hover {
+                        .icon {
+                            border: 1px solid transparent;
+                            background-color: #C82CFF;
+                        }
                     }
                 }
             }
             &:nth-child(5) {
-                .icon {
-                    border: 1px solid #F47D0E;
-                }
-                &:hover {
+                .rt-card {
                     .icon {
-                        border: 1px solid transparent;
+                        border: 1px solid #F47D0E;
+                    }
+                    &:hover {
+                        .icon {
+                            border: 1px solid transparent;
+                            background-color: #F47D0E;
+                        }
                     }
                 }
             }
             &:nth-child(6) {
-                .icon {
-                    border: 1px solid #3678F8;
-                }
-                &:hover {
+                .rt-card {
                     .icon {
-                        border: 1px solid transparent;
+                        border: 1px solid #3678F8;
+                    }
+                    &:hover {
+                        .icon {
+                            border: 1px solid transparent;
+                            background-color: #3678F8;
+                        }
                     }
                 }
             }
+        }
+
+        .rt-card {
+            margin-bottom: 40px;
         }
     }   
     .shapes {

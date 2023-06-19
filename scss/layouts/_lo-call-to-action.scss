@@ -46,9 +46,9 @@
             border-radius: 500px;
             border: 1px solid transparent;
             &--style-1 {
-                background: $color-secondary;
+                background: $color-black;
                 color: $color-white;
-                border: 1px solid currentColor;
+                border: 1px solid $color-secondary;
                 &::after {
                     background-color: white;
                 }

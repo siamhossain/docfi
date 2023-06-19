@@ -93,60 +93,6 @@
 
 //   -------------
 
-// btn-animation-1
-
-.btn {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  position: relative;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-  border: 3px solid #f45556;
-  color: #f45556;
-  overflow: hidden;
-  
-  &:after {
-    content: '';
-    position: absolute;
-    z-index: 1;
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
-    width: 100%;
-    height: 0;
-    top: 50%;
-    left: 50%;
-    background: $color-primary;
-    opacity: 0;
-    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    transform: translateX(-50%) translateY(-50%) rotate(45deg); 
-  }
-  
-  &:hover {
-    color: #fff;   
-    border-radius: 0px;
-    transition: 1s;
-    
-    &:after {
-     opacity: 1;
-     height: 160%;
-    }
-  }
-  
-  span {
-    position: relative;
-    z-index: 2;
-  }
-
-  &-style--2 {
-    &:after { 
-      // background: $color-primary !important;
-    }
-  }
-}
 
 // btn-animation-2
 .e-button {
@@ -266,37 +212,34 @@
 .coolBeans {
   position: relative;
   overflow: hidden;
-  z-index: 1;
+  z-index: 0;
   &::before {
-    background-color: $color-secondary;
     content: "";
+    background-color: $color-secondary;
     height: 100%;
     left: -100%;
-    position: absolute;
     top: 0;
     width: 0;
+    bottom: 0;
+    position: absolute;
     z-index: -1;
-    -webkit-transform: skew(50deg);
-    -moz-transform: skew(50deg);
-    -o-transform: skew(50deg);
     transform: skew(50deg);
-    -webkit-transition: width 0.6s;
-    -moz-transition: width 0.6s;
-    -o-transition: width 0.6s;
     transition: width 0.6s;
     transform-origin: top left;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -ms-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
   }
   &:hover {
     color: $color-white;
-    border: 1px solid $color-secondary;
+    // border: 1px solid $color-secondary;
     &::before {
       height: 100%;
       width: 200%;
     }
   }
+}
+
+.btn-dark {
+  background-color: $color-black;
+  // border: 1px solid $color-black;
+  color: $color-white;
 }

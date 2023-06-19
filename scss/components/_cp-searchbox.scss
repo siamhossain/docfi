@@ -73,22 +73,15 @@
     .searchbox-submit {
         .rt-searchbox-btn {
             font-family: $font-roboto;
-            background: $color-secondary;
             font-weight: 500;
             @include toRem(font-size, 20);
             line-height: 23px;
-            text-transform: capitalize;
-            color: $color-white;
             padding: 11px 29px;
-            border-radius: 50px;
-            border: 1px solid transparent;
+            border-radius: 500px;
+            border: none;
+            white-space: nowrap;
             &:hover {
-                border: 1px solid $color-secondary;
-                background: $color-white;
-                // @include transition;
-                &::before {
-                    // background-color: red;
-                }
+
             }
         }
     }

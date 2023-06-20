@@ -160,6 +160,7 @@
         padding: 120px 0 175px 0;
         @include media-only('sm', min) {
             padding-bottom: 303px;
+            padding-top: 200px;
         }
         &::before {
             content: url("../images/hero-section/BG-home-3.png");

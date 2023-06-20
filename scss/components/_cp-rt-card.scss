@@ -306,6 +306,11 @@
         box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
         border-radius: 20px;
         padding: 50px 40px;
+        &:hover {
+            .icon {
+                animation: jello 1s forwards;
+            }
+        }
         .card-title {
             margin-bottom: 16px;
             a {
@@ -327,12 +332,20 @@
             }
             &:hover {
                 color: $color-white;
+                &::before {
+                    background-color: #8A58F3;
+                }
             }
         }
     }
     &--style-7 {
         border-radius: 20px;
         padding: 47px 53px;
+        &:hover {
+            .icon {
+                animation: backInDown 0.8s forwards;
+            }
+        }
         .card-title {
             margin-bottom: 16px;
             a {

@@ -56,6 +56,9 @@
             color: #FFFFFF;
             &:hover {
                 color: $color-title;
+                &::before {
+                    background-color: $color-white;
+                }
             }
             &::after {
                 background-color: $color-white;

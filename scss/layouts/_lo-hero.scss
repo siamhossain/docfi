@@ -94,12 +94,17 @@
             padding: 215px 0 286px 0;
         }
         &:before {
-            content: url("../images/hero-section/BG-home-2.png");
+            content: "";
+            background-image: url("../images/hero-section/BG-home-2.png");
+            background-size: cover;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
-            width: 100%;
             z-index: -1;
             // text-align: center;
         }

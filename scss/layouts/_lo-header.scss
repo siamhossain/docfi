@@ -339,6 +339,9 @@ a.menu--link.second-level::after {
       color: #F8851C;
       &:hover {
         color: $color-white;
+        &::before {
+          background-color: #F8851C;
+        }
       }
       &::after {
         background-color: #F8851C;  

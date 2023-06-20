@@ -9,6 +9,17 @@
     }
     &:hover {
         background: $color-white;
+        .title-content {
+            .icon {
+                background: #fa7575;
+                svg {
+                    path {
+                        stroke: white;
+                        @include transition;
+                    }
+                }
+            }
+        }
     }
 
     .title-content {
@@ -17,6 +28,7 @@
             width: 70px;
             height: 70px;
             background: #FFF2F2;
+            @include transition;
         }
         .title-area {
             flex: 1;

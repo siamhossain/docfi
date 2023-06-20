@@ -234,8 +234,12 @@
 
 
         &:hover {
-            box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.08);
-            border: 1px solid transparent;
+            // box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.08);
+            border: 1px solid #fab6eb;
+            background: $color-white;
+            .icon {
+                animation: bounce 1s forwards;
+            }
             .card-btn {
                 background: $color-shade24;
                 border: 1px solid transparent;

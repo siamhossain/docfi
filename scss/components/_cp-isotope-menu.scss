@@ -16,32 +16,50 @@
             text-transform: capitalize;
 
             &:nth-child(1) {
-                background: #FAF7FF;
-                color: #8F3BFC;
+                background: #caffef;
+                color: #08b682;
+                &.active {
+                    background-color: $color-secondary;
+                } 
             }
             &:nth-child(2) {
                 background: #FFF7F8;
                 color: #FF4B6C;
+                &.active {
+                    background-color: #FF4B6C;
+                } 
             }
             &:nth-child(3) {
                 background: #F8F8F8;
                 color: #000000;
+                &.active {
+                    background-color: #000000;
+                } 
             }
             &:nth-child(4) {
                 background: #FFFBED;
                 color: #FDC800;
+                &.active {
+                    background-color: #FDC800;
+                } 
             }
             &:nth-child(5) {
-                color: #FC5C23;
                 background: #FFF6F3;
+                color: #FC5C23;
+                &.active {
+                    background-color: #FC5C23;
+                } 
             }
             &:nth-child(6) {
                 background: #FAF7FF;
                 color: #8F3BFC;
+                &.active {
+                    background-color: #8F3BFC;
+                } 
             }
         }
         li.active {
-            background: #15C590;
+            // background: #15C590;
             color: $color-white;
         } 
 

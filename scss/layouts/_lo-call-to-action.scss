@@ -44,30 +44,35 @@
             padding: 23px 39px 22px 39px;
             border: none;
             border-radius: 500px;
-            border: 1px solid transparent;
+            background: $color-secondary;
+            color: $color-white;
+            transition: 0.2s;
             &--style-1 {
-                background: $color-black;
-                color: $color-white;
-                border: 1px solid $color-secondary;
-                &::after {
-                    background-color: white;
-                }
                 &:hover {
-                    color: $color-title;
+                    background-color: $color-white;
+                    &::before {
+                        // background-color: $color-secondary;
+                    }
                 }
             }
             &--style-2 {
-                background: $color-shade25;
+                background-color: $color-shade25;
                 color: $color-white;
                 &:hover {
-                    color: $color-title;
+                    background-color: $color-white;
+                    &::before {
+                        // background-color: $color-shade25;
+                    }
                 }
             }
             &--style-4 {
                 background: #0289FF;
                 color: $color-white;
                 &:hover {
-                    color: $color-title;
+                    background-color: $color-white;
+                    &::before {
+                        // background-color: #0289FF;
+                    }
                 }
             }
         }

@@ -1,5 +1,10 @@
 .testimonial-section {
     overflow: hidden;
+    &--style-1 {
+        .swiper {
+            padding-bottom: 120px;   
+        }
+    }
     &--style-2 {
         margin-top: 70px;
         padding-top: 100px;

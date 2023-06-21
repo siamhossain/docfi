@@ -45,9 +45,12 @@
                 padding: 15px 32px;
                 background: #0289FF;
                 border-radius: 50px;
-                border: 1px solid transparent;
+                // border: 1px solid transparent;
                 &:hover {
-                    color: $color-title;
+                    background-color: $color-white;
+                    &::before {
+                        background-color: #0289FF;
+                    }
                 }
             }
         }

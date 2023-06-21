@@ -79,9 +79,14 @@
             padding: 11px 29px;
             border-radius: 500px;
             border: none;
-            white-space: nowrap;
+            background-color: $color-secondary;
+            color: $color-white;
             &:hover {
-
+                background-color: $color-white;
+                transition: 0.2s;
+                &::before {
+                    // background-color: #0abb86;
+                }
             }
         }
     }
@@ -93,14 +98,16 @@
         box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.05);
         .searchbox-submit {
             .rt-searchbox-btn {
-                background: $color-shade24;
-                border: 1px solid #F8851C;
+                background-color: $color-shade24;
+                color: $color-white;
                 &:hover {
-                    color: indigo;
-                }
-                &::after {
+                    transition: 0.2s;
                     background-color: $color-white;
+                    &::before {
+                        // background-color: $color-shade24;
+                    }
                 }
+                
             }
         }
     }
@@ -110,12 +117,13 @@
         .searchbox-submit {
             .rt-searchbox-btn {
                 background: $color-shade25;
-                border: 1px solid $color-shade25;;
+                color: $color-white;
                 &:hover {
-                    color: indigo;
-                }
-                &::after {
-                    background-color: $color-white;
+                    background: $color-white;
+                    transition: 0.2s;
+                    &::before {
+                        // background-color: $color-shade25;
+                    }
                 }
             }
         }
@@ -139,6 +147,14 @@
                 font-size: 16px;
                 line-height: 19px;
                 text-transform: uppercase;
+                color: $color-white;
+                &:hover {
+                    background: $color-white;
+                    transition: 0.2s;
+                    &::before {
+                        // background-color: #0289FF;
+                    }
+                }
             }
         }
     }

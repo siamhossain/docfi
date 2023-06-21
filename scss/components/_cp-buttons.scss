@@ -215,7 +215,7 @@
   z-index: 0;
   &::before {
     content: "";
-    background-color: $color-secondary;
+    background-color: $color-black;
     height: 100%;
     left: -100%;
     top: 0;
@@ -230,7 +230,6 @@
   }
   &:hover {
     color: $color-white;
-    // border: 1px solid $color-secondary;
     &::before {
       height: 100%;
       width: 200%;

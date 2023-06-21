@@ -66,36 +66,23 @@
             border-radius: 0 40px 40px 40px;
         }
         &:hover {
+            // background-color: $color-white;
+            // box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 0px;
+            @include transition;
             .icon {
-                // position: unset;
-                // @include transition;
+                transition: all 0.5s ease-in-out;
                 border-radius: 40px 0 40px 40px;
-                // &::before {
-                //     height: 200%;
-                //     width: 200%;
-                //     transition: 0.8s ease-in-out;
-                // }
+                svg {
+                    animation: fadeInUp 0.7s forwards;
+                }
             }
-            // .card-title {
-            //     a {
-            //         color: $color-white;
-            //         &:hover {
-            //             color: yellow;
-            //         }
-            //     }
-            // }
-            // .card-info {
-            //     color: $color-white;
-            // }
             .card-btn {
-                // color: $color-white;
-                // border: 1px solid $color-white;
-                // &::after {
-                //     background-color: white;
-                // }
                 &:hover {
                     border: 1px solid $color-secondary;
                     color: $color-white;
+                    &::before {
+                        background-color: $color-secondary;
+                    }
                 }
             }
         }
@@ -373,6 +360,7 @@
     }
     &--style-8 {
         padding: 57px 40px;
+        border-radius: 20px;
         @include transition;
         .card-title {
             gap: 10px;
@@ -411,7 +399,11 @@
             }
         }
         &:hover {
-            box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            background-color: $color-white;
+            .icon {
+                animation: flip 0.8s forwards;
+            }
         }
     }
 }

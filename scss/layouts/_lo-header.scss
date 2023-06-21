@@ -194,20 +194,13 @@ a.menu--link.second-level::after {
         position: relative;
 
         &::before {
-          // content: "";
-          // position: absolute;
-          // top: 10px;
-          // left: 10px;
-          // opacity: 0;
-          // visibility: none;
-          // transition: all 0.3s ease-in-out;
-
-          position: absolute;
           content: "";
-          width: 0px;
-          height: 3px;
+          position: absolute;
+          width: 3px;
+          height: 0;
           top: 50%;
-          left: 8px;
+          left: 15px;
+          transform: translateY(-50%);
           margin: 0;
           background: $color-primary;
           opacity: 0;
@@ -216,21 +209,19 @@ a.menu--link.second-level::after {
         }
 
         &:hover {
-          
           &::before {
             opacity: 1;
             visibility: visible;
-            width: 11px;
-            height: 3px
+            height: 11px
           }
         }
       }
 
       #{$self}--link {
-        @include toRem(font-size, 16);
+        @include toRem(font-size, 15);
         color: black;
         font-weight: 400;
-        padding: 20px 20px;
+        padding: 15px 15px 15px 26px;
         display: block;
         width: 100%;
         overflow: hidden;
@@ -240,7 +231,7 @@ a.menu--link.second-level::after {
 
         &:hover {
           color: $color-primary;
-          padding-left: 30px;
+          // padding-left: 30px;
         }
       }
     }
@@ -317,6 +308,10 @@ a.menu--link.second-level::after {
           }
           &:hover {
             color: $color-white;
+            border: 1px solid $color-secondary;
+            &::before {
+              background-color: $color-secondary;
+            }
           }
       }
       .affix {
@@ -367,6 +362,7 @@ a.menu--link.second-level::after {
       }
     }
   }
+  
   &--style-4 {
     .menu--link {
       color: $color-white;
@@ -374,8 +370,11 @@ a.menu--link.second-level::after {
     .navbar-action-area ul li a {
       border: 1px solid $color-white;
       color: $color-white;
-      &::after {
-        background: #0289FF;
+      &:hover {
+        border: 1px solid #0289FF;
+        &::before {
+          background-color: #0289FF;
+        }
       }
     }
     .affix {
@@ -388,6 +387,7 @@ a.menu--link.second-level::after {
       }
     }
   }
+
   &--style-5 {
     .menu--link {
       color: $color-title;
@@ -395,11 +395,12 @@ a.menu--link.second-level::after {
     .navbar-action-area ul li a {
       border: 1px solid $color-title;
       color: $color-title;
-      &::after {
-        background: $color-secondary;
-      }
       &:hover {
         color: $color-white;
+        border: 1px solid $color-secondary;
+        &::before {
+          background-color: $color-secondary;
+        }
       }
     }
   }

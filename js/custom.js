@@ -583,12 +583,12 @@
             if (current_position >= widgetTop && current_position <= widgetBottom) {
                 var storeY = current_position - widgetTop;
                 widthPercentage = (storeY / divHeight) * 100;
-                
-                $(".dropdown_nav li a[href*=" + widgetId + "]").addClass("active");
+                // linear-gradient(to right, $color-secondary 30%, #6B707F 50%);
+                $(".dropdown_nav li a[href*=" + widgetId + "]").addClass("active").css( "backgroundImage", "linear-gradient( to right, #15C590 "+widthPercentage+"%, #6B707F "+0+"% )" );
                 $(".active .progress-indicator").width(widthPercentage + "%");
     
             } else {
-                $(".dropdown_nav li a[href*=" + widgetId + "]").removeClass("active");
+                $(".dropdown_nav li a[href*=" + widgetId + "]").removeClass("active").css( "backgroundImage", "unset" );
             }
     
         })
@@ -607,12 +607,12 @@
                 var storeY = current_position - widgetTop;
                 widthPercentage = (storeY / divHeight) * 100;
                 
-                $(".dropdown_nav li a[href*=" + widgetId + "]").addClass("active");
+                $(".dropdown_nav li a[href*=" + widgetId + "]").addClass("active").css( "backgroundImage", "linear-gradient( to right, #15C590 "+widthPercentage+"%, #6B707F "+0+"% )" );
     
                 $(".active .progress-indicator").width(widthPercentage + "%");
     
             } else {
-                $(".dropdown_nav li a[href*=" + widgetId + "]").removeClass("active");
+                $(".dropdown_nav li a[href*=" + widgetId + "]").removeClass("active").css( "backgroundImage", "unset" );
             }
         })
 
@@ -630,12 +630,12 @@
                 var storeY = current_position - widgetTop;
                 widthPercentage = (storeY / divHeight) * 100;
                 
-                $(".dropdown_nav li a[href*=" + widgetId + "]").addClass("active");
+                $(".dropdown_nav li a[href*=" + widgetId + "]").addClass("active").css( "backgroundImage", "linear-gradient( to right, #15C590 "+widthPercentage+"%, #6B707F "+0+"% )" );
     
                 $(".active .progress-indicator").width(widthPercentage + "%");
     
             } else {
-                $(".dropdown_nav li a[href*=" + widgetId + "]").removeClass("active");
+                $(".dropdown_nav li a[href*=" + widgetId + "]").removeClass("active").css( "backgroundImage", "unset" );
             }
     
         })
@@ -654,12 +654,12 @@
                 var storeY = current_position - widgetTop;
                 widthPercentage = (storeY / divHeight) * 100;
                 
-                $(".dropdown_nav li a[href*=" + widgetId + "]").addClass("active");
+                $(".dropdown_nav li a[href*=" + widgetId + "]").addClass("active").css( "backgroundImage", "linear-gradient( to right, #15C590 "+widthPercentage+"%, #6B707F "+0+"% )" );
     
                 $(".active .progress-indicator").width(widthPercentage + "%");
     
             } else {
-                $(".dropdown_nav li a[href*=" + widgetId + "]").removeClass("active");
+                $(".dropdown_nav li a[href*=" + widgetId + "]").removeClass("active").css( "backgroundImage", "unset" );
             }
         })
 
@@ -677,12 +677,12 @@
                 var storeY = current_position - widgetTop;
                 widthPercentage = (storeY / divHeight) * 100;
                 
-                $(".dropdown_nav li a[href*=" + widgetId + "]").addClass("active");
+                $(".dropdown_nav li a[href*=" + widgetId + "]").addClass("active").css( "backgroundImage", "linear-gradient( to right, #15C590 "+ widthPercentage +"%, #6B707F "+0+"% )" );
     
                 $(".active .progress-indicator").width(widthPercentage + "%");
     
             } else {
-                $(".dropdown_nav li a[href*=" + widgetId + "]").removeClass("active");
+                $(".dropdown_nav li a[href*=" + widgetId + "]").removeClass("active").css( "backgroundImage", "unset" );
             }
         })
 

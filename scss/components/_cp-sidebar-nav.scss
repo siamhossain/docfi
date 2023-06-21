@@ -31,6 +31,7 @@
                         height: 30px;
                         background: #6C62CA;
                         border-radius: 0px 50px 50px 50px;
+                        @include transition;
                     }
                     .arrow, .active-arrow {
                         position: absolute;
@@ -72,13 +73,16 @@
                             position: relative;
 
                             &.active {
-                                color: $color-secondary;
+                                // color: $color-secondary;
+                                // background-image: linear-gradient(to right, $color-secondary 30%, #6B707F 50%);
+                                background-clip: text;
+                                color: transparent;
                                 .progress-indicator {
                                     position: absolute;
                                     background: $color-secondary;
                                     width: 0;
                                     height: 1px;
-                                    bottom: 0;
+                                    bottom: -1px;
                                     left: 0;
                                     z-index: 1;
                                 }
@@ -131,6 +135,10 @@
                 &.active {
                     a {
                         @include transition;
+                        .icon {
+                            border-radius: 50px 0 50px 50px;
+                            @include transition;
+                        }
                         .arrow {
                             display: none;
                         }

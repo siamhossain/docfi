@@ -523,42 +523,23 @@
     scrollContainer: null,
     });
     wow.init();
-  
-
-
-    //sticky tab
-    // $(window).scroll(function () {
-    //     if ($(this).scrollTop() > 550) {
-    //        $('.course-details-tabs').addClass('sticky-tab-style');
-    //     } else {
-    //        $('.course-details-tabs').removeClass('sticky-tab-style');
-    //     }
-    //  });
 
 
 
-    let sections = $('.single-element-section .content-wrapper section');
-    let elementsWidgetArea = $("#elements .widget-area");
-    let contentWidgetArea = $("#content .widget-area");
-    let layoutsWidgetArea = $("#layouts .widget-area");
-    let blogPostWidgetArea = $("#blog-post .widget-area");
-    let changeLogsWidgetArea = $("#change-logs .widget-area");
+    // Menu expand on scroll and active/remove class on scroll content height
 
-    
-    
+    var sections = $('.single-element-section .content-wrapper section');
+    var parentLayout = $(".layout-area .widget-area");
+
     $(window).on('scroll', function () {
 
-        let current_position = $(this).scrollTop()
-        
+        var current_position = $(this).scrollTop();
+
+        //add active or remove class according content height
         sections.each(function () {
-            let top = $(this).offset().top - 160;
-            let bottom = top + $(this).outerHeight();
-            let sectionId = $(this).attr('id');
-            
-            console.log(sectionId + " Section Id");
-            console.log(current_position + " Offset-Y");
-            console.log(top + " Top")
-            console.log(bottom + " Bottom")
+            var top = $(this).offset().top - 160;
+            var bottom = top + $(this).outerHeight();
+            var sectionId = $(this).attr('id');
             
             if (current_position >= top && current_position <= bottom) {
                 $(".parent-nav-item a[href*=" + sectionId + "]").parents('li').addClass("active");
@@ -568,129 +549,21 @@
         })
 
         //line on scroll
-        
-        elementsWidgetArea.each(function() {
+        parentLayout.each(function() {
             
             var divHeight = $(this).outerHeight();
             var widgetTop = $(this).offset().top - 160;
             var widgetBottom = widgetTop + divHeight;
             var widthPercentage = 0;
-
-            let widgetId = $(this).attr('id');
-            console.log(widgetId);
-
+            var widgetId = $(this).attr('id');
     
             if (current_position >= widgetTop && current_position <= widgetBottom) {
                 var storeY = current_position - widgetTop;
                 widthPercentage = (storeY / divHeight) * 100;
                 $(".dropdown_nav li a[href*=" + widgetId + "]").addClass("active").css( "backgroundImage", "linear-gradient( to right, #15C590 "+widthPercentage+"%, #6B707F "+0+"% )" );
                 $(".active .progress-indicator").width(widthPercentage + "%");
-                // $(".dropdown_nav li a .link-text").css({
-                //     "backgroundImage": "unset", 
-                //     "color": "#6B707F"
-                // });
-                // $(".dropdown_nav li .active .link-text").css({
-                //     "backgroundImage": "linear-gradient( to right, #15C590 "+widthPercentage+"%, #6B707F "+0+"% )" ,
-                //     "color": "transparent",
-                //     "-webkit-background-clip": "text"
-                // });
-    
             } else {
                 $(".dropdown_nav li a[href*=" + widgetId + "]").removeClass("active").css( "backgroundImage", "unset" );;
-            }
-    
-        })
-
-        contentWidgetArea.each(function() {
-            
-            var divHeight = $(this).outerHeight();
-            var widgetTop = $(this).offset().top - 160;
-            var widgetBottom = widgetTop + divHeight;
-            var widthPercentage = 0;
-
-            let widgetId = $(this).attr('id');
-            console.log(widgetId);
-    
-            if (current_position >= widgetTop && current_position <= widgetBottom) {
-                var storeY = current_position - widgetTop;
-                widthPercentage = (storeY / divHeight) * 100;
-                
-                $(".dropdown_nav li a[href*=" + widgetId + "]").addClass("active").css( "backgroundImage", "linear-gradient( to right, #15C590 "+widthPercentage+"%, #6B707F "+0+"% )" );
-    
-                $(".active .progress-indicator").width(widthPercentage + "%");
-    
-            } else {
-                $(".dropdown_nav li a[href*=" + widgetId + "]").removeClass("active").css( "backgroundImage", "unset" );
-            }
-        })
-
-        layoutsWidgetArea.each(function() {
-            
-            var divHeight = $(this).outerHeight();
-            var widgetTop = $(this).offset().top - 160;
-            var widgetBottom = widgetTop + divHeight;
-            var widthPercentage = 0;
-
-            let widgetId = $(this).attr('id');
-            console.log(widgetId);
-    
-            if (current_position >= widgetTop && current_position <= widgetBottom) {
-                var storeY = current_position - widgetTop;
-                widthPercentage = (storeY / divHeight) * 100;
-                
-                $(".dropdown_nav li a[href*=" + widgetId + "]").addClass("active").css( "backgroundImage", "linear-gradient( to right, #15C590 "+widthPercentage+"%, #6B707F "+0+"% )" );
-    
-                $(".active .progress-indicator").width(widthPercentage + "%");
-    
-            } else {
-                $(".dropdown_nav li a[href*=" + widgetId + "]").removeClass("active").css( "backgroundImage", "unset" );
-            }
-    
-        })
-
-        changeLogsWidgetArea.each(function() {
-            
-            var divHeight = $(this).outerHeight();
-            var widgetTop = $(this).offset().top - 160;
-            var widgetBottom = widgetTop + divHeight;
-            var widthPercentage = 0;
-
-            let widgetId = $(this).attr('id');
-            console.log(widgetId);
-    
-            if (current_position >= widgetTop && current_position <= widgetBottom) {
-                var storeY = current_position - widgetTop;
-                widthPercentage = (storeY / divHeight) * 100;
-                
-                $(".dropdown_nav li a[href*=" + widgetId + "]").addClass("active").css( "backgroundImage", "linear-gradient( to right, #15C590 "+widthPercentage+"%, #6B707F "+0+"% )" );
-    
-                $(".active .progress-indicator").width(widthPercentage + "%");
-    
-            } else {
-                $(".dropdown_nav li a[href*=" + widgetId + "]").removeClass("active").css( "backgroundImage", "unset" );
-            }
-        })
-
-        blogPostWidgetArea.each(function() {
-            
-            var divHeight = $(this).outerHeight();
-            var widgetTop = $(this).offset().top - 160;
-            var widgetBottom = widgetTop + divHeight;
-            var widthPercentage = 0;
-
-            let widgetId = $(this).attr('id');
-            console.log(widgetId);
-    
-            if (current_position >= widgetTop && current_position <= widgetBottom) {
-                var storeY = current_position - widgetTop;
-                widthPercentage = (storeY / divHeight) * 100;
-                
-                $(".dropdown_nav li a[href*=" + widgetId + "]").addClass("active").css( "backgroundImage", "linear-gradient( to right, #15C590 "+ widthPercentage +"%, #6B707F "+0+"% )" );
-    
-                $(".active .progress-indicator").width(widthPercentage + "%");
-    
-            } else {
-                $(".dropdown_nav li a[href*=" + widgetId + "]").removeClass("active").css( "backgroundImage", "unset" );
             }
         })
 

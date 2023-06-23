@@ -7,7 +7,7 @@
             a {
                 font-family: $font-roboto;
                 font-weight: 400;
-                font-size: 18px;
+                @include toRem(font-size, 18);
                 line-height: 21px;
                 color: #666666;
                 position: relative;

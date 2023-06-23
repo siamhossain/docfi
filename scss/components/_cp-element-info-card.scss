@@ -10,17 +10,17 @@
         }   
         .title-area {
             h3 {
-                font-family: 'Roboto';
+                font-family: $font-roboto;
                 font-weight: 600;
-                font-size: 24px;
+                @include toRem(font-size, 24);
                 line-height: 28px;
-                color: #1D2746;
+                color: $color-title;
                 margin-bottom: 2px;
             }
             p {
                 font-family: $font-roboto;
                 font-weight: 400;
-                font-size: 16px;
+                @include toRem(font-size, 15);
                 line-height: 19px;
                 color: #6B707F;
             }
@@ -40,10 +40,10 @@
         a {
             font-family: $font-roboto;
             font-weight: 500;
-            font-size: 15px;
+            @include toRem(font-size, 15);
             line-height: 26px;
             color: $color-title;
-            border: 1px solid #1D2746;
+            border: 1px solid $color-title;
             border-radius: 500px;
             padding: 6px 21px;
             &::after {
@@ -68,7 +68,7 @@
         a {
             font-family: $font-roboto;
             font-weight: 600;
-            font-size: 20px;
+            @include toRem(font-size, 20);
             color: $color-title;
         }
     }

@@ -44,7 +44,7 @@
             &::placeholder {
                 font-family: $font-roboto;
                 font-weight: 400;
-                font-size: 16px;
+                @include toRem(font-size, 16);
                 line-height: 19px;
                 color: #8D8D8D;
             }
@@ -144,7 +144,7 @@
             .rt-searchbox-btn {
                 background: #0289FF;
                 padding: 13px 29px;
-                font-size: 16px;
+                @include toRem(font-size, 16);
                 line-height: 19px;
                 text-transform: uppercase;
                 color: $color-white;

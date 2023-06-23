@@ -16,7 +16,7 @@
         .post-author-name {
             font-family: $font-outfit;
             font-weight: 500;
-            font-size: 24px;
+            @include toRem(font-size, 24);
             line-height: 26px;
             color: $color-primary;
             margin-bottom: 12px;
@@ -50,7 +50,7 @@
                 li:nth-child(1) {
                     font-family: $text-font;
                     font-weight: 500;
-                    font-size: 15px;
+                    @include toRem(font-size, 15);
                     line-height: 18px;
                     text-align: right;
                     color: #222222;

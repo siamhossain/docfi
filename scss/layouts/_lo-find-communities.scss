@@ -15,6 +15,7 @@
     .wrapper {
         position: relative;
         .slider-navigation-btn-wrapper {
+            
             .prev {
                 left: -30px;
             } 
@@ -23,11 +24,19 @@
             } 
         }
         .slider-navigation-btn-wrapper {
+            visibility: hidden;
+            opacity: 0;
             .swiper-arrow {
                 top: 40%;
                 background: $color-white;
                 box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.07);
                 border: none;
+            }
+        }
+        &:hover {
+            .slider-navigation-btn-wrapper {
+                visibility: visible;
+                opacity: 1;
             }
         }
     }

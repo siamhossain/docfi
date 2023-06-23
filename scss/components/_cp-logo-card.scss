@@ -14,7 +14,7 @@
         .text {
             font-family: $font-roboto;
             font-weight: 400;
-            font-size: 20px;
+            @include toRem(font-size, 20);
             line-height: 28px;
             color: #8E8E8F;
         }
@@ -40,11 +40,11 @@
         border: 1px solid transparent;
         @include transition;
         &:hover {
-            border: 1px solid #F8851C;
+            border: 1px solid $color-shade24;
             box-shadow: none;
             .logo-card-btn {
                 svg {
-                    fill: #F8851C;
+                    fill: $color-shade24;
                     @include transition;
                 }
             }
@@ -68,7 +68,7 @@
         }
         @include transition;
         &:hover {
-            border: 1px solid #8A58F3;
+            border: 1px solid $color-shade25;
             box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05);
         }
     }

@@ -2,13 +2,13 @@
     .section-text-content {
         margin-bottom: 38px;
         .section-heading {
-            font-size: 22px;
+            @include toRem(font-size, 22);
             line-height: 26px;
             padding: 0;
             margin-bottom: 8px;
         }
         .para-text {
-            font-size: 15px;
+            @include toRem(font-size, 15);
             line-height: 18px;
         }
     }
@@ -23,7 +23,7 @@
 
                 font-family: $font-roboto;
                 font-weight: 400;
-                font-size: 15px;
+                @include toRem(font-size, 15);
                 line-height: 18px;
                 color: #7B7B7B;
                 &::placeholder {

@@ -609,8 +609,8 @@ a.menu--link.second-level::after {
 
 .rt-slide-nav {
   position: absolute;
-  background: $color-primary;
-  opacity: 0.98;
+  background: #000000;
+  opacity: 0.8;
   width: 100%;
   left: 0;
   display: none;
@@ -619,11 +619,14 @@ a.menu--link.second-level::after {
   box-shadow: 0 1px 3px 0 rgba(#000000, 0.2);
   top: 100%;
   z-index: 99;
-  padding: 35px 0;
+  padding: 50px 0;
 }
 
 .rt-header-menu {
-  position: relative;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
   padding: 12px 15px;
   z-index: 999;
   background: $color-white;

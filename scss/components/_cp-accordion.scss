@@ -11,7 +11,7 @@
                     padding: 20px 30px;
                     font-family: $font-roboto;
                     font-weight: 500;
-                    font-size: 18px;
+                    @include toRem(font-size, 18);
                     line-height: 21px;
                     color: $color-title;
                     &::after {
@@ -39,9 +39,9 @@
             .accordion-body {
                 border: none;
                 padding: 0px 30px 29px 30px;
-                font-family: 'Roboto';
+                font-family: $font-roboto;
                 font-weight: 400;
-                font-size: 15px;
+                @include toRem(font-size, 15);
                 line-height: 26px;
                 color: #6B707F;
             }
@@ -161,7 +161,7 @@
                         a {
                             font-family: $font-roboto;
                             font-weight: 500;
-                            font-size: 15px;
+                            @include toRem(font-size, 15);
                             line-height: 50px;
                             color: #6B707F;
                         }
@@ -212,7 +212,7 @@
                 .accordion-button {
                     font-family: $font-roboto;
                     font-weight: 500;
-                    font-size: 18px;
+                    @include toRem(font-size, 18);
                     line-height: 21px;
                     color: $color-title;
 
@@ -247,7 +247,7 @@
                 padding: 0 30px 35px 30px;
                 font-family: $font-roboto;
                 font-weight: 400;
-                font-size: 15px;
+                @include toRem(font-size, 15);
                 line-height: 30px;
                 color: #6B707F;
 
@@ -266,7 +266,7 @@
                     padding: 5px 20px 5px 40px;
                     font-family: $font-roboto;
                     font-weight: 500;
-                    font-size: 16px;
+                    @include toRem(font-size, 16);
                     line-height: 21px;
                     color: $color-title;
                     background-color: #DFF0FF;

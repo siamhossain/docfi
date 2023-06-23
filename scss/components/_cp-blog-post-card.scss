@@ -18,7 +18,7 @@
             color: $color-white;
             font-family: $font-roboto;
             font-weight: 500;
-            font-size: 15px;
+            @include toRem(font-size, 15);
             line-height: 18px;
             text-align: center;
             text-transform: capitalize;
@@ -82,7 +82,7 @@
             border-radius: 500px;
             font-family: $font-roboto;
             font-weight: 500;
-            font-size: 15px;
+            @include toRem(font-size, 15);
             line-height: 18px;
             color: $color-title;
             padding: 11px 19px;
@@ -169,7 +169,7 @@
             }
         }
         .author-name {
-            font-size: 14px;
+            @include toRem(font-size, 14);
             line-height: 16px;
             color: #7B7B7B;
             margin-bottom: 5px;
@@ -182,7 +182,7 @@
                 a {
                     font-family: $font-roboto;
                     font-weight: 600;
-                    font-size: 16px;
+                    @include toRem(font-size, 16);
                     line-height: 24px;
                     color: $color-title;
                 }
@@ -201,7 +201,7 @@
             }
         }
         .author-name {
-            font-size: 14px;
+            @include toRem(font-size, 14);
             line-height: 16px;
             color: #7B7B7B;
             margin-bottom: 10px;
@@ -212,7 +212,7 @@
             box-shadow: none;
             .blog-post-title {
                 a {
-                    font-size: 30px;
+                    @include toRem(font-size, 30);
                     line-height: 24px;
                 }
             }
@@ -232,7 +232,7 @@
             padding: 11px 20px;
             font-family: $font-roboto;
             font-weight: 500;
-            font-size: 15px;
+            @include toRem(font-size, 15);
             line-height: 18px;
             color: #15C590;
             svg {

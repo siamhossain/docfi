@@ -7,7 +7,6 @@
     .quote {
         font-family: $font-outfit;
         font-weight: 400;
-        font-size: 20px;
         @include toRem(font-size, 20);
         line-height: 28px;
         color: $color-title;

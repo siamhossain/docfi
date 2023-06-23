@@ -9,7 +9,7 @@
         .numbers {
             font-family: $font-roboto;
             font-weight: 400;
-            font-size: 16px;
+            @include toRem(font-size, 16);
             line-height: 23px;
             text-align: center;
             color: $color-title;

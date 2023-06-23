@@ -126,6 +126,7 @@
                 padding: 16px;
                 &:hover {
                    color: $color-title;
+                   @include transition;
                    &::before {
                         background-color: $color-white;
                    }
@@ -229,7 +230,7 @@
                 &::before {
                     content: "";
                     position: absolute;
-                    background: #1D8FFA;
+                    background: #6C62CA;
                     width: 100%;
                     height: 100%;
                     transition: all 0.3s ease-in-out;
@@ -240,7 +241,7 @@
                     left: -100%;
                 }
                 &:hover {
-                    background: #8d47fd;
+                    background: #6C62CA;
                     @include transition;
                     color: $color-white;
                     &:before {

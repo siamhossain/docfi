@@ -32,6 +32,9 @@
                         line-height: 21px;
                         color: $color-title;
                         margin-bottom: 5px;
+                        &:hover {
+                            color: $color-secondary;
+                        }
                     }
                     .comment-meta {
                         span {
@@ -61,9 +64,10 @@
                     color: $color-title;
                     gap: 7px;
                     &:hover {
-    
+                        color: $color-secondary;
                         svg {
-                            fill: $color-white;
+                            fill: $color-secondary;
+                            @include transition;
                         }
                     }
                 }

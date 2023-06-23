@@ -64,6 +64,11 @@
                     line-height: 18px;
                     color: $color-white;
                     text-decoration: underline;
+                    &:hover {
+                        @include transition;
+                        color: $color-secondary;
+                        font-weight: 500;
+                    }
                 }
             }
         }
@@ -136,6 +141,9 @@
                 }
                 a {
                     color: $color-title;
+                    &:hover {
+                        color: #F8851C;
+                    }
                 }
             }
         }
@@ -147,10 +155,12 @@
                     &:nth-child(1) {
                         left: 0;
                         top: 0;
+                        animation:  flickerAnimation3 2s infinite;
                     }
                     &:nth-child(2) {
                         right: 0;
                         bottom: 32%;
+                        animation:  flickerAnimation4 2s infinite;
                     }
                 }
             }
@@ -199,6 +209,9 @@
                 }
                 a {
                     color: $color-title;
+                    &:hover {
+                        color: #8A58F3;
+                    }
                 }
             }
         }
@@ -239,6 +252,9 @@
                 }
                 a {
                     color: $color-white;
+                    &:hover {
+                        color: #0289FF;
+                    }
                 }
             }
         }

@@ -2,6 +2,17 @@
     .topic-item {
         gap: 15px;
         margin-bottom: 30px;
+        &:hover {
+            .icon {
+                @include transition;
+                background: #a0b8fa;;
+                svg {
+                    path {
+                        stroke: $color-white;
+                    }
+                }
+            }
+        }
         &:last-child {
             margin-bottom: 0;
         }

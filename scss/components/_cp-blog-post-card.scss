@@ -92,9 +92,9 @@
         .blog-post-img {
             .blog-post-img-link {
                 img {
-                    transform: scale(1.3);
+                    transform: scale(1.15);
                     filter: grayscale(0);
-                    transform-origin: right center;
+                    // transform-origin: right center;
                 }
             }
         }
@@ -242,7 +242,8 @@
                 }
             }
             &:hover {
-                background: $color-secondary;
+                // background: $color-secondary;
+                border: 1px solid transparent;
                 color: $color-white;
                 svg {
                     path {

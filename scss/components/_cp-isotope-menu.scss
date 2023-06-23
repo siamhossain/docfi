@@ -61,6 +61,7 @@
         li.active {
             // background: #15C590;
             color: $color-white;
+            @include transition;
         } 
 
     }

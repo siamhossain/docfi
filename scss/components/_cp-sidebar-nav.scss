@@ -22,7 +22,7 @@
                     gap: 5px;
                     font-family: $font-roboto;
                     font-weight: 500;
-                    font-size: 20px;
+                    font-size: 19px;
                     line-height: 23px;
                     color: $color-title;
                     padding: 10px 20px;
@@ -51,7 +51,6 @@
                 .dropdown_nav {
                     background: $color-white;
                     padding-left: 50px;
-                    // display: none;
                     transition: opacity 1s ease-out;
                     opacity: 0;
                     max-height: 0;
@@ -72,11 +71,18 @@
                             border-bottom: 1px solid #E4E4E4;
                             position: relative;
 
+                            .link-text {
+                                background-image: unset;
+                            }
+                            
+
                             &.active {
                                 // color: $color-secondary;
                                 // background-image: linear-gradient(to right, $color-secondary 30%, #6B707F 50%);
-                                background-clip: text;
-                                color: transparent;
+                                // .link-text {
+                                    background-clip: text;
+                                    color: transparent;
+                                // }
                                 .progress-indicator {
                                     position: absolute;
                                     background: $color-secondary;

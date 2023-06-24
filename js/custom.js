@@ -550,7 +550,6 @@
 
         //line on scroll
         parentLayout.each(function() {
-            
             var divHeight = $(this).outerHeight();
             var widgetTop = $(this).offset().top - 160;
             var widgetBottom = widgetTop + divHeight;
@@ -563,10 +562,9 @@
                 $(".dropdown_nav li a[href*=" + widgetId + "]").addClass("active").css( "backgroundImage", "linear-gradient( to right, #15C590 "+widthPercentage+"%, #6B707F "+0+"% )" );
                 $(".active .progress-indicator").width(widthPercentage + "%");
             } else {
-                $(".dropdown_nav li a[href*=" + widgetId + "]").removeClass("active").css( "backgroundImage", "unset" );;
+                $(".dropdown_nav li a[href*=" + widgetId + "]").removeClass("active").css( "backgroundImage", "unset" );
             }
         })
-
     })
     
     

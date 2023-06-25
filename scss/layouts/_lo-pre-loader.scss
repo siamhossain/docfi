@@ -97,17 +97,24 @@
             border-radius: 15px;
             @include transition;
             &:nth-child(1) {
-              animation: line-fill 0.5s infinite;
+              animation: line-fill 0.5s ease-in-out infinite;
+              @include transition;
             }
             &:nth-child(2) {
               width: 70%;
-              animation: line-fill-small 0.5s infinite;
+              animation: line-fill-small 0.5s ease-in-out infinite;
+              @include transition;
+              transition-delay: 0.5s;
             }
             &:nth-child(3) {
-              animation: line-fill-small 0.5s infinite;
+              animation: line-fill-small 0.5s ease-in-out infinite;
+              @include transition;
+              transition-delay: 0.8s;
             }
             &:nth-child(4) {
-              animation: line-fill 0.5s infinite;
+              animation: line-fill 0.5s ease-in-out infinite;
+              @include transition;
+              transition-delay: 1s;
             }
           }
       }
@@ -126,7 +133,7 @@
     @keyframes line-fill {
       from {
         width: 0;
-        opacity: 1;
+        opacity: 0.3;
       }
       to {
         width: 100%;
@@ -137,14 +144,12 @@
     @keyframes line-fill-small {
       from {
         width: 0;
-        opacity: 1;
+        opacity: 0.3;
       }
       to {
         width: 70%;
         opacity: 1;
       }
-    }
-
-    
+    }   
 }
 

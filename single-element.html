@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css" href="assets/hover/css/hover-min.css">
     <link rel="stylesheet" type="text/css" href="assets/odometer/css/odometer-theme-default.css">
     <link rel="stylesheet" type="text/css" href="assets/jquery-nice-select/css/nice-select.css">
+    <link rel="stylesheet" type="text/css" href="assets/video/video-js.css">
     <link rel="stylesheet" type="text/css" href="assets/popup/magnific-popup.css">
     <link rel="stylesheet" type="text/css" href="assets/swiper/css/swiper.min.css">
     <link rel="stylesheet" type="text/css" href="assets/nouislider/nouislider.min.css">
@@ -29,9 +30,20 @@
 
 <body>
     <!-- start perloader -->
-    <!-- <div class="pre-loader" id="preloader">
-        <div class="loader"></div>
-    </div> -->
+    <div class="pre-loader" id="preloader">
+        <div class="loading-wrapper">
+            <!-- <div class="loading-text">LOADING</div> -->
+            <div class="loading-circle circle"></div>
+            <div class="loading-circle-small circle">
+                <div class="doc-icon">
+                    <div class="line wow animate__fadeInUp animate__animated" data-wow-duration="1200ms" data-wow-delay="200ms"></div>
+                    <div class="line wow animate__fadeInUp animate__animated" data-wow-duration="1200ms" data-wow-delay="400ms"></div>
+                    <div class="line wow animate__fadeInUp animate__animated" data-wow-duration="1200ms" data-wow-delay="500ms"></div>
+                    <div class="line wow animate__fadeInUp animate__animated" data-wow-duration="1200ms" data-wow-delay="600ms"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- end perloader -->
     
     <!-- Start main wrapper -->
@@ -1467,12 +1479,9 @@
                                             </div>
                                             <div class="video-area-wraper">
                                                 <div class="video-area">
-                                                    <img src="images/elements/youtube-video.jpg" alt="">
-                                                    <a href="" class="video-play-btn d-flex justify-content-center align-items-center">
-                                                        <svg width="14" height="17" viewBox="0 0 14 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path d="M12.6914 6.80859C13.1836 7.125 13.5 7.6875 13.5 8.25C13.5 8.84766 13.1836 9.41016 12.6914 9.69141L2.56641 15.8789C2.03906 16.1953 1.37109 16.2305 0.84375 15.9141C0.316406 15.6328 0 15.0703 0 14.4375V2.0625C0 1.46484 0.316406 0.902344 0.84375 0.621094C1.37109 0.304688 2.03906 0.304688 2.56641 0.65625L12.6914 6.80859Z" fill="white"/>
-                                                        </svg>    
-                                                    </a>
+                                                    <!-- <img src="images/elements/youtube-video.jpg" alt=""> -->
+                                                    <iframe width="100%" height="373" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                                                    </iframe>
                                                 </div>
                                                 <div class="video-title-area">
                                                     <h3 class="title">YouTube Video</h3>
@@ -1481,7 +1490,26 @@
                                             </div>
                                             <div class="video-area-wraper">
                                                 <div class="video-area">
-                                                    <img src="images/elements/local-video.png" alt="">
+                                                    <!-- <img src="images/elements/local-video.png" alt=""> -->
+                                                    <video
+                                                        id="my-video"
+                                                        class="video-js"
+                                                        controls
+                                                        preload="auto"
+                                                        width="640"
+                                                        height="360"
+                                                        poster="images/elements/local-video.jpg"
+                                                        data-setup="{}"
+                                                    >
+                                                        <source src="/video/fish.mp4" type="video/mp4" />
+                                                        <p class="vjs-no-js">
+                                                        To view this video please enable JavaScript, and consider upgrading to a
+                                                        web browser that
+                                                        <a href="https://videojs.com/html5-video-support/" target="_blank"
+                                                            >supports HTML5 video</a
+                                                        >
+                                                        </p>
+                                                    </video>
                                                 </div>
                                                 <div class="video-title-area">
                                                     <h3 class="title">Self Hosted Local Video</h3>
@@ -2889,6 +2917,7 @@
     <script src="assets/marquee/jquery.marquee.min.js"></script>
     <!-- For counterUp -->
     <script src="assets/odometer/js/odometer.min.js"></script>
+    <script src="assets/video/video.min.js"></script>
     <script src="assets/countdown/jquery.countdown.min.js"></script>
     <script src="assets/nouislider/nouislider.min.js"></script>
     <script src="assets/wnumb/wNumb.js"></script>

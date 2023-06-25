@@ -439,12 +439,16 @@
         .video-area-wraper {
             margin-bottom: 47px;
             .video-area {
-                border-radius: 10px;
                 overflow: hidden;
                 position: relative;
                 margin-bottom: 30px;
+                border-radius: 10px;
+                iframe {
+                    border-radius: 10px;
+                }
                 img {
                     width: 100%;
+                    height: auto;
                 }
                 .video-play-btn {
                     background: #FF0000;

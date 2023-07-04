@@ -162,9 +162,6 @@
                     }
                 }
                 &.active {
-                    // &:nth-child(1) {
-                        // background-color: #6C62CA;
-                    // }
                     a {
                         @include transition;
                         .icon {

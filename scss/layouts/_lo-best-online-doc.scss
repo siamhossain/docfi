@@ -186,8 +186,12 @@
                             font-size: 15px;
                             line-height: 18px;
                             color: #9B9B9B;
+                            transition: 0.3s;
                             &::placeholder {
                                 color: #9B9B9B;
+                            }
+                            &:focus {
+                                border: 1px solid black;
                             }
                         }
                         textarea {

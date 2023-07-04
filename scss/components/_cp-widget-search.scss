@@ -12,12 +12,16 @@
                     border: none;
                     padding: 0 20px;
                     color: #ADADAD;
+                    background-color: #FBFBFB;
                     &::placeholder {
                         font-family: $font-roboto;
                         font-weight: 400;
                         font-size: 15px;
                         line-height: 18px;
                         color: #ADADAD;
+                    }
+                    &:focus {
+                        border: 1px solid transparent;
                     }
                 }
             }

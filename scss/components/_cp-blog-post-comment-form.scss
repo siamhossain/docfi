@@ -20,14 +20,17 @@
                 border-radius: 5px;
                 padding: 15px 20px;
                 width: 100%;
-
                 font-family: $font-roboto;
                 font-weight: 400;
                 @include toRem(font-size, 15);
                 line-height: 18px;
                 color: #7B7B7B;
+                transition: 0.3s;
                 &::placeholder {
                     color: #7B7B7B;
+                }
+                &:focus {
+                    border: 1px solid black;
                 }
             }
             textarea {

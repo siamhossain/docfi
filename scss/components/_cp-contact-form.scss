@@ -12,8 +12,12 @@
             @include toRem(font-size, 16);
             line-height: 19px;
             color: #8F8F8F;
+            transition: 0.3s;
             &::placeholder {
                 color: #8F8F8F;
+            }
+            &:focus {
+                border: 1px solid black;
             }
         }
     }
